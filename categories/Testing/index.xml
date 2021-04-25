@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Testing on Yuanjie-跑步爱好者，IT从业者。</title><link>https://www.shiyuanjie.cn/categories/Testing/</link><description>Recent content in Testing on Yuanjie-跑步爱好者，IT从业者。</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 27 May 2020 12:25:12 +0800</lastBuildDate><atom:link href="https://www.shiyuanjie.cn/categories/Testing/index.xml" rel="self" type="application/rss+xml"/><item><title>Bug Review</title><link>https://www.shiyuanjie.cn/posts/QA/BugReview/</link><pubDate>Wed, 27 May 2020 12:25:12 +0800</pubDate><guid>https://www.shiyuanjie.cn/posts/QA/BugReview/</guid><description>今天有个朋友问到，BUG Review有什么注意事情和流程方法没？简单整理了下，便于后续回顾。 源地址：https://mubu.com/doc/amsCZEE1YV 流程 host QA 流程 QA搜集各位输入信息，并整理数据分布 所有参与人员一起讨论，并制定后续改进 时机 不确定，建议：团队质量较差或者</description></item><item><title>构建Headless 的 E2E 测试</title><link>https://www.shiyuanjie.cn/posts/UITest/%E5%A6%82%E4%BD%95%E6%9E%84%E5%BB%BA-Headless-%E7%9A%84-E2E-%E6%B5%8B%E8%AF%95/</link><pubDate>Fri, 02 Mar 2018 12:20:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/UITest/%E5%A6%82%E4%BD%95%E6%9E%84%E5%BB%BA-Headless-%E7%9A%84-E2E-%E6%B5%8B%E8%AF%95/</guid><description>&lt;h2 id="为什么要构建-headless-的-e2e-测试">为什么要&lt;code>构建 Headless 的 E2E 测试&lt;/code>&lt;/h2>
+&lt;pre>&lt;code>A headless browser is a great tool for automated testing and server environments where you don't need a visible UI shell. For example, you may want to run some tests against a real web page, create a PDF of it, or just inspect how the browser renders an URL.
+&lt;/code>&lt;/pre>&lt;p>结合上面的原因，我们还可以&lt;/p>
+&lt;ul>
+&lt;li>Headless结合 E2E 测试，可以让E2E 测试在非 GUI 的操作系统中运行&lt;/li>
+&lt;li>可以集成至 CI 环境中。让版本得到快速验证&lt;/li>
+&lt;/ul>
+&lt;h3 id="chrome-headless-的选取">Chrome Headless 的选取&lt;/h3>
+&lt;ul>
+&lt;li>Mac/Linux 的Chrome从59版本后，已经支持 Healess 模式的运行。Windows 的从60版本开始支持&lt;/li>
+&lt;li>所以选择一个你想要的 Chrome 版本，便可以进行 Headless 的测试&lt;/li>
+&lt;/ul>
+&lt;pre>&lt;code>chrome \
+--headless \ # Runs Chrome in headless mode.
+--disable-gpu \ # Temporarily needed if running on Windows.
+https://www.chromestatus.com # URL to open. Defaults to about:blank.
+&lt;/code>&lt;/pre></description></item><item><title>Responsive测试</title><link>https://www.shiyuanjie.cn/posts/UITest/Responsive%E6%B5%8B%E8%AF%95/</link><pubDate>Thu, 03 Aug 2017 15:30:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/UITest/Responsive%E6%B5%8B%E8%AF%95/</guid><description>Responsive测试 如何使用Galen进行响应式测试 使用Javascript编写测试代码 完整代码：https://github.com/aimer1124/GalenDemo 安装Galen 通过NPM安装 sudo npm install -g galenframework-cli 检查安装版本galen -v ➜ GalenDemo git:(master) ✗ galen -v Galen Framework Version: 2.3.4 JavaScript executor: Rhino 1.7 release 5 2015 01 29 第</description></item><item><title>性能测试与持续集成</title><link>https://www.shiyuanjie.cn/posts/CICD/%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95%E4%B8%8E%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90/</link><pubDate>Sun, 07 Aug 2016 14:23:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/CICD/%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95%E4%B8%8E%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90/</guid><description>&lt;h2 id="目的">目的&lt;/h2>
+&lt;ul>
+&lt;li>将性能测试与持续集成挂接起来&lt;/li>
+&lt;li>性能测试： &lt;a href="http://jmeter.apache.org/">JMeter&lt;/a>&lt;/li>
+&lt;li>持续集成： &lt;a href="https://jenkins.io/">Jenkins&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>E2E测试之Headless browser容器化</title><link>https://www.shiyuanjie.cn/posts/UITest/E2E%E6%B5%8B%E8%AF%95%E4%B9%8BHeadless-browser%E5%AE%B9%E5%99%A8%E5%8C%96/</link><pubDate>Mon, 01 Aug 2016 20:00:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/UITest/E2E%E6%B5%8B%E8%AF%95%E4%B9%8BHeadless-browser%E5%AE%B9%E5%99%A8%E5%8C%96/</guid><description>&lt;h1 id="目的">目的&lt;/h1>
+&lt;ul>
+&lt;li>E2E测试执行过程中&lt;strong>不依赖UI&lt;/strong>界面&lt;/li>
+&lt;li>可在*nix系统中运行&lt;/li>
+&lt;li>为什么不用&lt;code>PhantomJS&lt;/code>,&lt;a href="http://www.protractortest.org/#/browser-setup#setting-up-phantomjs">Protractor官方不推荐使用&lt;code>PhantomJS&lt;/code>来测试&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;pre>&lt;code>We recommend against using PhantomJS for tests with Protractor. There are many reported issues with PhantomJS crashing and behaving differently from real browsers.
+&lt;/code>&lt;/pre>&lt;h1 id="docker">Docker&lt;/h1>
+&lt;h2 id="安装">安装&lt;/h2>
+&lt;ul>
+&lt;li>下载系统所需要的安装包，下载地址：&lt;a href="https://www.docker.com/products/docker">https://www.docker.com/products/docker&lt;/a>&lt;/li>
+&lt;li>注册&lt;a href="https://hub.docker.com/">https://hub.docker.com/&lt;/a>账号&lt;/li>
+&lt;li>使用&lt;code>pull&lt;/code>来获取docker 镜像&lt;code>protractor-headless&lt;/code>，此过程会比较慢，耐心等待
+docker hub地址：&lt;a href="https://hub.docker.com/r/webnicer/protractor-headless/">https://hub.docker.com/r/webnicer/protractor-headless/&lt;/a>
+git hub地址：&lt;a href="https://github.com/jciolek/docker-protractor-headless">https://github.com/jciolek/docker-protractor-headless&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;pre>&lt;code>docker pull webnicer/protractor-headless
+&lt;/code>&lt;/pre></description></item><item><title>如此Tricky的测试场景,你应该怎么办</title><link>https://www.shiyuanjie.cn/posts/QA/%E5%A6%82%E6%AD%A4Tricky%E7%9A%84%E6%B5%8B%E8%AF%95%E5%9C%BA%E6%99%AF%E4%BD%A0%E5%BA%94%E8%AF%A5%E6%80%8E%E4%B9%88%E5%8A%9E/</link><pubDate>Sun, 22 May 2016 11:03:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/QA/%E5%A6%82%E6%AD%A4Tricky%E7%9A%84%E6%B5%8B%E8%AF%95%E5%9C%BA%E6%99%AF%E4%BD%A0%E5%BA%94%E8%AF%A5%E6%80%8E%E4%B9%88%E5%8A%9E/</guid><description>&lt;h1 id="什么是tricky的测试场景">什么是Tricky的测试场景？&lt;/h1>
+&lt;p>&lt;img src="https://www.shiyuanjie.cn/img/TestScenario-Tricky.png" alt="Tricky的测试场景">&lt;/p>
+&lt;h2 id="测试场景">测试场景&lt;/h2>
+&lt;p>&lt;strong>Scenario testing&lt;/strong> is a software &lt;strong>testing&lt;/strong> activity that uses &lt;strong>scenarios&lt;/strong>: hypothetical stories to help the tester work through a complex problem or &lt;strong>test&lt;/strong> system. The ideal &lt;strong>scenario test&lt;/strong> is a credible, complex, compelling or motivating story the outcome of which is easy to evaluate.&lt;/p></description></item><item><title>API自动化测试与持续集成</title><link>https://www.shiyuanjie.cn/posts/APITest/API%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E4%B8%8E%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90/</link><pubDate>Tue, 10 May 2016 14:23:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/APITest/API%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E4%B8%8E%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90/</guid><description>&lt;h1 id="目的">目的&lt;/h1>
+&lt;ul>
+&lt;li>如何使用&lt;code>SuperTest&lt;/code>测试框架，进行API测试&lt;/li>
+&lt;li>如何将API测试与构建工具结合&lt;/li>
+&lt;li>如何将API测试、构建工具与持续集成结合&lt;/li>
+&lt;/ul></description></item><item><title>游戏测试</title><link>https://www.shiyuanjie.cn/posts/QA/%E6%B8%B8%E6%88%8F%E6%B5%8B%E8%AF%95/</link><pubDate>Sun, 03 Apr 2016 19:50:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/QA/%E6%B8%B8%E6%88%8F%E6%B5%8B%E8%AF%95/</guid><description>PS:文档备案，以便以后查看</description></item><item><title>Tricky test scenario</title><link>https://www.shiyuanjie.cn/posts/QA/Tricky-test/</link><pubDate>Sat, 30 Jan 2016 18:47:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/QA/Tricky-test/</guid><description>测试验证码，收到客户投诉 Scenario 作为普通用户,在用户注册时，可通过获取短信码使用手机号进行注册 功能 用户注册时，需要测试手机号码与获取的短信码是否能正常收到且匹配。 短信验证码由本项目生成,但由第三方来发送 验证码发送是由第三方提供的，无法完全Mock 数据库中会记录收到的短信验证码. 测试策略</description></item></channel></rss>

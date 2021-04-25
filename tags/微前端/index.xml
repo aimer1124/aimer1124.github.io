@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>微前端 on Yuanjie-跑步爱好者，IT从业者。</title><link>https://www.shiyuanjie.cn/tags/%E5%BE%AE%E5%89%8D%E7%AB%AF/</link><description>Recent content in 微前端 on Yuanjie-跑步爱好者，IT从业者。</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Tue, 25 Dec 2018 11:40:00 +0000</lastBuildDate><atom:link href="https://www.shiyuanjie.cn/tags/%E5%BE%AE%E5%89%8D%E7%AB%AF/index.xml" rel="self" type="application/rss+xml"/><item><title>微前端</title><link>https://www.shiyuanjie.cn/posts/Book/%E5%BE%AE%E5%89%8D%E7%AB%AF-%E6%80%BB%E7%BB%93/</link><pubDate>Tue, 25 Dec 2018 11:40:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Book/%E5%BE%AE%E5%89%8D%E7%AB%AF-%E6%80%BB%E7%BB%93/</guid><description>&lt;h2 id="解决问题">解决问题&lt;/h2>
+&lt;pre>&lt;code>目标：遗留系统
+&lt;/code>&lt;/pre>&lt;p>往往这种系统都会有三个问题：&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>框架&lt;/code>陈旧，没办法直接使用直接更换新的技术&lt;/li>
+&lt;li>&lt;code>业务&lt;/code>复杂，老业务太复杂，当前很多业务已经没有人熟悉&lt;/li>
+&lt;li>&lt;code>改造&lt;/code>成本大，这条其实是由上面两个问题引起的&lt;/li>
+&lt;/ul>
+&lt;p>提出&lt;code>微前端&lt;/code>，就是要解决上面的问题。&lt;/p></description></item></channel></rss>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Protractor on Yuanjie-跑步爱好者，IT从业者。</title><link>https://www.shiyuanjie.cn/tags/Protractor/</link><description>Recent content in Protractor on Yuanjie-跑步爱好者，IT从业者。</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Mon, 01 Aug 2016 20:00:00 +0000</lastBuildDate><atom:link href="https://www.shiyuanjie.cn/tags/Protractor/index.xml" rel="self" type="application/rss+xml"/><item><title>E2E测试之Headless browser容器化</title><link>https://www.shiyuanjie.cn/posts/UITest/E2E%E6%B5%8B%E8%AF%95%E4%B9%8BHeadless-browser%E5%AE%B9%E5%99%A8%E5%8C%96/</link><pubDate>Mon, 01 Aug 2016 20:00:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/UITest/E2E%E6%B5%8B%E8%AF%95%E4%B9%8BHeadless-browser%E5%AE%B9%E5%99%A8%E5%8C%96/</guid><description>&lt;h1 id="目的">目的&lt;/h1>
+&lt;ul>
+&lt;li>E2E测试执行过程中&lt;strong>不依赖UI&lt;/strong>界面&lt;/li>
+&lt;li>可在*nix系统中运行&lt;/li>
+&lt;li>为什么不用&lt;code>PhantomJS&lt;/code>,&lt;a href="http://www.protractortest.org/#/browser-setup#setting-up-phantomjs">Protractor官方不推荐使用&lt;code>PhantomJS&lt;/code>来测试&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;pre>&lt;code>We recommend against using PhantomJS for tests with Protractor. There are many reported issues with PhantomJS crashing and behaving differently from real browsers.
+&lt;/code>&lt;/pre>&lt;h1 id="docker">Docker&lt;/h1>
+&lt;h2 id="安装">安装&lt;/h2>
+&lt;ul>
+&lt;li>下载系统所需要的安装包，下载地址：&lt;a href="https://www.docker.com/products/docker">https://www.docker.com/products/docker&lt;/a>&lt;/li>
+&lt;li>注册&lt;a href="https://hub.docker.com/">https://hub.docker.com/&lt;/a>账号&lt;/li>
+&lt;li>使用&lt;code>pull&lt;/code>来获取docker 镜像&lt;code>protractor-headless&lt;/code>，此过程会比较慢，耐心等待
+docker hub地址：&lt;a href="https://hub.docker.com/r/webnicer/protractor-headless/">https://hub.docker.com/r/webnicer/protractor-headless/&lt;/a>
+git hub地址：&lt;a href="https://github.com/jciolek/docker-protractor-headless">https://github.com/jciolek/docker-protractor-headless&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;pre>&lt;code>docker pull webnicer/protractor-headless
+&lt;/code>&lt;/pre></description></item><item><title>Protractor End to End Testing</title><link>https://www.shiyuanjie.cn/posts/UITest/Protractor-End-to-End-Testing/</link><pubDate>Thu, 28 Apr 2016 11:06:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/UITest/Protractor-End-to-End-Testing/</guid><description>&lt;h1 id="protractor">Protractor&lt;/h1>
+&lt;pre>&lt;code>Protractor is an end-to-end test framework for AngularJS applications.
+Protractor runs tests against your application running in a real browser, interacting with it as a user would.
+&lt;/code>&lt;/pre>&lt;h2 id="是什么">是什么&lt;/h2>
+&lt;ul>
+&lt;li>基于&lt;code>Node.js&lt;/code>的程序&lt;/li>
+&lt;li>使用&lt;code>Jasmine&lt;/code>测试框架测试接口,针对&lt;code>AngularJS&lt;/code>的应用程序&lt;/li>
+&lt;li>官网： &lt;a href="http://angular.github.io/protractor/#/">http://angular.github.io/protractor/#/&lt;/a>&lt;/li>
+&lt;li>Github: &lt;a href="https://github.com/angular/protractor">https://github.com/angular/protractor&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="功能">功能&lt;/h2>
+&lt;ul>
+&lt;li>模拟真实的用户操作行为&lt;/li>
+&lt;li>针对&lt;code>AngularJS&lt;/code>中的Element不需要做特殊的处理，普通HTML元素也同样支持&lt;/li>
+&lt;li>智能等待，不需要为页面中的加载和同步显示做特殊的等待时间处理&lt;/li>
+&lt;/ul></description></item></channel></rss>

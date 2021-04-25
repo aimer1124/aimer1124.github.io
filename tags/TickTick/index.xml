@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>TickTick on Yuanjie-跑步爱好者，IT从业者。</title><link>https://www.shiyuanjie.cn/tags/TickTick/</link><description>Recent content in TickTick on Yuanjie-跑步爱好者，IT从业者。</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Tue, 11 Jun 2019 16:00:00 +0000</lastBuildDate><atom:link href="https://www.shiyuanjie.cn/tags/TickTick/index.xml" rel="self" type="application/rss+xml"/><item><title>整理TickTick和邮箱</title><link>https://www.shiyuanjie.cn/posts/Upgrade/%E6%95%B4%E7%90%86TickTick%E5%92%8C%E9%82%AE%E7%AE%B1/</link><pubDate>Tue, 11 Jun 2019 16:00:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Upgrade/%E6%95%B4%E7%90%86TickTick%E5%92%8C%E9%82%AE%E7%AE%B1/</guid><description>&lt;h3 id="邮箱">邮箱&lt;/h3>
+&lt;p>自己在工作中使用Gmail有4年了，一直坚持在使用一些过滤器和分组整理各种邮件。今天邮箱里面的Filter和Label重新进行了梳理，感觉再次清爽了很多。&lt;/p>
+&lt;h4 id="规则">规则&lt;/h4>
+&lt;ul>
+&lt;li>把Filter后不重要或不需要阅读的邮件，直接标记为&lt;code>已读&lt;/code>&lt;/li>
+&lt;li>将Label的分组，依据当前的工作状态与时间关系再次&lt;code>分组&lt;/code>。如将&lt;code>去年&lt;/code>的同类Label进行归纳至&lt;code>年份&lt;/code>Label&lt;/li>
+&lt;li>将不重要的Label组设置为&lt;code>show if unread&lt;/code>&lt;/li>
+&lt;li>删除几乎不会有邮件进入的Label(不记得自己之前为什么会创建这些Label)&lt;/li>
+&lt;li>合并部分重叠度很多的Label&lt;/li>
+&lt;/ul></description></item></channel></rss>

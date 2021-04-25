@@ -1,0 +1,120 @@
+<!doctype html><html lang=zh-cn><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><title>Posts | Yuanjie-跑步爱好者，IT从业者。</title><meta property="og:title" content="Posts - Yuanjie-跑步爱好者，IT从业者。"><meta property="og:type" content="article"><meta name=Keywords content="测试,敏捷,跑步,项目管理,学习"><meta name=description content="Posts"><meta name=author content="Yuanjie"><meta property="og:url" content="https://www.shiyuanjie.cn/posts/"><link rel="shortcut icon" href=/favicon.ico type=image/x-icon><link rel=stylesheet href=/css/normalize.css><link rel=stylesheet href=/css/style.css><link rel=alternate type=application/rss+xml+xml href=https://www.shiyuanjie.cn/posts/index.xml title=Yuanjie-跑步爱好者，IT从业者。><script type=text/javascript src=//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js></script><script>var _hmt=_hmt||[];(function(){var hm=document.createElement("script");hm.src="https://hm.baidu.com/hm.js?ac69e1e54b317232c0d3a881b738cfe8";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm,s);})();</script></head><body><header id=header class=clearfix><div class=container><div class=col-group><div class=site-name><a id=logo href=https://www.shiyuanjie.cn>Yuanjie-跑步爱好者，IT从业者。</a><p class=description>跑步爱好者，IT从业者。</p></div><div><nav id=nav-menu class=clearfix><a href=https://www.shiyuanjie.cn>首页</a>
+<a href=https://www.shiyuanjie.cn/tools/ title=小工具>小工具</a>
+<a href=https://www.shiyuanjie.cn/archives/ title=归档>归档</a>
+<a href=https://www.shiyuanjie.cn/about/ title=关于>关于</a></nav></div></div></div></header><div id=body><div class=container><div class=col-group><div class=col-8 id=main><div class=res-cons><article class=post><header><h1 class=post-title><a href=https://www.shiyuanjie.cn/posts/PerformanceTest/%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95%E4%B9%8B%E8%BF%9C%E7%A8%8B%E6%A8%A1%E5%BC%8F/ title=性能测试之远程并发模式>性能测试之远程并发模式</a></h1></header><date class="post-meta meta-date">2016年9月12日</date><div class=post-meta><span>|</span>
+<span class=meta-category><a href=https://www.shiyuanjie.cn/categories/Translate>Translate</a></span></div><div class=post-content><p>事实上，你的JMeter客户端机器是不能表现出完美的压力请求，来模拟足够多的用户或由于网络限制去向服务施加压力，一种解决方法是通过一个JMeter去控制多个/远程JMeter。通过运行JMeter的远程模式，你可以通过多个低配制的电脑复制测试计划用于模拟一个大数据量的压力并发在服务器上。一个JMeter客户端实例可以控制多个远程JMeter实例，并收集所有数据信息。特点如下:</p><ul><li>保存测试样例在本机电脑</li><li>通过一台机器来管理多台JMeter测试机</li><li>不需要复制测试计划到每一台JMeter测试机-JMeter客户端会发送至所有的服务器</li></ul><blockquote><p>提示: 相同的测试计划将会被运行在所有的服务器中。JMeter不会在服务器间分发压力，每一个均会完整执行测试计划。因此，如果你设置了1000个线程并有6个JMeter服务，你将会完成6000线程注入。</p></blockquote>……</div><p class=readmore><a href=https://www.shiyuanjie.cn/posts/PerformanceTest/%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95%E4%B9%8B%E8%BF%9C%E7%A8%8B%E6%A8%A1%E5%BC%8F/>阅读全文</a></p></article><article class=post><header><h1 class=post-title><a href=https://www.shiyuanjie.cn/posts/PerformanceTest/%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5%E4%B9%8BJMeter/ title=性能测试最佳实践之JMeter>性能测试最佳实践之JMeter</a></h1></header><date class="post-meta meta-date">2016年8月31日</date><div class=post-meta><span>|</span>
+<span class=meta-category><a href=https://www.shiyuanjie.cn/categories/Translate>Translate</a></span></div><div class=post-content><h1 id=保持使用最新版本>保持使用最新版本</h1><p>JMeter被经常推荐用来测试性能，鼓励用户使用最新的版本。</p><p>确保你要经常去阅读<a href=http://jmeter.apache.org/changes.html>变更记录</a>中的新功能和模块的提升。你不应该再使用3.0之前的版本了</p><h1 id=使用正确的线程数>使用正确的线程数</h1><p>你硬件设备的能力及测试计划将都会影响你的JMeter可运行的线程数。数量也依赖于你的服务有多快(一个可快速响应的服务可以让JMeter变更更加给力)。像其它性能测试工具一样，如果你没有正确的线程数，你将面对不准备或错误结果的<code>Coordinated Omission</code>问题。如果你需要大数量级的压力测试，考虑使用分布式模式在多台机器上运行无GUI的JMeter实例。当使用分布式模式时，结果将被聚合在控制器的结果中，如果使用多个自已的实例，结果文件可以聚合用于持续性分析。对于如何在一个给定的平台上使用JMeter测试，<code>JavaTest Sampler</code>可以考虑使用。它不需要任何网络请求便可返回一些信息在最大的吞吐量。</p><p>JMeter有选项用于延迟线程创建直到线程正常启动，如在其它线程组延迟之后和线程自身的启动时间。这样就允许一个非常大数量级的线程数，不需要太多的线程同时并发。</p>……</div><p class=readmore><a href=https://www.shiyuanjie.cn/posts/PerformanceTest/%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5%E4%B9%8BJMeter/>阅读全文</a></p></article><article class=post><header><h1 class=post-title><a href=https://www.shiyuanjie.cn/posts/Book/%E6%97%A0%E5%A3%B0%E5%91%8A%E7%99%BD/ title=无声告白>无声告白</a></h1></header><date class="post-meta meta-date">2016年8月14日</date><div class=post-meta><span>|</span>
+<span class=meta-category><a href=https://www.shiyuanjie.cn/categories/Book>Book</a></span></div><div class=post-content><h2 id=封面>封面</h2><p></p>……</div><p class=readmore><a href=https://www.shiyuanjie.cn/posts/Book/%E6%97%A0%E5%A3%B0%E5%91%8A%E7%99%BD/>阅读全文</a></p></article><article class=post><header><h1 class=post-title><a href=https://www.shiyuanjie.cn/posts/CICD/%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95%E4%B8%8E%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90/ title=性能测试与持续集成>性能测试与持续集成</a></h1></header><date class="post-meta meta-date">2016年8月7日</date><div class=post-meta><span>|</span>
+<span class=meta-category><a href=https://www.shiyuanjie.cn/categories/Testing>Testing</a></span></div><div class=post-content><h2 id=目的>目的</h2><ul><li>将性能测试与持续集成挂接起来</li><li>性能测试： <a href=http://jmeter.apache.org/>JMeter</a></li><li>持续集成： <a href=https://jenkins.io/>Jenkins</a></li></ul>……</div><p class=readmore><a href=https://www.shiyuanjie.cn/posts/CICD/%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95%E4%B8%8E%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90/>阅读全文</a></p></article><article class=post><header><h1 class=post-title><a href=https://www.shiyuanjie.cn/posts/UITest/E2E%E6%B5%8B%E8%AF%95%E4%B9%8BHeadless-browser%E5%AE%B9%E5%99%A8%E5%8C%96/ title="E2E测试之Headless browser容器化">E2E测试之Headless browser容器化</a></h1></header><date class="post-meta meta-date">2016年8月1日</date><div class=post-meta><span>|</span>
+<span class=meta-category><a href=https://www.shiyuanjie.cn/categories/Testing>Testing</a></span></div><div class=post-content><h1 id=目的>目的</h1><ul><li>E2E测试执行过程中<strong>不依赖UI</strong>界面</li><li>可在*nix系统中运行</li><li>为什么不用<code>PhantomJS</code>,<a href=http://www.protractortest.org/#/browser-setup#setting-up-phantomjs>Protractor官方不推荐使用<code>PhantomJS</code>来测试</a></li></ul><pre><code>We recommend against using PhantomJS for tests with Protractor. There are many reported issues with PhantomJS crashing and behaving differently from real browsers.
+</code></pre><h1 id=docker>Docker</h1><h2 id=安装>安装</h2><ul><li>下载系统所需要的安装包，下载地址：<a href=https://www.docker.com/products/docker>https://www.docker.com/products/docker</a></li><li>注册<a href=https://hub.docker.com/>https://hub.docker.com/</a>账号</li><li>使用<code>pull</code>来获取docker 镜像<code>protractor-headless</code>，此过程会比较慢，耐心等待
+docker hub地址：<a href=https://hub.docker.com/r/webnicer/protractor-headless/>https://hub.docker.com/r/webnicer/protractor-headless/</a>
+git hub地址：<a href=https://github.com/jciolek/docker-protractor-headless>https://github.com/jciolek/docker-protractor-headless</a></li></ul><pre><code>docker pull webnicer/protractor-headless
+</code></pre>……</div><p class=readmore><a href=https://www.shiyuanjie.cn/posts/UITest/E2E%E6%B5%8B%E8%AF%95%E4%B9%8BHeadless-browser%E5%AE%B9%E5%99%A8%E5%8C%96/>阅读全文</a></p></article><article class=post><header><h1 class=post-title><a href=https://www.shiyuanjie.cn/posts/Tools/%E7%AE%80%E4%B9%A6%E7%88%AC%E8%99%AB/ title=简书爬虫>简书爬虫</a></h1></header><date class="post-meta meta-date">2016年7月19日</date><div class=post-meta><span>|</span>
+<span class=meta-category><a href=https://www.shiyuanjie.cn/categories/Mark>Mark</a></span></div><div class=post-content>简书爬虫 此功能纯粹为个人意想功能,利用业余时间来学习Node。所有内容均已开源,欢迎各种PR和Fork。最后更新时间: 20161129。 项目 源代码 https://github.com/aimer1124/JianshuSpider 需求 Teambition-简书爬虫 效果图 Home Article Author Collections Search ShowCase Home Articles Authors Collections Search 代码 启动 DB: sudo mongod 程序: gulp 测试: gulp test 版本 Node: 4.4.3 Mongo: 3.0.3 引用包列表 Backend express: http://expressjs.com/,node web框架……</div><p class=readmore><a href=https://www.shiyuanjie.cn/posts/Tools/%E7%AE%80%E4%B9%A6%E7%88%AC%E8%99%AB/>阅读全文</a></p></article><article class=post><header><h1 class=post-title><a href=https://www.shiyuanjie.cn/posts/APITest/API%E5%BC%80%E5%8F%91%E7%A5%9E%E5%99%A8-Postman/ title=API开发神器-Postman>API开发神器-Postman</a></h1></header><date class="post-meta meta-date">2016年6月24日</date><div class=post-meta><span>|</span>
+<span class=meta-category><a href=https://www.shiyuanjie.cn/categories/Tool>Tool</a></span></div><div class=post-content><p><code>Postman helps you develop APIs faster.</code></p><h1 id=豪华午餐>豪华午餐</h1><p><img src=/img/Postman.png alt=Postman></p><h2 id=postman>Postman</h2><p><code>构建、管理、文档化</code>API</p><ul><li>在线安装</li><li>Chrome插件版
+<a href=https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop>https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop</a></li><li>MAC版
+<a href=https://www.getpostman.com/app/postman-osx>https://www.getpostman.com/app/postman-osx</a></li><li>离线安装
+使用已经安装好的Postman文件夹，<code>机器</code>默认存放目录：/Library/Application\ Support/Google/Chrome/Default/Extensions
+进入<code>chrome://extensions/</code>，选择<code>Load unpacked extensions</code>，加载Postman的文件夹</li></ul><p><img src=/img/Postman-Newman.png alt=Newman(我真的不是MP3)></p>……</div><p class=readmore><a href=https://www.shiyuanjie.cn/posts/APITest/API%E5%BC%80%E5%8F%91%E7%A5%9E%E5%99%A8-Postman/>阅读全文</a></p></article><article class=post><header><h1 class=post-title><a href=https://www.shiyuanjie.cn/posts/QA/%E5%A6%82%E6%AD%A4Tricky%E7%9A%84%E6%B5%8B%E8%AF%95%E5%9C%BA%E6%99%AF%E4%BD%A0%E5%BA%94%E8%AF%A5%E6%80%8E%E4%B9%88%E5%8A%9E/ title=如此Tricky的测试场景,你应该怎么办>如此Tricky的测试场景,你应该怎么办</a></h1></header><date class="post-meta meta-date">2016年5月22日</date><div class=post-meta><span>|</span>
+<span class=meta-category><a href=https://www.shiyuanjie.cn/categories/Testing>Testing</a></span></div><div class=post-content><h1 id=什么是tricky的测试场景>什么是Tricky的测试场景？</h1><p><img src=/img/TestScenario-Tricky.png alt=Tricky的测试场景></p><h2 id=测试场景>测试场景</h2><p><strong>Scenario testing</strong> is a software <strong>testing</strong> activity that uses <strong>scenarios</strong>: hypothetical stories to help the tester work through a complex problem or <strong>test</strong> system. The ideal <strong>scenario test</strong> is a credible, complex, compelling or motivating story the outcome of which is easy to evaluate.</p>……</div><p class=readmore><a href=https://www.shiyuanjie.cn/posts/QA/%E5%A6%82%E6%AD%A4Tricky%E7%9A%84%E6%B5%8B%E8%AF%95%E5%9C%BA%E6%99%AF%E4%BD%A0%E5%BA%94%E8%AF%A5%E6%80%8E%E4%B9%88%E5%8A%9E/>阅读全文</a></p></article><article class=post><header><h1 class=post-title><a href=https://www.shiyuanjie.cn/posts/APITest/API%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E4%B8%8E%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90/ title=API自动化测试与持续集成>API自动化测试与持续集成</a></h1></header><date class="post-meta meta-date">2016年5月10日</date><div class=post-meta><span>|</span>
+<span class=meta-category><a href=https://www.shiyuanjie.cn/categories/Testing>Testing</a></span></div><div class=post-content><h1 id=目的>目的</h1><ul><li>如何使用<code>SuperTest</code>测试框架，进行API测试</li><li>如何将API测试与构建工具结合</li><li>如何将API测试、构建工具与持续集成结合</li></ul>……</div><p class=readmore><a href=https://www.shiyuanjie.cn/posts/APITest/API%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E4%B8%8E%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90/>阅读全文</a></p></article><article class=post><header><h1 class=post-title><a href=https://www.shiyuanjie.cn/posts/Book/%E5%88%AB%E7%AC%91%E8%BF%99%E6%98%AF%E5%A4%A7%E6%B8%85%E6%AD%A3%E5%8F%B2/ title=别笑，这是大清正史1,2,3>别笑，这是大清正史1,2,3</a></h1></header><date class="post-meta meta-date">2016年5月9日</date><div class=post-meta><span>|</span>
+<span class=meta-category><a href=https://www.shiyuanjie.cn/categories/Book>Book</a></span></div><div class=post-content><h2 id=封面>封面</h2><p></p>……</div><p class=readmore><a href=https://www.shiyuanjie.cn/posts/Book/%E5%88%AB%E7%AC%91%E8%BF%99%E6%98%AF%E5%A4%A7%E6%B8%85%E6%AD%A3%E5%8F%B2/>阅读全文</a></p></article><ol class=page-navigator><li class=prev><a href=https://www.shiyuanjie.cn/posts/page/13/>上一页</a></li><li><a href=https://www.shiyuanjie.cn/posts/>1</a></li><li><span>...</span></li><li><a href=https://www.shiyuanjie.cn/posts/page/12/>12</a></li><li><a href=https://www.shiyuanjie.cn/posts/page/13/>13</a></li><li class=current><a href=https://www.shiyuanjie.cn/posts/page/14/>14</a></li><li><a href=https://www.shiyuanjie.cn/posts/page/15/>15</a></li><li><a href=https://www.shiyuanjie.cn/posts/page/16/>16</a></li><li><span>...</span></li><li><a href=https://www.shiyuanjie.cn/posts/page/17/>17</a></li><li class=next><a href=https://www.shiyuanjie.cn/posts/page/15/>下一页</a></li></ol></div></div><div id=secondary><section class=widget><h3 class=widget-title>最近文章</h3><ul class=widget-list><li><a href=https://www.shiyuanjie.cn/posts/Upgrade/driver-license/ title=我的驾照历程>我的驾照历程</a></li><li><a href=https://www.shiyuanjie.cn/posts/Book/%E5%8F%AF%E5%A4%8D%E5%88%B6%E7%9A%84%E9%A2%86%E5%AF%BC%E5%8A%9B/ title=可复制的领导力>可复制的领导力</a></li><li><a href=https://www.shiyuanjie.cn/posts/Book/%E5%86%8D%E8%A7%81%E5%BF%8D%E8%80%81%E5%B8%88/ title=再见，忍老师>再见，忍老师</a></li><li><a href=https://www.shiyuanjie.cn/posts/Book/%E5%85%84%E5%BC%9F/ title=兄弟>兄弟</a></li><li><a href=https://www.shiyuanjie.cn/posts/QA/BugReview/ title="Bug Review">Bug Review</a></li><li><a href=https://www.shiyuanjie.cn/posts/Book/%E4%BA%BA%E7%B1%BB%E7%AE%80%E5%8F%B2/ title=人类简史>人类简史</a></li><li><a href=https://www.shiyuanjie.cn/posts/Book/%E5%AD%A6%E4%BC%9A%E6%8F%90%E9%97%AE/ title=学会提问>学会提问</a></li><li><a href=https://www.shiyuanjie.cn/posts/Product/shiyanlou/ title=实验楼>实验楼</a></li><li><a href=https://www.shiyuanjie.cn/posts/Book/%E8%8C%B6%E9%81%93/ title=茶道>茶道</a></li><li><a href=https://www.shiyuanjie.cn/posts/Management/PM-Daily/ title="PM Daily">PM Daily</a></li></ul></section><section class=widget><h3 class=widget-title>分类</h3><ul class=widget-list><li><a href=https://www.shiyuanjie.cn/categories/Book/>Book (57)</a></li><li><a href=https://www.shiyuanjie.cn/categories/Car/>Car (1)</a></li><li><a href=https://www.shiyuanjie.cn/categories/Design/>Design (5)</a></li><li><a href=https://www.shiyuanjie.cn/categories/Management/>Management (6)</a></li><li><a href=https://www.shiyuanjie.cn/categories/Mark/>Mark (32)</a></li><li><a href=https://www.shiyuanjie.cn/categories/Paint/>Paint (3)</a></li><li><a href=https://www.shiyuanjie.cn/categories/Testing/>Testing (9)</a></li><li><a href=https://www.shiyuanjie.cn/categories/Tool/>Tool (34)</a></li><li><a href=https://www.shiyuanjie.cn/categories/Translate/>Translate (16)</a></li></ul></section><section class=widget><h3 class=widget-title>标签</h3><div class=tagcloud><a href=https://www.shiyuanjie.cn/tags/2017/>2017</a>
+<a href=https://www.shiyuanjie.cn/tags/2018/>2018</a>
+<a href=https://www.shiyuanjie.cn/tags/2019/>2019</a>
+<a href=https://www.shiyuanjie.cn/tags/API%E6%B5%8B%E8%AF%95/>API测试</a>
+<a href=https://www.shiyuanjie.cn/tags/Alfred/>Alfred</a>
+<a href=https://www.shiyuanjie.cn/tags/Android/>Android</a>
+<a href=https://www.shiyuanjie.cn/tags/Bug/>Bug</a>
+<a href=https://www.shiyuanjie.cn/tags/CI/>CI</a>
+<a href=https://www.shiyuanjie.cn/tags/Chrome/>Chrome</a>
+<a href=https://www.shiyuanjie.cn/tags/Cucumber/>Cucumber</a>
+<a href=https://www.shiyuanjie.cn/tags/Docker/>Docker</a>
+<a href=https://www.shiyuanjie.cn/tags/E2E/>E2E</a>
+<a href=https://www.shiyuanjie.cn/tags/ECS/>ECS</a>
+<a href=https://www.shiyuanjie.cn/tags/Espresso/>Espresso</a>
+<a href=https://www.shiyuanjie.cn/tags/Evernote/>Evernote</a>
+<a href=https://www.shiyuanjie.cn/tags/Flutter/>Flutter</a>
+<a href=https://www.shiyuanjie.cn/tags/GIF/>GIF</a>
+<a href=https://www.shiyuanjie.cn/tags/Galen/>Galen</a>
+<a href=https://www.shiyuanjie.cn/tags/Gauge/>Gauge</a>
+<a href=https://www.shiyuanjie.cn/tags/Genymotion/>Genymotion</a>
+<a href=https://www.shiyuanjie.cn/tags/Git/>Git</a>
+<a href=https://www.shiyuanjie.cn/tags/Github/>Github</a>
+<a href=https://www.shiyuanjie.cn/tags/Google/>Google</a>
+<a href=https://www.shiyuanjie.cn/tags/Grunt/>Grunt</a>
+<a href=https://www.shiyuanjie.cn/tags/Gulp/>Gulp</a>
+<a href=https://www.shiyuanjie.cn/tags/HTTP/>HTTP</a>
+<a href=https://www.shiyuanjie.cn/tags/Hexo/>Hexo</a>
+<a href=https://www.shiyuanjie.cn/tags/Hugo/>Hugo</a>
+<a href=https://www.shiyuanjie.cn/tags/JMeter/>JMeter</a>
+<a href=https://www.shiyuanjie.cn/tags/JavaScript/>JavaScript</a>
+<a href=https://www.shiyuanjie.cn/tags/Jenkins/>Jenkins</a>
+<a href=https://www.shiyuanjie.cn/tags/Layout%E6%B5%8B%E8%AF%95/>Layout测试</a>
+<a href=https://www.shiyuanjie.cn/tags/Locust/>Locust</a>
+<a href=https://www.shiyuanjie.cn/tags/MarkDown/>MarkDown</a>
+<a href=https://www.shiyuanjie.cn/tags/MarkDown/>MarkDown</a>
+<a href=https://www.shiyuanjie.cn/tags/Node.js/>Node.js</a>
+<a href=https://www.shiyuanjie.cn/tags/PDF/>PDF</a>
+<a href=https://www.shiyuanjie.cn/tags/PM/>PM</a>
+<a href=https://www.shiyuanjie.cn/tags/PageObject/>PageObject</a>
+<a href=https://www.shiyuanjie.cn/tags/Product/>Product</a>
+<a href=https://www.shiyuanjie.cn/tags/Protractor/>Protractor</a>
+<a href=https://www.shiyuanjie.cn/tags/Python/>Python</a>
+<a href=https://www.shiyuanjie.cn/tags/Ruby/>Ruby</a>
+<a href=https://www.shiyuanjie.cn/tags/SSH/>SSH</a>
+<a href=https://www.shiyuanjie.cn/tags/SuperTest/>SuperTest</a>
+<a href=https://www.shiyuanjie.cn/tags/TeamLeader/>TeamLeader</a>
+<a href=https://www.shiyuanjie.cn/tags/Test-scenario/>Test scenario</a>
+<a href=https://www.shiyuanjie.cn/tags/Testing/>Testing</a>
+<a href=https://www.shiyuanjie.cn/tags/TickTick/>TickTick</a>
+<a href=https://www.shiyuanjie.cn/tags/Travis/>Travis</a>
+<a href=https://www.shiyuanjie.cn/tags/Workflow/>Workflow</a>
+<a href=https://www.shiyuanjie.cn/tags/find/>find</a>
+<a href=https://www.shiyuanjie.cn/tags/%E4%B8%83%E7%89%9B/>七牛</a>
+<a href=https://www.shiyuanjie.cn/tags/%E4%B8%9C%E9%87%8E%E5%9C%AD%E5%90%BE/>东野圭吾</a>
+<a href=https://www.shiyuanjie.cn/tags/%E4%B8%9C%E9%87%8E%E5%A5%8E%E5%90%BE/>东野奎吾</a>
+<a href=https://www.shiyuanjie.cn/tags/%E4%B8%AD%E5%8F%B0/>中台</a>
+<a href=https://www.shiyuanjie.cn/tags/%E4%B8%AD%E5%9B%BD%E7%A7%BB%E5%8A%A8/>中国移动</a>
+<a href=https://www.shiyuanjie.cn/tags/%E4%B9%A0%E6%83%AF/>习惯</a>
+<a href=https://www.shiyuanjie.cn/tags/%E4%BA%A7%E5%93%81/>产品</a>
+<a href=https://www.shiyuanjie.cn/tags/%E4%BD%99%E5%8D%8E/>余华</a>
+<a href=https://www.shiyuanjie.cn/tags/%E5%8E%86%E5%8F%B2/>历史</a>
+<a href=https://www.shiyuanjie.cn/tags/%E5%92%A8%E8%AF%A2/>咨询</a>
+<a href=https://www.shiyuanjie.cn/tags/%E5%9B%A2%E9%98%9F/>团队</a>
+<a href=https://www.shiyuanjie.cn/tags/%E5%AD%A9%E5%AD%90/>孩子</a>
+<a href=https://www.shiyuanjie.cn/tags/%E5%B0%8F%E8%AF%B4/>小说</a>
+<a href=https://www.shiyuanjie.cn/tags/%E5%B7%A5%E5%85%B7/>工具</a>
+<a href=https://www.shiyuanjie.cn/tags/%E5%BE%AE%E5%89%8D%E7%AB%AF/>微前端</a>
+<a href=https://www.shiyuanjie.cn/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/>微服务</a>
+<a href=https://www.shiyuanjie.cn/tags/%E6%80%9D%E7%BB%B4/>思维</a>
+<a href=https://www.shiyuanjie.cn/tags/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/>思维导图</a>
+<a href=https://www.shiyuanjie.cn/tags/%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/>性能测试</a>
+<a href=https://www.shiyuanjie.cn/tags/%E6%88%92%E7%83%9F/>戒烟</a>
+<a href=https://www.shiyuanjie.cn/tags/%E6%89%8B%E7%BB%98/>手绘</a>
+<a href=https://www.shiyuanjie.cn/tags/%E6%8B%9B%E8%81%98/>招聘</a>
+<a href=https://www.shiyuanjie.cn/tags/%E6%94%B6%E8%B4%B9%E8%BD%AF%E4%BB%B6/>收费软件</a>
+<a href=https://www.shiyuanjie.cn/tags/%E6%95%8F%E6%8D%B7/>敏捷</a>
+<a href=https://www.shiyuanjie.cn/tags/%E6%95%99%E8%82%B2/>教育</a>
+<a href=https://www.shiyuanjie.cn/tags/%E6%95%B4%E7%90%86/>整理</a>
+<a href=https://www.shiyuanjie.cn/tags/%E6%97%A5%E6%9B%B4/>日更</a>
+<a href=https://www.shiyuanjie.cn/tags/%E6%A8%A1%E6%8B%9F%E5%99%A8/>模拟器</a>
+<a href=https://www.shiyuanjie.cn/tags/%E6%B2%9F%E9%80%9A/>沟通</a>
+<a href=https://www.shiyuanjie.cn/tags/%E6%B8%B8%E6%B3%B3/>游泳</a>
+<a href=https://www.shiyuanjie.cn/tags/%E7%88%AC%E8%99%AB/>爬虫</a>
+<a href=https://www.shiyuanjie.cn/tags/%E7%94%9F%E6%B4%BB/>生活</a>
+<a href=https://www.shiyuanjie.cn/tags/%E7%94%A8%E6%88%B7%E6%95%85%E4%BA%8B/>用户故事</a>
+<a href=https://www.shiyuanjie.cn/tags/%E7%94%B2%E6%96%B9/>甲方</a>
+<a href=https://www.shiyuanjie.cn/tags/%E7%AE%A1%E7%90%86/>管理</a>
+<a href=https://www.shiyuanjie.cn/tags/%E7%BB%83%E5%AD%97/>练字</a>
+<a href=https://www.shiyuanjie.cn/tags/%E8%81%8C%E5%9C%BA/>职场</a>
+<a href=https://www.shiyuanjie.cn/tags/%E8%8C%B6/>茶</a>
+<a href=https://www.shiyuanjie.cn/tags/%E8%AE%BE%E8%AE%A1/>设计</a>
+<a href=https://www.shiyuanjie.cn/tags/%E8%AF%BB%E4%B9%A6/>读书</a>
+<a href=https://www.shiyuanjie.cn/tags/%E8%B7%83%E8%BF%81/>跃迁</a>
+<a href=https://www.shiyuanjie.cn/tags/%E8%B7%91%E6%AD%A5/>跑步</a>
+<a href=https://www.shiyuanjie.cn/tags/%E9%93%B6%E5%B1%8B/>银屋</a>
+<a href=https://www.shiyuanjie.cn/tags/%E9%9C%80%E6%B1%82/>需求</a>
+<a href=https://www.shiyuanjie.cn/tags/%E9%A9%BE%E7%85%A7/>驾照</a></div></section><section class=widget><h3 class=widget-title>产出</h3><ul class=widget-list><li><a target=_blank href=https://www.shiyuanjie.cn/tools/ title=我的小工具>我的小工具</a></li><li><a target=_blank href=https://www.shiyuanjie.cn/posts/Upgrade/%E5%88%A9%E7%94%A821%E5%A4%A9%E7%9A%84%E5%AE%8C%E6%88%90%E4%B8%80%E6%9C%ACMini%E4%B9%A6/ title=利用21天时间完成一本Mini书>利用21天时间完成一本Mini书</a></li><li><a target=_blank href=https://aimer1124.github.io/practice-character/ title=练字记录>练字记录</a></li><li><a target=_blank href=https://aimer1124.github.io/graphic-recorder/ title=GR记录>GR记录</a></li><li><a target=_blank href=https://aimer1124.github.io/100-questions-to-pm/ title=PM的问题集>PM的问题集</a></li><li><a target=_blank href=https://www.shiyuanjie.cn/posts/Blog/%E7%AB%99%E7%82%B9%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/ title=网站时间线Timeline>网站时间线Timeline</a></li></ul></section></div></div></div></div><footer id=footer><div class=container>&copy; 2021, By Yuanjie</a>。
+访客 <span id=busuanzi_value_site_uv></span>人次 | 访问 <span id=busuanzi_value_site_pv></span>次。
+备案号：<a href=http://www.beian.miit.gov.cn target=_blank>陕ICP备20003547号-1</a></div></footer><a id=rocket href=#top></a><script type=text/javascript src="/js/totop.js?v=0.0.0" async></script><script type=text/javascript src=//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js async></script></body></html>

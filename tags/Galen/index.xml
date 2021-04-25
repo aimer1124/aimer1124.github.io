@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Galen on Yuanjie-跑步爱好者，IT从业者。</title><link>https://www.shiyuanjie.cn/tags/Galen/</link><description>Recent content in Galen on Yuanjie-跑步爱好者，IT从业者。</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Thu, 03 Aug 2017 15:30:00 +0000</lastBuildDate><atom:link href="https://www.shiyuanjie.cn/tags/Galen/index.xml" rel="self" type="application/rss+xml"/><item><title>Responsive测试</title><link>https://www.shiyuanjie.cn/posts/UITest/Responsive%E6%B5%8B%E8%AF%95/</link><pubDate>Thu, 03 Aug 2017 15:30:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/UITest/Responsive%E6%B5%8B%E8%AF%95/</guid><description>Responsive测试 如何使用Galen进行响应式测试 使用Javascript编写测试代码 完整代码：https://github.com/aimer1124/GalenDemo 安装Galen 通过NPM安装 sudo npm install -g galenframework-cli 检查安装版本galen -v ➜ GalenDemo git:(master) ✗ galen -v Galen Framework Version: 2.3.4 JavaScript executor: Rhino 1.7 release 5 2015 01 29 第</description></item><item><title>Layout测试</title><link>https://www.shiyuanjie.cn/posts/UITest/Layout%E6%B5%8B%E8%AF%95/</link><pubDate>Mon, 28 Nov 2016 15:40:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/UITest/Layout%E6%B5%8B%E8%AF%95/</guid><description>&lt;p>Web页面Layout测试，一直是测试人员比较头疼的事情。原因有&lt;/p>
+&lt;ul>
+&lt;li>当前市面中设备的&lt;code>分辨率&lt;/code>千差万别&lt;/li>
+&lt;li>浏览器版本众多，工作量很大&lt;/li>
+&lt;/ul>
+&lt;p>如何使用&lt;code>高效&lt;/code>的方式来测试Web Layout是否能正常，下面来看下&lt;a href="http://galenframework.com/">Galen&lt;/a>是如何帮助我们的&lt;/p>
+&lt;h2 id="galenhttpgalenframeworkcom的特点">&lt;a href="http://galenframework.com/">Galen&lt;/a>的特点&lt;/h2>
+&lt;ul>
+&lt;li>开源项目，License基于&lt;a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0&lt;/a>&lt;/li>
+&lt;li>可测试页面布局、响应式设计，支持功能测试&lt;/li>
+&lt;li>基于&lt;a href="http://www.seleniumhq.org/">Selenium&lt;/a>，对Selenium Grid支持很好，可直接在&lt;a href="https://saucelabs.com/">Sauce Labs&lt;/a>和 &lt;a href="https://www.browserstack.com/">BrowserStack&lt;/a>&lt;/li>
+&lt;li>支持并行测试，减少测试时间&lt;/li>
+&lt;li>语法简洁&lt;/li>
+&lt;/ul></description></item></channel></rss>

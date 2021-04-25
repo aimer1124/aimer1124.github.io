@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Gulp on Yuanjie-跑步爱好者，IT从业者。</title><link>https://www.shiyuanjie.cn/tags/Gulp/</link><description>Recent content in Gulp on Yuanjie-跑步爱好者，IT从业者。</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Tue, 10 May 2016 14:23:00 +0000</lastBuildDate><atom:link href="https://www.shiyuanjie.cn/tags/Gulp/index.xml" rel="self" type="application/rss+xml"/><item><title>API自动化测试与持续集成</title><link>https://www.shiyuanjie.cn/posts/APITest/API%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E4%B8%8E%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90/</link><pubDate>Tue, 10 May 2016 14:23:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/APITest/API%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E4%B8%8E%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90/</guid><description>&lt;h1 id="目的">目的&lt;/h1>
+&lt;ul>
+&lt;li>如何使用&lt;code>SuperTest&lt;/code>测试框架，进行API测试&lt;/li>
+&lt;li>如何将API测试与构建工具结合&lt;/li>
+&lt;li>如何将API测试、构建工具与持续集成结合&lt;/li>
+&lt;/ul></description></item><item><title>SuperTestWithGulp</title><link>https://www.shiyuanjie.cn/posts/SuperTest/SuperTestWithGulp/</link><pubDate>Fri, 15 Apr 2016 15:51:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/SuperTest/SuperTestWithGulp/</guid><description>&lt;h1 id="gulp">Gulp&lt;/h1>
+&lt;p>Automate and enhance your workflow&lt;/p>
+&lt;p>&lt;code>用自动化构建工具增强你的工作流程！&lt;/code>&lt;/p>
+&lt;ul>
+&lt;li>官网：&lt;a href="http://gulpjs.com/">http://gulpjs.com/&lt;/a>&lt;/li>
+&lt;li>中文官网：&lt;a href="http://www.gulpjs.com.cn/">http://www.gulpjs.com.cn/&lt;/a>&lt;/li>
+&lt;li>简体中文文档: &lt;a href="https://github.com/lisposter/gulp-docs-zh-cn">https://github.com/lisposter/gulp-docs-zh-cn&lt;/a>&lt;/li>
+&lt;li>安装&lt;code>npm install --global gulp&lt;/code>&lt;/li>
+&lt;li>验证&lt;/li>
+&lt;/ul>
+&lt;pre>&lt;code>➜ Downloads gulp -v
+[15:59:38] CLI version 3.9.1
+[15:59:38] Local version 3.9.1
+&lt;/code>&lt;/pre></description></item></channel></rss>

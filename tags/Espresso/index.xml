@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Espresso on Yuanjie-跑步爱好者，IT从业者。</title><link>https://www.shiyuanjie.cn/tags/Espresso/</link><description>Recent content in Espresso on Yuanjie-跑步爱好者，IT从业者。</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Fri, 25 Nov 2016 13:46:00 +0000</lastBuildDate><atom:link href="https://www.shiyuanjie.cn/tags/Espresso/index.xml" rel="self" type="application/rss+xml"/><item><title>Android UI自动化测试神器-Espresso录制</title><link>https://www.shiyuanjie.cn/posts/Android/Android-UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E7%A5%9E%E5%99%A8-Espresso%E5%BD%95%E5%88%B6/</link><pubDate>Fri, 25 Nov 2016 13:46:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Android/Android-UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E7%A5%9E%E5%99%A8-Espresso%E5%BD%95%E5%88%B6/</guid><description>&lt;p>Espresso Test Recorder的好处&lt;/p>
+&lt;ul>
+&lt;li>直接录制与APP的所有交互操作&lt;/li>
+&lt;li>支持在录制过程中添加断言&lt;/li>
+&lt;li>可直接生成&lt;code>可回放&lt;/code>的测试脚本，基本不需要做任何修改&lt;/li>
+&lt;/ul>
+&lt;p>原文地址: &lt;a href="https://developer.android.com/studio/test/espresso-test-recorder.html">Create UI Tests with Espresso Test Recorder&lt;/a>，以下为正文&lt;/p>
+&lt;hr>
+&lt;blockquote>
+&lt;p>注意: Espresso Test Recorder在AndroidStudio 2.2 Beta版本之后才有。&lt;/p>
+&lt;/blockquote>
+&lt;p>Espresso Test Recorder可以在不写一行代码的情况下创建UI测试。通过录制一个测试场景，你可以记录设备的交互并在APP的部分快照中添加断言来验证元素。Espresso Test Recorder会保存录制并自动生成对应的UI测试，并可直接运行来测试你的APP。&lt;/p>
+&lt;p>Espresso Test Recorder编写的测试基于&lt;a href="https://google.github.io/android-testing-support-library/docs/espresso/">Espresso Testing framework&lt;/a>，API在&lt;a href="https://developer.android.com/topic/libraries/testing-support-library/index.html">Android Testing Support Library&lt;/a>。Espresso API鼓励你创建基于用户操作的简洁且可信赖的UI测试。通过使用expectations、interactions和assertions而不是底层APP的Activity和Views，这样的结构防止了测试的脆弱性并优化测试运行速度。&lt;/p></description></item><item><title>PageObject分离E2E测试</title><link>https://www.shiyuanjie.cn/posts/UITest/PageObject%E5%88%86%E7%A6%BBE2E%E6%B5%8B%E8%AF%95/</link><pubDate>Thu, 24 Nov 2016 14:20:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/UITest/PageObject%E5%88%86%E7%A6%BBE2E%E6%B5%8B%E8%AF%95/</guid><description>&lt;h2 id="pageobject">PageObject&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="http://martinfowler.com">老马&lt;/a>关于&lt;a href="http://martinfowler.com/bliki/PageObject.html">PageObject&lt;/a>的定义&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>It should allow a software client to do anything and see anything that a human can&lt;/p>
+&lt;/blockquote>
+&lt;ul>
+&lt;li>PageObject到底是个啥&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>将针对Page的&lt;code>所有操作&lt;/code>进行&lt;code>统一&lt;/code>封装，如: 输入框中输入内容、点击按钮等&lt;/p>
+&lt;/blockquote></description></item><item><title>Espresso入门</title><link>https://www.shiyuanjie.cn/posts/UITest/Espresso%E5%85%A5%E9%97%A8/</link><pubDate>Wed, 23 Nov 2016 14:20:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/UITest/Espresso%E5%85%A5%E9%97%A8/</guid><description>&lt;h2 id="espresso">Espresso&lt;/h2>
+&lt;ul>
+&lt;li>Espresso是什么&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>由Google提供的开源native测试框架。支持所有版本的Android API.&lt;/p>
+&lt;/blockquote>
+&lt;ul>
+&lt;li>如何测试
+&lt;ul>
+&lt;li>通过使用&lt;code>Rule&lt;/code>来获取&lt;code>Activity&lt;/code>&lt;/li>
+&lt;li>针对&lt;code>Activity&lt;/code>中的元素进行操作，进而达到测试的目的
+&lt;img src="https://www.shiyuanjie.cn/img/espressoDemo/Espresso%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86.png" alt="Espresso工作原理">&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul></description></item></channel></rss>

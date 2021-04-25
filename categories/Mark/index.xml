@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Mark on Yuanjie-跑步爱好者，IT从业者。</title><link>https://www.shiyuanjie.cn/categories/Mark/</link><description>Recent content in Mark on Yuanjie-跑步爱好者，IT从业者。</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Tue, 31 Mar 2020 16:16:25 +0800</lastBuildDate><atom:link href="https://www.shiyuanjie.cn/categories/Mark/index.xml" rel="self" type="application/rss+xml"/><item><title>转移hexo文章至Hugo</title><link>https://www.shiyuanjie.cn/posts/Blog/migrate-from-hexo-to-hugo/</link><pubDate>Tue, 31 Mar 2020 16:16:25 +0800</pubDate><guid>https://www.shiyuanjie.cn/posts/Blog/migrate-from-hexo-to-hugo/</guid><description>Github源代码地址：https://github.com/aimer1124/python-format-md 为什么做这个： 把原来博客的文章从Hexo转移至Hugo，但两者在MD文件头部处理不一致。 Hexo格式 1 2 3 4 5 6 7 8 9 title: &amp;#39;Http-Header&amp;#39; tags: - API测试 - SuperTest categories: - Tool date: 2016-02-29 20:14:00 thumbnail: /img/a.png --- Hugo</description></item><item><title>选择一个新的方向</title><link>https://www.shiyuanjie.cn/posts/Upgrade/challenge-new-job/</link><pubDate>Sat, 28 Mar 2020 20:10:20 +0800</pubDate><guid>https://www.shiyuanjie.cn/posts/Upgrade/challenge-new-job/</guid><description>今天在知乎看到一个问题： 一个在电气行业待了两年的人，计划转行软件相关，想问下前端开发/软件测试哪个好？ 尝试回答下这个问题 没有好的方向，只有适合自己的方向。 每个人在转行的时候，大家都是比较犹豫。恰巧自己也做过转行：做了10年QA，转行PM。现在已经转行快2年了。 作为一个过来人，我认</description></item><item><title>我与中国移动的一场Battle</title><link>https://www.shiyuanjie.cn/posts/Upgrade/%E6%88%91%E4%B8%8E%E4%B8%AD%E5%9B%BD%E7%A7%BB%E5%8A%A8%E7%9A%84%E4%B8%80%E5%9C%BABattle/</link><pubDate>Sun, 19 Jan 2020 20:30:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Upgrade/%E6%88%91%E4%B8%8E%E4%B8%AD%E5%9B%BD%E7%A7%BB%E5%8A%A8%E7%9A%84%E4%B8%80%E5%9C%BABattle/</guid><description>不要轻信客服人员的办不了，拿起武器，与它们战斗。 原由 自己的A卡是给孩子的电话手表办的卡，一直用的18RMB/月的套餐。儿童手表不知道丢哪了，想着号码先保留，把套餐调整至8RMB/月的。等待有空了，再去营业厅办理。 用自己的B卡打10086客服，想变更自己A卡的套餐，被告知只能通过A</description></item><item><title>你要复吸了么？</title><link>https://www.shiyuanjie.cn/posts/Life/%E4%BD%A0%E8%A6%81%E5%A4%8D%E5%90%B8%E4%BA%86%E4%B9%88/</link><pubDate>Sat, 11 Jan 2020 19:00:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Life/%E4%BD%A0%E8%A6%81%E5%A4%8D%E5%90%B8%E4%BA%86%E4%B9%88/</guid><description>最近偶尔又会去蹭别人的烟，去吸。难道我要复吸了么？ 现象 最近加班比较多，会去蹭别人的烟去吸。已经吸了10根左右了。 原因 加班多，抗不住 事情太多，分散压力 这真的是原因么？ 深入分析 每次自己去蹭烟的时候，都是想着解决上面原因。但问题根本没有解决 自己在每次蹭烟的过程中，都给自己会找一个理由 结</description></item><item><title>2020总结</title><link>https://www.shiyuanjie.cn/posts/Flags/2020%E6%80%BB%E7%BB%93/</link><pubDate>Tue, 24 Dec 2019 20:00:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Flags/2020%E6%80%BB%E7%BB%93/</guid><description>&lt;h2 id="summary-in-2019">Summary in 2019&lt;/h2>
+&lt;ul>
+&lt;li>4道菜&lt;/li>
+&lt;li>3个交付项目，5个售前项目&lt;/li>
+&lt;li>1场Workshop+BQTime，1个Community&lt;/li>
+&lt;li>21本书
+&lt;img src="https://www.shiyuanjie.cn/img/2020/Book-1.png" alt="Book1/2">
+&lt;img src="https://www.shiyuanjie.cn/img/2020/Book-2.png" alt="Book2/2">&lt;/li>
+&lt;li>620公里
+&lt;img src="https://www.shiyuanjie.cn/img/2020/RunRecord.png" alt="Run">&lt;/li>
+&lt;/ul></description></item><item><title>天空、下雨、雨伞</title><link>https://www.shiyuanjie.cn/posts/Upgrade/%E5%A4%A9%E7%A9%BA%E4%B8%8B%E9%9B%A8%E9%9B%A8%E4%BC%9E/</link><pubDate>Thu, 01 Aug 2019 18:00:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Upgrade/%E5%A4%A9%E7%A9%BA%E4%B8%8B%E9%9B%A8%E9%9B%A8%E4%BC%9E/</guid><description>&lt;p>最近在听一本电子书《靠谱》，关于咨询师的工作基本功。其中有一个简单的因果论&lt;code>思考方式&lt;/code>感觉很不错：&lt;code>天空--&amp;gt;下雨--&amp;gt;雨伞&lt;/code>，自己尝试总结下。&lt;/p>
+&lt;pre>&lt;code>领导问你，外面的天气怎么样？
+&lt;/code>&lt;/pre>&lt;h4 id="common-sense">Common Sense&lt;/h4>
+&lt;p>你会走向窗户边上，看了下外面的&lt;code>天空&lt;/code>。哦，今天是乌云密布。&lt;/p>
+&lt;p>你回去把今天的&lt;code>天气&lt;/code>，告诉了领导：今天是乌云密布。&lt;/p>
+&lt;p>End。&lt;/p></description></item><item><title>英雄钢笔</title><link>https://www.shiyuanjie.cn/posts/Life/%E8%8B%B1%E9%9B%84%E9%92%A2%E7%AC%94/</link><pubDate>Fri, 19 Jul 2019 10:30:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Life/%E8%8B%B1%E9%9B%84%E9%92%A2%E7%AC%94/</guid><description>&lt;p>本文源于自己购买一支&lt;code>英雄&lt;/code>钢笔的售后服务，让自己反思下一个老字号品牌的没落和互联网服务的影响。&lt;/p>
+&lt;h4 id="购买">购买&lt;/h4>
+&lt;p>自己之前买了一支&lt;code>百乐&lt;/code>78G的钢笔，被孩子不小心弄坏了。最近计划再买一支钢笔，随记在JD下单购买了一支钢笔&amp;amp;墨囊(&lt;strong>同一品牌&amp;ndash;英雄&lt;/strong>)。&lt;/p>
+&lt;ul>
+&lt;li>英雄（HERO）1063黑砂铱金钢笔墨水笔暗尖: &lt;a href="https://item.jd.com/1128188.html">https://item.jd.com/1128188.html&lt;/a>&lt;/li>
+&lt;li>英雄（HERO）359钢笔墨囊[6支装] 黑色：&lt;a href="https://item.jd.com/1586652.html">https://item.jd.com/1586652.html&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://www.shiyuanjie.cn/img/HeroPen/Order.png" alt="订单">&lt;/p></description></item><item><title>我购买的收费软件</title><link>https://www.shiyuanjie.cn/posts/Tools/%E6%88%91%E8%B4%AD%E4%B9%B0%E7%9A%84%E6%94%B6%E8%B4%B9%E8%BD%AF%E4%BB%B6/</link><pubDate>Fri, 28 Jun 2019 15:00:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Tools/%E6%88%91%E8%B4%AD%E4%B9%B0%E7%9A%84%E6%94%B6%E8%B4%B9%E8%BD%AF%E4%BB%B6/</guid><description>&lt;p>最近几年，自己也开始为一些软件付费。把&lt;code>自己付费&lt;/code>的软件梳理下来，为后续的软件再付费做参考。&lt;/p>
+&lt;p>&lt;strong>软件排名不分先后&lt;/strong>&lt;/p>
+&lt;h3 id="爱奇艺">爱奇艺&lt;/h3>
+&lt;h5 id="功能说明">功能说明&lt;/h5>
+&lt;p>视频网站，支持手机、IPad、电视。&lt;/p>
+&lt;h5 id="付费动机">付费动机&lt;/h5>
+&lt;ul>
+&lt;li>媳妇当时想看一个综艺节目，不付费的话需要等好几天。&lt;/li>
+&lt;li>家里老大一直看的一个动画片，突然不付费的话，只能看前面两集。&lt;/li>
+&lt;li>广告时间太长。&lt;/li>
+&lt;/ul>
+&lt;h5 id="费用">费用&lt;/h5>
+&lt;ul>
+&lt;li>100RMB+/年&lt;/li>
+&lt;/ul>
+&lt;h5 id="收益">收益&lt;/h5>
+&lt;ul>
+&lt;li>再也没有广告了，很爽&lt;/li>
+&lt;li>没有节目限制，孩子和媳妇想看什么就看什么。除部分新上映电影&lt;/li>
+&lt;/ul>
+&lt;h5 id="是否续费">是否续费&lt;/h5>
+&lt;ul>
+&lt;li>是&lt;/li>
+&lt;/ul></description></item><item><title>戒烟</title><link>https://www.shiyuanjie.cn/posts/Life/%E6%88%92%E7%83%9F/</link><pubDate>Wed, 19 Jun 2019 11:00:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Life/%E6%88%92%E7%83%9F/</guid><description>&lt;h3 id="现状">现状&lt;/h3>
+&lt;p>自己从开始抽烟到现在已经有&lt;code>15&lt;/code>年了，今年&lt;code>34&lt;/code>岁，接近一半的岁月 44% 都在抽烟的生活中。抽烟的量基本是1包烟抽不到2天的时间，回想起来还挺可怕的~~&lt;/p>
+&lt;p>从这次的&lt;code>正式&lt;/code>不抽烟，到今天大概有&lt;code>2&lt;/code>个多月了，一根烟没有抽，对自己的坚持要点赞。&lt;/p></description></item><item><title>放弃Keep</title><link>https://www.shiyuanjie.cn/posts/Tools/%E6%94%BE%E5%BC%83Keep/</link><pubDate>Thu, 06 Jun 2019 17:00:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Tools/%E6%94%BE%E5%BC%83Keep/</guid><description>&lt;h2 id="放弃keep">放弃Keep&lt;/h2>
+&lt;p>从2016年开始使用Keep来跑步，断断续续的有3年时间了。但最近我把Keep拉入黑名单了。&lt;/p>
+&lt;p>&lt;img src="https://www.shiyuanjie.cn/img/Keep/Keep%E4%BD%BF%E7%94%A8.png" alt="">&lt;/p>
+&lt;p>&lt;img src="https://www.shiyuanjie.cn/img/Keep/Keep%E6%95%B0%E6%8D%AE.png" alt="">&lt;/p></description></item><item><title>48天全程马拉松集训</title><link>https://www.shiyuanjie.cn/posts/Run/48DayMathron/</link><pubDate>Wed, 29 May 2019 17:00:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Run/48DayMathron/</guid><description>&lt;p>今天是自己坚持&lt;strong>48天全程马拉松集训&lt;/strong>的第&lt;strong>16&lt;/strong>天，期间中断一天没有锻炼，不过后面都有在坚持。&lt;/p>
+&lt;p>&lt;img src="https://www.shiyuanjie.cn/img/marathron/48DayMathron/48%E5%A4%A9Mathron.png" alt="16Day in 48DayMathron">&lt;/p></description></item><item><title>开学第一天</title><link>https://www.shiyuanjie.cn/posts/Life/%E5%BC%80%E5%AD%A6%E7%AC%AC%E4%B8%80%E5%A4%A9/</link><pubDate>Thu, 21 Feb 2019 08:00:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Life/%E5%BC%80%E5%AD%A6%E7%AC%AC%E4%B8%80%E5%A4%A9/</guid><description>&lt;p>早上我刚醒来，儿子也跟着醒来了。时间6:40。&lt;/p></description></item><item><title>新学期报名</title><link>https://www.shiyuanjie.cn/posts/Life/%E6%96%B0%E5%AD%A6%E6%9C%9F%E6%8A%A5%E5%90%8D/</link><pubDate>Wed, 20 Feb 2019 07:00:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Life/%E6%96%B0%E5%AD%A6%E6%9C%9F%E6%8A%A5%E5%90%8D/</guid><description>今天儿子要进行一年级第二学期的报名，早上自己也早早的醒来了。这会正在洗漱中。 新的学期 上个学期的时候，每天早上都要帮他穿衣，提前做好吃的，更要把洗漱的工具准备好。新的学期，需要有点改善： 早上起来需要自己穿衣 自己准备洗漱工具 也许这些内容对于成年人来说很容易，但是要让孩子养成自理的习惯</description></item><item><title>个人网站搭建</title><link>https://www.shiyuanjie.cn/posts/Blog/%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/</link><pubDate>Mon, 18 Feb 2019 20:00:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Blog/%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/</guid><description>&lt;h3 id="套餐">套餐&lt;/h3>
+&lt;p>Github + Hexo + Travis&lt;/p>
+&lt;p>&lt;img src="https://www.shiyuanjie.cn/img/SelfBlog/Relationship.png" alt="Relationship">&lt;/p>
+&lt;ul>
+&lt;li>Github&lt;/li>
+&lt;/ul>
+&lt;p>源文件和网站资源的管理&lt;/p>
+&lt;ul>
+&lt;li>Hexo&lt;/li>
+&lt;/ul>
+&lt;p>网站内容的生成&lt;/p>
+&lt;ul>
+&lt;li>Travis&lt;/li>
+&lt;/ul>
+&lt;p>打通Github+Travis&lt;/p></description></item><item><title>2019总结</title><link>https://www.shiyuanjie.cn/posts/Flags/2019%E6%80%BB%E7%BB%93/</link><pubDate>Sat, 12 Jan 2019 16:16:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Flags/2019%E6%80%BB%E7%BB%93/</guid><description>&lt;h2 id="回顾">回顾&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="http://shiyuanjie.cn/2018/01/08/2018%E6%80%BB%E7%BB%93/">2018总结&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://shiyuanjie.cn/2016/12/28/2017%E6%80%BB%E7%BB%93/">2017总结&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="2018规划">2018规划&lt;/h3>
+&lt;h4 id="生活">生活&lt;/h4>
+&lt;ul>
+&lt;li>带 &lt;code>大宝&lt;/code> 去参加一次跑步比赛 &amp;ndash;Done&lt;/li>
+&lt;li>带 家人 出去旅游 一次。 &amp;ndash;Delay&lt;/li>
+&lt;li>学会做更多的饭菜，让家人可以吃到更多的美味 &amp;ndash;Delay&lt;/li>
+&lt;/ul></description></item><item><title>思特沃克(全国)招聘</title><link>https://www.shiyuanjie.cn/posts/Management/%E6%8B%9B%E8%81%98/</link><pubDate>Fri, 16 Nov 2018 17:20:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Management/%E6%8B%9B%E8%81%98/</guid><description>长年有效，持续更新 思特沃克（全国）重磅岗位，有兴趣的发简历至380774061@qq.com，请注明城市和岗位。 上海: SA解决方案架构师（6年以上） UI前端开发工程师（3年以上，英文读写流利） Java 后端开发工程师（3年以上，英文读写流利） UX 用户体验设计师（5年以上，英文流利） BA 业务需</description></item><item><title>七牛床图迁移至Github</title><link>https://www.shiyuanjie.cn/posts/Tools/%E4%B8%83%E7%89%9B%E5%BA%8A%E5%9B%BE%E8%BF%81%E7%A7%BB%E8%87%B3Github/</link><pubDate>Thu, 18 Oct 2018 15:10:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Tools/%E4%B8%83%E7%89%9B%E5%BA%8A%E5%9B%BE%E8%BF%81%E7%A7%BB%E8%87%B3Github/</guid><description>&lt;p>问题由于网站的大部分床图一直使用的是七牛的，近期&lt;a href="https://developer.qiniu.com/fusion/kb/1319/test-domain-access-restriction-rules">官网更新&lt;/a>，导致原测试域名已失效，之前在测试域名存储的图片无法&lt;code>访问、查看、下载&lt;/code>，网站文章关联的图片无法正常查看。所以决定&lt;strong>把图片从七牛迁移至Github来存储，弃用七牛云&lt;/strong>。&lt;/p>
+&lt;pre>&lt;code>七牛融合 CDN 测试域名（以 clouddn.com/qiniucdn.com/qiniudn.com/qnssl.com/qbox.me 结尾），每个域名每日限总流量 10GB，
+每个测试域名自创建起 30 个自然日后系统会自动回收，仅供测试使用，详情查看 七牛测试域名使用规范 。
+&lt;/code>&lt;/pre></description></item><item><title>蛙泳</title><link>https://www.shiyuanjie.cn/posts/Life/%E8%9B%99%E6%B3%B3/</link><pubDate>Sat, 26 May 2018 18:00:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Life/%E8%9B%99%E6%B3%B3/</guid><description>&lt;p>最近在出差，刚好住的酒店有游泳池。晚上有时有空就和同事一起去学习游泳，自己之前只去过三次泳池。但还是没有完全学会。&lt;/p>
+&lt;p>今天在知乎上看到&lt;code>梦觉&lt;/code>在 B站的系列课程，很不错。整理如下，为以后自己的游泳学习做个备忘。&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://www.zhihu.com/question/19767374/answer/18504728">怎样快速有效地学习游泳&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://www.bilibili.com/video/av5892786/">梦觉教游泳.蛙泳入门合集&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul></description></item><item><title>2017Calendar中的提示</title><link>https://www.shiyuanjie.cn/posts/Flags/2017CalendarTips/</link><pubDate>Thu, 18 Jan 2018 17:30:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Flags/2017CalendarTips/</guid><description>&lt;pre>&lt;code>2017年中的时候，想把自己针对孩子的教育方式和沟通方式调整下，所以在家里的 Calendar 中每个月都给自己一句话，来提醒自己。
+&lt;/code>&lt;/pre>&lt;p>&lt;img src="https://www.shiyuanjie.cn/img/2017Calendar/6%E6%9C%88.jpeg" alt="6月">&lt;/p></description></item><item><title>2018总结</title><link>https://www.shiyuanjie.cn/posts/Flags/2018%E6%80%BB%E7%BB%93/</link><pubDate>Mon, 08 Jan 2018 19:10:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Flags/2018%E6%80%BB%E7%BB%93/</guid><description>&lt;blockquote>
+&lt;p>2018年已经过了好几天，这几天终于闲下来，把今年的事情总结下。&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="回顾2017计划">回顾2017计划&lt;/h2>
+&lt;p>&lt;a href="http://shiyuanjie.cn/2016/12/28/2017%E6%80%BB%E7%BB%93/">2017总结&lt;/a>&lt;/p>
+&lt;h4 id="工作">工作&lt;/h4>
+&lt;ul>
+&lt;li>更多的尝试其他角色&lt;/li>
+&lt;li>将更多的测试新技术应用至项目实践中&lt;/li>
+&lt;/ul>
+&lt;pre>&lt;code>在两个项目中，尝试并实践了 PM、BA 的工作，自己现在对其它角色有更加深入的认识。
+测试新技术的话，实践较多的还是 E2E 和性能测试。
+今年在一个项目中，有机会带领2个QA 新人，终于有机会带新人。
+&lt;/code>&lt;/pre></description></item><item><title>Showcase的正确姿势</title><link>https://www.shiyuanjie.cn/posts/Agile/Showcase%E7%9A%84%E6%AD%A3%E7%A1%AE%E5%A7%BF%E5%8A%BF/</link><pubDate>Tue, 18 Apr 2017 18:00:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Agile/Showcase%E7%9A%84%E6%AD%A3%E7%A1%AE%E5%A7%BF%E5%8A%BF/</guid><description>&lt;h2 id="为什么要进行showcase">为什么要进行Showcase&lt;/h2>
+&lt;blockquote>
+&lt;p>Showcase目的：&lt;strong>将迭代开发过程中，已完成的内容&lt;code>定期&lt;/code>给客户演示，让客户对迭代中的内容有&lt;code>直观&lt;/code>的了解&lt;/strong>&lt;/p>
+&lt;/blockquote>
+&lt;p>因此Showcase可以&lt;code>帮助&lt;/code>&lt;/p>
+&lt;ul>
+&lt;li>客户&lt;code>尽早&lt;/code>了解到迭代中的功能，做出及时&lt;code>调整&lt;/code>&lt;/li>
+&lt;li>团队&lt;code>少走&lt;/code>弯路，减少不必要的功能开发&lt;/li>
+&lt;li>客户与团队更好的沟通，达成一致的&lt;code>交付目标&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;h2 id="6步完成showcase">&lt;code>6&lt;/code>步完成Showcase&lt;/h2>
+&lt;p>&lt;img src="https://www.shiyuanjie.cn/img/Showcase/Showcase.png" alt="6步法">&lt;/p></description></item><item><title>2017杨凌马拉松</title><link>https://www.shiyuanjie.cn/posts/Run/2017%E6%9D%A8%E5%87%8C%E9%A9%AC%E6%8B%89%E6%9D%BE/</link><pubDate>Sun, 16 Apr 2017 08:10:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Run/2017%E6%9D%A8%E5%87%8C%E9%A9%AC%E6%8B%89%E6%9D%BE/</guid><description>&lt;h2 id="中雨跑-杨凌马拉松">&lt;code>中雨&lt;/code>跑 杨凌马拉松&lt;/h2>
+&lt;p>&lt;code>2015-02-23&lt;/code>开始跑步，到现在也有&lt;strong>2&lt;/strong>年多的时间了，一直是一个人在跑，累积跑步不到&lt;code>1000公里&lt;/code>。以前在深圳的时候，坚持的还比较好，但西安的雾霾天气，断断续续的中断过好几次。&lt;/p>
+&lt;p>今年终于有机会报了杨凌马拉松，也跑了一次&lt;code>半马&lt;/code>，成绩&lt;strong>2小时8分&lt;/strong>。参赛当天，下着&lt;code>中雨&lt;/code>，不过对于第一次参加马拉松的人来说，确实不是啥大问题.当然，还有&lt;code>家人&lt;/code>在为我加油，全程跑起来，感觉很轻松。&lt;/p>
+&lt;p>&lt;img src="https://www.shiyuanjie.cn/img/marathron/20170409%E6%9D%A8%E5%87%8C%E9%A9%AC%E6%8B%89%E6%9D%BE.jpg" alt="完赛证书">&lt;/p></description></item><item><title>如何组织一场Retro</title><link>https://www.shiyuanjie.cn/posts/Agile/%E5%A6%82%E4%BD%95%E7%BB%84%E7%BB%87%E4%B8%80%E5%9C%BARetro/</link><pubDate>Mon, 27 Mar 2017 16:40:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Agile/%E5%A6%82%E4%BD%95%E7%BB%84%E7%BB%87%E4%B8%80%E5%9C%BARetro/</guid><description>&lt;h2 id="retro">Retro&lt;/h2>
+&lt;h2 id="retro是什么">Retro是什么&lt;/h2>
+&lt;ul>
+&lt;li>敏捷团队中，针对一定周期内的活动进行的回顾会议。&lt;/li>
+&lt;li>&lt;code>Retrospective&lt;/code>的缩写&lt;/li>
+&lt;/ul>
+&lt;h2 id="retro要做什么">Retro要做什么&lt;/h2>
+&lt;blockquote>
+&lt;p>团队中的每个成员，&lt;code>均&lt;/code>可暴露以下&lt;code>所有行为&lt;/code>的&lt;strong>任何&lt;/strong>问题&lt;/p>
+&lt;/blockquote>
+&lt;ul>
+&lt;li>敏捷实践的落实情况&lt;/li>
+&lt;li>团队内部协作、工作流程&lt;/li>
+&lt;li>工作环境&lt;/li>
+&lt;li>&lt;code>其他角色&lt;/code>的工作方式、行为&lt;/li>
+&lt;li>&lt;strong>任何你想吐槽的问题&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>暴露问题的时候，一定有足够的&lt;code>事实&lt;/code>做依据和自己理想的&lt;code>做法&lt;/code>。&lt;/p>
+&lt;/blockquote></description></item><item><title>如何判断一个团队是敏捷团队？</title><link>https://www.shiyuanjie.cn/posts/Book/%E5%A6%82%E4%BD%95%E5%88%A4%E6%96%AD%E4%B8%80%E4%B8%AA%E5%9B%A2%E9%98%9F%E6%98%AF%E6%95%8F%E6%8D%B7%E5%9B%A2%E9%98%9F/</link><pubDate>Tue, 14 Mar 2017 14:30:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Book/%E5%A6%82%E4%BD%95%E5%88%A4%E6%96%AD%E4%B8%80%E4%B8%AA%E5%9B%A2%E9%98%9F%E6%98%AF%E6%95%8F%E6%8D%B7%E5%9B%A2%E9%98%9F/</guid><description>&lt;p>经常被客户问到，你们的敏捷团队是怎么定义的？敏捷的落实情况如何，项目开发中的敏捷实践有多少？&lt;/p>
+&lt;hr>
+&lt;p>个人的理解&lt;/p>
+&lt;ul>
+&lt;li>敏捷是一种团队状态，不是一个人的实践&lt;/li>
+&lt;li>评判一个团队是否敏捷，不能单看是否有敏捷实践，而是要看团队成员对敏捷的实践的落地&lt;/li>
+&lt;li>敏捷不是口号，而是实践。在迭代过程中，对敏捷实践的落地&lt;/li>
+&lt;li>敏捷是一个持续的过程，不能说今天我敏捷，明天我就不敏捷&lt;/li>
+&lt;li>敏捷是拥抱变化，但我们拥抱的是有节制、规划的变化&lt;/li>
+&lt;li>敏捷不是没有文档，只是轻文档，减少不必要的文档输出&lt;/li>
+&lt;/ul></description></item><item><title>轮滑VS滑板车</title><link>https://www.shiyuanjie.cn/posts/Life/%E8%BD%AE%E6%BB%91VS%E6%BB%91%E6%9D%BF%E8%BD%A6/</link><pubDate>Sat, 11 Mar 2017 19:30:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Life/%E8%BD%AE%E6%BB%91VS%E6%BB%91%E6%9D%BF%E8%BD%A6/</guid><description>&lt;p>今天带儿子去迪卡侬，计划买&lt;strong>轮滑&lt;/strong>，挑选好&lt;strong>轮滑&lt;/strong>后，又看中了&lt;strong>滑板车&lt;/strong>。随改主意。&lt;/p>
+&lt;p>我的方案：&lt;/p>
+&lt;ul>
+&lt;li>自己想好到底要哪个&lt;/li>
+&lt;li>把自己的决定重复一遍&lt;/li>
+&lt;li>告诉妈妈，自己的决定是什么&lt;/li>
+&lt;/ul></description></item><item><title>性能测试-JMeter入门手册</title><link>https://www.shiyuanjie.cn/posts/PerformanceTest/%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95-JMeter%E5%85%A5%E9%97%A8/</link><pubDate>Tue, 28 Feb 2017 16:15:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/PerformanceTest/%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95-JMeter%E5%85%A5%E9%97%A8/</guid><description>Github地址(源文件及脚本) 本文目的 面向新手，学习后可以使用JMeter独立完成项目的性能测试 快速分析并使用JMeter定位出项目性能测试结果 产出有价值的性能测试报告 目录 简介 认识JMeter 了解并启动JMeter 认识JMeter 第一个测试 提高JMeter 线程高并发 逻辑控件器 断</description></item><item><title>2017总结</title><link>https://www.shiyuanjie.cn/posts/Flags/2017%E6%80%BB%E7%BB%93/</link><pubDate>Wed, 28 Dec 2016 11:20:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Flags/2017%E6%80%BB%E7%BB%93/</guid><description>&lt;blockquote>
+&lt;p>2016还有几天就结束了，公司的Review基本做完，自己再做个总结。便于对新的一年有整体的规划。&lt;/p>
+&lt;/blockquote>
+&lt;h1 id="2016">2016&lt;/h1>
+&lt;h2 id="工作">工作&lt;/h2>
+&lt;h3 id="专业技能">专业技能&lt;/h3>
+&lt;ul>
+&lt;li>
+&lt;p>测试技能&lt;/p>
+&lt;ul>
+&lt;li>掌握&lt;code>Protractor&lt;/code>对Angular项目的测试&lt;/li>
+&lt;li>掌握&lt;code>SuperTest&lt;/code>进行API测试&lt;/li>
+&lt;li>熟悉项目中应用&lt;code>Docker&lt;/code>，进行容器化部署的全流程&lt;/li>
+&lt;li>更加深入的掌握&lt;code>JMeter&lt;/code>在性能测试中的功能&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>其它角色&lt;/p>
+&lt;ul>
+&lt;li>实践PM、BA角色在项目中的经验&lt;/li>
+&lt;li>实践公司项目&lt;code>售前&lt;/code>的操作方法&lt;/li>
+&lt;li>利用自己的&lt;a href="https://github.com/aimer1124/JianshuSpider">个人项目&lt;/a>，体验敏捷项目中，其它各角色的工作方式&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="业务">业务&lt;/h3>
+&lt;ul>
+&lt;li>了解银行&lt;code>账号系统、借贷系统&lt;/code>&lt;/li>
+&lt;li>了解市面主流&lt;code>敏捷看板&lt;/code>工具，及各自优缺点&lt;/li>
+&lt;/ul></description></item><item><title>如何快速崛起</title><link>https://www.shiyuanjie.cn/posts/Book/%E5%A6%82%E4%BD%95%E5%BF%AB%E9%80%9F%E5%B4%9B%E8%B5%B7/</link><pubDate>Wed, 14 Dec 2016 16:05:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Book/%E5%A6%82%E4%BD%95%E5%BF%AB%E9%80%9F%E5%B4%9B%E8%B5%B7/</guid><description>&lt;blockquote>
+&lt;p>本文整理的内容，来源于微信公众号『彪悍一只猫』作者猫哥的分享，『如何快速崛起』。&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="整理">整理&lt;/h2>
+&lt;p>&lt;img src="https://www.shiyuanjie.cn/img/share/%E5%A6%82%E4%BD%95%E5%BF%AB%E9%80%9F%E5%B4%9B%E8%B5%B7.png" alt="如何快速崛起">&lt;/p></description></item><item><title>跑步500公里的小总结</title><link>https://www.shiyuanjie.cn/posts/Run/%E8%B7%91%E6%AD%A5500%E5%85%AC%E9%87%8C%E7%9A%84%E5%B0%8F%E6%80%BB%E7%BB%93/</link><pubDate>Mon, 17 Oct 2016 13:34:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Run/%E8%B7%91%E6%AD%A5500%E5%85%AC%E9%87%8C%E7%9A%84%E5%B0%8F%E6%80%BB%E7%BB%93/</guid><description>&lt;h2 id="跑步数据">跑步数据&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>从刚开始跑步到现在，已经用过三款跑步APP了，&lt;code>小米运动&lt;/code> &lt;code>咕咚&lt;/code> &lt;code>Keep&lt;/code>。现在用的是&lt;code>Keep&lt;/code>，已有&lt;code>大半年&lt;/code>。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>从2015-02-23的&lt;code>3.7公里/配速7'43&amp;quot;&lt;/code>至今，总计跑步里程&lt;code>507.96&lt;/code>，现在的个人&lt;code>配速&lt;/code>基本在&lt;code>6'&lt;/code>分钟左右。&lt;/p>
+&lt;/li>
+&lt;/ul></description></item><item><title>利用21天的完成一本Mini书</title><link>https://www.shiyuanjie.cn/posts/Upgrade/%E5%88%A9%E7%94%A821%E5%A4%A9%E7%9A%84%E5%AE%8C%E6%88%90%E4%B8%80%E6%9C%ACMini%E4%B9%A6/</link><pubDate>Mon, 26 Sep 2016 13:17:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Upgrade/%E5%88%A9%E7%94%A821%E5%A4%A9%E7%9A%84%E5%AE%8C%E6%88%90%E4%B8%80%E6%9C%ACMini%E4%B9%A6/</guid><description>&lt;p>自己之前也没有任何写&lt;code>书&lt;/code>的经验，这次写这本书，也是经一位朋友的建议，把自己了解的关于&lt;a href="http://jmeter.apache.org/">JMeter&lt;/a>内容&lt;code>梳理&lt;/code>下来，整本书仅&lt;code>79&lt;/code>页。&lt;/p>
+&lt;p>书中的内容是&lt;code>性能测试工具&lt;/code>&lt;a href="http://jmeter.apache.org/">JMeter&lt;/a>的&lt;strong>入门级&lt;/strong>使用。在准备写的时候，在心里做了简单的规划，如下:&lt;/p>
+&lt;p>&lt;img src="https://www.shiyuanjie.cn/img/JMeterBook/Mind.png" alt="整体结构">&lt;/p></description></item><item><title>简书爬虫</title><link>https://www.shiyuanjie.cn/posts/Tools/%E7%AE%80%E4%B9%A6%E7%88%AC%E8%99%AB/</link><pubDate>Tue, 19 Jul 2016 19:50:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Tools/%E7%AE%80%E4%B9%A6%E7%88%AC%E8%99%AB/</guid><description>简书爬虫 此功能纯粹为个人意想功能,利用业余时间来学习Node。所有内容均已开源,欢迎各种PR和Fork。最后更新时间: 20161129。 项目 源代码 https://github.com/aimer1124/JianshuSpider 需求 Teambition-简书爬虫 效果图 Home Article Author Collections Search ShowCase Home Articles Authors Collections Search 代码 启动 DB: sudo mongod 程序: gulp 测试: gulp test 版本 Node: 4.4.3 Mongo: 3.0.3 引用包列表 Backend express: http://expressjs.com/,node web框架</description></item><item><title>站点搭建过程</title><link>https://www.shiyuanjie.cn/posts/Blog/%E7%AB%99%E7%82%B9%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/</link><pubDate>Sat, 30 Jan 2016 11:20:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Blog/%E7%AB%99%E7%82%B9%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/</guid><description>20200402 启用网站本地搜索功能 启用本地搜索功能 使用百度搜索 20200401 CodeStyle变更为monokai 调整Code Style为monokai 20200325 ECS+备案 重大更新 站点生成从Hexo转移至Hugo 将源公开站点信息拖管至Github的Private仓库 将站点资源部署在阿里云的ECS中，在阿里云中</description></item></channel></rss>

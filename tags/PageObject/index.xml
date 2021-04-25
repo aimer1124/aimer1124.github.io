@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>PageObject on Yuanjie-跑步爱好者，IT从业者。</title><link>https://www.shiyuanjie.cn/tags/PageObject/</link><description>Recent content in PageObject on Yuanjie-跑步爱好者，IT从业者。</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Thu, 24 Nov 2016 14:20:00 +0000</lastBuildDate><atom:link href="https://www.shiyuanjie.cn/tags/PageObject/index.xml" rel="self" type="application/rss+xml"/><item><title>PageObject分离E2E测试</title><link>https://www.shiyuanjie.cn/posts/UITest/PageObject%E5%88%86%E7%A6%BBE2E%E6%B5%8B%E8%AF%95/</link><pubDate>Thu, 24 Nov 2016 14:20:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/UITest/PageObject%E5%88%86%E7%A6%BBE2E%E6%B5%8B%E8%AF%95/</guid><description>&lt;h2 id="pageobject">PageObject&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="http://martinfowler.com">老马&lt;/a>关于&lt;a href="http://martinfowler.com/bliki/PageObject.html">PageObject&lt;/a>的定义&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>It should allow a software client to do anything and see anything that a human can&lt;/p>
+&lt;/blockquote>
+&lt;ul>
+&lt;li>PageObject到底是个啥&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>将针对Page的&lt;code>所有操作&lt;/code>进行&lt;code>统一&lt;/code>封装，如: 输入框中输入内容、点击按钮等&lt;/p>
+&lt;/blockquote></description></item></channel></rss>

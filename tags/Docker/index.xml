@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Docker on Yuanjie-跑步爱好者，IT从业者。</title><link>https://www.shiyuanjie.cn/tags/Docker/</link><description>Recent content in Docker on Yuanjie-跑步爱好者，IT从业者。</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 25 Jan 2017 21:50:00 +0000</lastBuildDate><atom:link href="https://www.shiyuanjie.cn/tags/Docker/index.xml" rel="self" type="application/rss+xml"/><item><title>JMeter与Docker</title><link>https://www.shiyuanjie.cn/posts/JMeter/jmeter%E4%B8%8EDocker/</link><pubDate>Wed, 25 Jan 2017 21:50:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/JMeter/jmeter%E4%B8%8EDocker/</guid><description>&lt;h1 id="jmeter_docker">JMeter_docker&lt;/h1>
+&lt;p>Use JMeter with Docker&lt;/p>
+&lt;ul>
+&lt;li>Replace &lt;code>Demo.jmx&lt;/code>&lt;/li>
+&lt;li>Change the following about &lt;code>Demo.jmx&lt;/code> file&lt;/li>
+&lt;/ul>
+&lt;pre>&lt;code>COPY Demo.jmx /opt/jmeter
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>build Docker file in root folder&lt;/li>
+&lt;/ul>
+&lt;pre>&lt;code>docker build -t performanceDocker .
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>run docker with performance testing&lt;/li>
+&lt;/ul></description></item><item><title>轻量级微服务架构(上册)</title><link>https://www.shiyuanjie.cn/posts/Book/%E8%BD%BB%E9%87%8F%E7%BA%A7%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%9E%B6%E6%9E%84%E4%B8%8A%E5%86%8C/</link><pubDate>Fri, 20 Jan 2017 14:40:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Book/%E8%BD%BB%E9%87%8F%E7%BA%A7%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%9E%B6%E6%9E%84%E4%B8%8A%E5%86%8C/</guid><description>&lt;h2 id="书">书&lt;/h2>
+&lt;p>&lt;!-- raw HTML omitted -->&lt;/p>
+&lt;h2 id="读后总结">读后总结&lt;/h2>
+&lt;blockquote>
+&lt;p>微服务的架构实践，书中的内容更偏重于&lt;code>落地的&lt;/code>实践操作。 详细的讲解了如何&lt;code>搭建&lt;/code>一套微服务框架环境，适合于寻找实践操作的书籍&lt;/p>
+&lt;/blockquote>
+&lt;ul>
+&lt;li>微服务就是将功能&lt;code>分而治之&lt;/code>&lt;/li>
+&lt;li>架构框架落地
+&lt;ul>
+&lt;li>Spring Boot做开发框架&lt;/li>
+&lt;li>Node.js做网关&lt;/li>
+&lt;li>Zookeeper做微服务注册与发现&lt;/li>
+&lt;li>Docker封装微服务&amp;ndash;&lt;code>容器化&lt;/code>&lt;/li>
+&lt;li>Jenkins实现CI&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>章节中，重点讲解了每个&lt;code>落地&lt;/code>步骤的&lt;code>操作方法&lt;/code>&lt;/li>
+&lt;/ul></description></item><item><title>E2E测试之Headless browser容器化</title><link>https://www.shiyuanjie.cn/posts/UITest/E2E%E6%B5%8B%E8%AF%95%E4%B9%8BHeadless-browser%E5%AE%B9%E5%99%A8%E5%8C%96/</link><pubDate>Mon, 01 Aug 2016 20:00:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/UITest/E2E%E6%B5%8B%E8%AF%95%E4%B9%8BHeadless-browser%E5%AE%B9%E5%99%A8%E5%8C%96/</guid><description>&lt;h1 id="目的">目的&lt;/h1>
+&lt;ul>
+&lt;li>E2E测试执行过程中&lt;strong>不依赖UI&lt;/strong>界面&lt;/li>
+&lt;li>可在*nix系统中运行&lt;/li>
+&lt;li>为什么不用&lt;code>PhantomJS&lt;/code>,&lt;a href="http://www.protractortest.org/#/browser-setup#setting-up-phantomjs">Protractor官方不推荐使用&lt;code>PhantomJS&lt;/code>来测试&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;pre>&lt;code>We recommend against using PhantomJS for tests with Protractor. There are many reported issues with PhantomJS crashing and behaving differently from real browsers.
+&lt;/code>&lt;/pre>&lt;h1 id="docker">Docker&lt;/h1>
+&lt;h2 id="安装">安装&lt;/h2>
+&lt;ul>
+&lt;li>下载系统所需要的安装包，下载地址：&lt;a href="https://www.docker.com/products/docker">https://www.docker.com/products/docker&lt;/a>&lt;/li>
+&lt;li>注册&lt;a href="https://hub.docker.com/">https://hub.docker.com/&lt;/a>账号&lt;/li>
+&lt;li>使用&lt;code>pull&lt;/code>来获取docker 镜像&lt;code>protractor-headless&lt;/code>，此过程会比较慢，耐心等待
+docker hub地址：&lt;a href="https://hub.docker.com/r/webnicer/protractor-headless/">https://hub.docker.com/r/webnicer/protractor-headless/&lt;/a>
+git hub地址：&lt;a href="https://github.com/jciolek/docker-protractor-headless">https://github.com/jciolek/docker-protractor-headless&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;pre>&lt;code>docker pull webnicer/protractor-headless
+&lt;/code>&lt;/pre></description></item></channel></rss>

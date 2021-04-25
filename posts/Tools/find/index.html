@@ -1,0 +1,695 @@
+<!doctype html><html lang=zh-cn><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><title>find | Yuanjie-跑步爱好者，IT从业者。</title><meta property="og:title" content="find - Yuanjie-跑步爱好者，IT从业者。"><meta property="og:type" content="article"><meta property="article:published_time" content="2016-01-20T21:27:00+08:00"><meta property="article:modified_time" content="2016-01-20T21:27:00+08:00"><meta name=Keywords content="测试,敏捷,跑步,项目管理,学习"><meta name=description content="find"><meta name=author content="Yuanjie"><meta property="og:url" content="https://www.shiyuanjie.cn/posts/Tools/find/"><link rel="shortcut icon" href=/favicon.ico type=image/x-icon><link rel=stylesheet href=/css/normalize.css><link rel=stylesheet href=/css/style.css><script type=text/javascript src=//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js></script><script>var _hmt=_hmt||[];(function(){var hm=document.createElement("script");hm.src="https://hm.baidu.com/hm.js?ac69e1e54b317232c0d3a881b738cfe8";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm,s);})();</script></head><body><header id=header class=clearfix><div class=container><div class=col-group><div class=site-name><a id=logo href=https://www.shiyuanjie.cn>Yuanjie-跑步爱好者，IT从业者。</a><p class=description>跑步爱好者，IT从业者。</p></div><div><nav id=nav-menu class=clearfix><a href=https://www.shiyuanjie.cn>首页</a>
+<a href=https://www.shiyuanjie.cn/tools/ title=小工具>小工具</a>
+<a href=https://www.shiyuanjie.cn/archives/ title=归档>归档</a>
+<a href=https://www.shiyuanjie.cn/about/ title=关于>关于</a></nav></div></div></div></header><div id=body><div class=container><div class=col-group><div class=col-8 id=main><div class=res-cons><style type=text/css>.post-toc{position:fixed;width:200px;margin-left:-210px;padding:5px 10px;font-family:Athelas,STHeiti,Microsoft Yahei,serif;font-size:12px;border:1px solid rgba(0,0,0,.07);border-radius:5px;background-color:rgba(255,255,255,.98);background-clip:padding-box;-webkit-box-shadow:1px 1px 2px rgba(0,0,0,.125);box-shadow:1px 1px 2px rgba(0,0,0,.125);word-wrap:break-word;white-space:nowrap;-webkit-box-sizing:border-box;box-sizing:border-box;z-index:999;cursor:pointer;max-height:70%;overflow-y:auto;overflow-x:hidden}.post-toc .post-toc-title{width:100%;margin:0 auto;font-size:20px;font-weight:400;text-transform:uppercase;text-align:center}.post-toc .post-toc-content{font-size:15px}.post-toc .post-toc-content>nav>ul{margin:10px 0}.post-toc .post-toc-content ul{padding-left:20px;list-style:square;margin:.5em;line-height:1.8em}.post-toc .post-toc-content ul ul{padding-left:15px;display:none}@media print,screen and (max-width:1057px){.post-toc{display:none}}</style><div class=post-toc style=position:absolute;top:188px><h2 class=post-toc-title>文章目录</h2><div class=post-toc-content><nav id=TableOfContents></nav></div></div><script type=text/javascript>$(document).ready(function(){var postToc=$(".post-toc");if(postToc.length){var leftPos=$("#main").offset().left;if(leftPos<220){postToc.css({"width":leftPos-10,"margin-left":(0-leftPos)})}
+var t=postToc.offset().top-20,a={start:{position:"absolute",top:t},process:{position:"fixed",top:20},};$(window).scroll(function(){var e=$(window).scrollTop();e<t?postToc.css(a.start):postToc.css(a.process)})}})</script><article class=post><header><h1 class=post-title>find</h1></header><date class="post-meta meta-date">2016年1月20日</date><div class=post-meta><span>|</span>
+<span class=meta-category><a href=https://www.shiyuanjie.cn/categories/Tool>Tool</a></span></div><div class=post-meta><span id=busuanzi_container_page_pv>|<span id=busuanzi_value_page_pv></span><span>
+阅读</span></span></div><div class=post-content><h1 id=find>find</h1><p>查找文件，可指定遍历路径</p><h1 id=用法举例>用法举例</h1><ul><li>查看当前目录下具体的文件</li></ul><pre><code>~ find a.txt
+</code></pre><ul><li>在指定目录查找文件</li></ul><pre><code>~ find ./Download -name &quot;*.jpg&quot;
+</code></pre><ul><li>查看目录下所有包括a的文件列表</li></ul><pre><code>~  find . -name &quot;Thought*&quot;
+</code></pre><ul><li>查找大于100K的文件表列</li></ul><pre><code>~ find . -name &quot;Thought*&quot; -size +100k
+</code></pre><ul><li>查找创建时间大于2天的</li></ul><pre><code>~ find . -name &quot;*.txt&quot; -mtime +2
+</code></pre><h1 id=查看find的详细用法>查看find的详细用法</h1><pre><code>
+FIND(1)                   BSD General Commands Manual                  FIND(1)
+
+NAME
+     find -- walk a file hierarchy
+
+SYNOPSIS
+     find [-H | -L | -P] [-EXdsx] [-f path] path ... [expression]
+     find [-H | -L | -P] [-EXdsx] -f path [path ...] [expression]
+
+DESCRIPTION
+     The find utility recursively descends the directory tree for each path
+     listed, evaluating an expression (composed of the ``primaries'' and
+     ``operands'' listed below) in terms of each file in the tree.
+
+     The options are as follows:
+
+     -E      Interpret regular expressions followed by -regex and -iregex pri-
+             maries as extended (modern) regular expressions rather than basic
+             regular expressions (BRE's).  The re_format(7) manual page fully
+             describes both formats.
+
+     -H      Cause the file information and file type (see stat(2)) returned
+             for each symbolic link specified on the command line to be those
+             of the file referenced by the link, not the link itself.  If the
+             referenced file does not exist, the file information and type
+             will be for the link itself.  File information of all symbolic
+             links not on the command line is that of the link itself.
+
+     -L      Cause the file information and file type (see stat(2)) returned
+             for each symbolic link to be those of the file referenced by the
+             link, not the link itself.  If the referenced file does not
+             exist, the file information and type will be for the link itself.
+
+             This option is equivalent to the deprecated -follow primary.
+
+     -P      Cause the file information and file type (see stat(2)) returned
+             for each symbolic link to be those of the link itself.  This is
+             the default.
+
+     -X      Permit find to be safely used in conjunction with xargs(1).  If a
+             file name contains any of the delimiting characters used by
+             xargs(1), a diagnostic message is displayed on standard error,
+             and the file is skipped.  The delimiting characters include sin-
+             gle (`` ' '') and double (`` &quot; '') quotes, backslash (``\''),
+             space, tab and newline characters.
+
+             However, you may wish to consider the -print0 primary in conjunc-
+             tion with ``xargs -0'' as an effective alternative.
+
+     -d      Cause find to perform a depth-first traversal, i.e., directories
+             are visited in post-order and all entries in a directory will be
+             acted on before the directory itself.  By default, find visits
+             directories in pre-order, i.e., before their contents.  Note, the
+             default is not a breadth-first traversal.
+
+             This option is equivalent to the -depth primary of IEEE Std
+             1003.1-2001 (``POSIX.1'').  The -d option can be useful when find
+             is used with cpio(1) to process files that are contained in
+             directories with unusual permissions.  It ensures that you have
+             write permission while you are placing files in a directory, then
+             sets the directory's permissions as the last thing.
+
+     -f      Specify a file hierarchy for find to traverse.  File hierarchies
+             may also be specified as the operands immediately following the
+             options.
+
+     -s      Cause find to traverse the file hierarchies in lexicographical
+             order, i.e., alphabetical order within each directory.  Note:
+             `find -s' and `find | sort' may give different results.
+
+     -x      Prevent find from descending into directories that have a device
+             number different than that of the file from which the descent
+             began.
+
+             This option is equivalent to the deprecated -xdev primary.
+
+PRIMARIES
+     All primaries which take a numeric argument allow the number to be pre-
+     ceded by a plus sign (``+'') or a minus sign (``-'').  A preceding plus
+     sign means ``more than n'', a preceding minus sign means ``less than n''
+     and neither means ``exactly n''.
+
+     -Bmin n
+             True if the difference between the time of a file's inode cre-
+             ation and the time find was started, rounded up to the next full
+             minute, is n minutes.
+
+     -Bnewer file
+             Same as -newerBm.
+
+     -Btime n[smhdw]
+             If no units are specified, this primary evaluates to true if the
+             difference between the time of a file's inode creation and the
+             time find was started, rounded up to the next full 24-hour
+             period, is n 24-hour periods.
+
+             If units are specified, this primary evaluates to true if the
+             difference between the time of a file's inode creation and the
+             time find was started is exactly n units.  Please refer to the
+             -atime primary description for information on supported time
+             units.
+
+     -acl    May be used in conjunction with other primaries to locate files
+             with extended ACLs.  See acl(3) for more information.
+
+     -amin n
+             True if the difference between the file last access time and the
+             time find was started, rounded up to the next full minute, is n
+             minutes.
+
+     -anewer file
+             Same as -neweram.
+
+     -atime n[smhdw]
+             If no units are specified, this primary evaluates to true if the
+             difference between the file last access time and the time find
+             was started, rounded up to the next full 24-hour period, is n
+             24-hour periods.
+
+             If units are specified, this primary evaluates to true if the
+             difference between the file last access time and the time find
+             was started is exactly n units.  Possible time units are as fol-
+             lows:
+
+             s       second
+             m       minute (60 seconds)
+             h       hour (60 minutes)
+             d       day (24 hours)
+             w       week (7 days)
+
+             Any number of units may be combined in one -atime argument, for
+             example, ``-atime -1h30m''.  Units are probably only useful when
+             used in conjunction with the + or - modifier.
+
+     -cmin n
+             True if the difference between the time of last change of file
+             status information and the time find was started, rounded up to
+             the next full minute, is n minutes.
+
+     -cnewer file
+             Same as -newercm.
+
+     -ctime n[smhdw]
+             If no units are specified, this primary evaluates to true if the
+             difference between the time of last change of file status infor-
+             mation and the time find was started, rounded up to the next full
+             24-hour period, is n 24-hour periods.
+
+             If units are specified, this primary evaluates to true if the
+             difference between the time of last change of file status infor-
+             mation and the time find was started is exactly n units.  Please
+             refer to the -atime primary description for information on sup-
+             ported time units.
+
+     -d      Same as depth.  GNU find implements this as a primary in mistaken
+             emulation of FreeBSD find(1).
+
+     -delete
+             Delete found files and/or directories.  Always returns true.
+             This executes from the current working directory as find recurses
+             down the tree.  It will not attempt to delete a filename with a
+             ``/'' character in its pathname relative to ``.'' for security
+             reasons.  Depth-first traversal processing is implied by this
+             option.  Following symlinks is incompatible with this option.
+
+     -depth  Always true; same as the -d option.
+
+     -depth n
+             True if the depth of the file relative to the starting point of
+             the traversal is n.
+
+     -empty  True if the current file or directory is empty.
+
+     -exec utility [argument ...] ;
+             True if the program named utility returns a zero value as its
+             exit status.  Optional arguments may be passed to the utility.
+             The expression must be terminated by a semicolon (``;'').  If you
+             invoke find from a shell you may need to quote the semicolon if
+             the shell would otherwise treat it as a control operator.  If the
+             string ``{}'' appears anywhere in the utility name or the argu-
+             ments it is replaced by the pathname of the current file.
+             Utility will be executed from the directory from which find was
+             executed.  Utility and arguments are not subject to the further
+             expansion of shell patterns and constructs.
+
+     -exec utility [argument ...] {} +
+             Same as -exec, except that ``{}'' is replaced with as many path-
+             names as possible for each invocation of utility.  This behaviour
+             is similar to that of xargs(1).
+
+     -execdir utility [argument ...] ;
+             The -execdir primary is identical to the -exec primary with the
+             exception that utility will be executed from the directory that
+             holds the current file.  The filename substituted for the string
+             ``{}'' is not qualified.
+
+     -execdir utility [argument ...] {} +
+             Same as -execdir, except that ``{}'' is replaced with as many
+             pathnames as possible for each invocation of utility.  This be-
+             haviour is similar to that of xargs(1).
+
+     -flags [-|+]flags,notflags
+             The flags are specified using symbolic names (see chflags(1)).
+             Those with the &quot;no&quot; prefix (except &quot;nodump&quot;) are said to be
+             notflags.  Flags in flags are checked to be set, and flags in
+             notflags are checked to be not set.  Note that this is different
+             from -perm, which only allows the user to specify mode bits that
+             are set.
+
+             If flags are preceded by a dash (``-''), this primary evaluates
+             to true if at least all of the bits in flags and none of the bits
+             in notflags are set in the file's flags bits.  If flags are pre-
+             ceded by a plus (``+''), this primary evaluates to true if any of
+             the bits in flags is set in the file's flags bits, or any of the
+             bits in notflags is not set in the file's flags bits.  Otherwise,
+             this primary evaluates to true if the bits in flags exactly match
+             the file's flags bits, and none of the flags bits match those of
+             notflags.
+
+     -fstype type
+             True if the file is contained in a file system of type type.  The
+             lsvfs(1) command can be used to find out the types of file sys-
+             tems that are available on the system.  In addition, there are
+             two pseudo-types, ``local'' and ``rdonly''.  The former matches
+             any file system physically mounted on the system where the find
+             is being executed and the latter matches any file system which is
+             mounted read-only.
+
+     -gid gname
+             The same thing as -group gname for compatibility with GNU find.
+             GNU find imposes a restriction that gname is numeric, while
+             find(1) does not.
+
+     -group gname
+             True if the file belongs to the group gname.  If gname is numeric
+             and there is no such group name, then gname is treated as a group
+             ID.
+
+     -ignore_readdir_race
+             This option is for GNU find compatibility and is ignored.
+
+     -ilname pattern
+             Like -lname, but the match is case insensitive.  This is a GNU
+             find extension.
+
+     -iname pattern
+             Like -name, but the match is case insensitive.
+
+     -inum n
+             True if the file has inode number n.
+
+     -ipath pattern
+             Like -path, but the match is case insensitive.
+
+     -iregex pattern
+             Like -regex, but the match is case insensitive.
+
+     -iwholename pattern
+             The same thing as -ipath, for GNU find compatibility.
+
+     -links n
+             True if the file has n links.
+
+     -lname pattern
+             Like -name, but the contents of the symbolic link are matched
+             instead of the file name.  Note that this only matches broken
+             symbolic links if symbolic links are being followed.  This is a
+             GNU find extension.
+
+     -ls     This primary always evaluates to true.  The following information
+             for the current file is written to standard output: its inode
+             number, size in 512-byte blocks, file permissions, number of hard
+             links, owner, group, size in bytes, last modification time, and
+             pathname.  If the file is a block or character special file, the
+             device number will be displayed instead of the size in bytes.  If
+             the file is a symbolic link, the pathname of the linked-to file
+             will be displayed preceded by ``-&gt;''.  The format is identical to
+             that produced by ``ls -dgils''.
+
+     -maxdepth n
+             Always true; descend at most n directory levels below the command
+             line arguments.  If any -maxdepth primary is specified, it
+             applies to the entire expression even if it would not normally be
+             evaluated.  ``-maxdepth 0'' limits the whole search to the com-
+             mand line arguments.
+
+     -mindepth n
+             Always true; do not apply any tests or actions at levels less
+             than n.  If any -mindepth primary is specified, it applies to the
+             entire expression even if it would not normally be evaluated.
+             ``-mindepth 1'' processes all but the command line arguments.
+
+     -mmin n
+             True if the difference between the file last modification time
+             and the time find was started, rounded up to the next full
+             minute, is n minutes.
+
+     -mnewer file
+             Same as -newer.
+
+     -mount  The same thing as -xdev, for GNU find compatibility.
+
+     -mtime n[smhdw]
+             If no units are specified, this primary evaluates to true if the
+             difference between the file last modification time and the time
+             find was started, rounded up to the next full 24-hour period, is
+             n 24-hour periods.
+
+             If units are specified, this primary evaluates to true if the
+             difference between the file last modification time and the time
+             find was started is exactly n units.  Please refer to the -atime
+             primary description for information on supported time units.
+
+     -name pattern
+             True if the last component of the pathname being examined matches
+             pattern.  Special shell pattern matching characters (``['',
+             ``]'', ``*'', and ``?'') may be used as part of pattern.  These
+             characters may be matched explicitly by escaping them with a
+             backslash (``\'').
+
+     -newer file
+             True if the current file has a more recent last modification time
+             than file.
+
+     -newerXY file
+             True if the current file has a more recent last access time
+             (X=a), inode creation time (X=B), change time (X=c), or modifica-
+             tion time (X=m) than the last access time (Y=a), inode creation
+             time (Y=B), change time (Y=c), or modification time (Y=m) of
+             file.  In addition, if Y=t, then file is instead interpreted as a
+             direct date specification of the form understood by cvs(1).  Note
+             that -newermm is equivalent to -newer.
+
+     -nogroup
+             True if the file belongs to an unknown group.
+
+     -noignore_readdir_race
+             This option is for GNU find compatibility and is ignored.
+
+     -noleaf
+             This option is for GNU find compatibility.  In GNU find it dis-
+             ables an optimization not relevant to find(1), so it is ignored.
+
+     -nouser
+             True if the file belongs to an unknown user.
+
+     -ok utility [argument ...] ;
+             The -ok primary is identical to the -exec primary with the excep-
+             tion that find requests user affirmation for the execution of the
+             utility by printing a message to the terminal and reading a
+             response.  If the response is not affirmative (`y' in the
+             ``POSIX'' locale), the command is not executed and the value of
+             the -ok expression is false.
+
+     -okdir utility [argument ...] ;
+             The -okdir primary is identical to the -execdir primary with the
+             same exception as described for the -ok primary.
+
+     -path pattern
+             True if the pathname being examined matches pattern.  Special
+             shell pattern matching characters (``['', ``]'', ``*'', and
+             ``?'') may be used as part of pattern.  These characters may be
+             matched explicitly by escaping them with a backslash (``\'').
+             Slashes (``/'') are treated as normal characters and do not have
+             to be matched explicitly.
+
+     -perm [-|+]mode
+             The mode may be either symbolic (see chmod(1)) or an octal num-
+             ber.  If the mode is symbolic, a starting value of zero is
+             assumed and the mode sets or clears permissions without regard to
+             the process' file mode creation mask.  If the mode is octal, only
+             bits 07777 (S_ISUID | S_ISGID | S_ISTXT | S_IRWXU | S_IRWXG |
+             S_IRWXO) of the file's mode bits participate in the comparison.
+             If the mode is preceded by a dash (``-''), this primary evaluates
+             to true if at least all of the bits in the mode are set in the
+             file's mode bits.  If the mode is preceded by a plus (``+''),
+             this primary evaluates to true if any of the bits in the mode are
+             set in the file's mode bits.  Otherwise, this primary evaluates
+             to true if the bits in the mode exactly match the file's mode
+             bits.  Note, the first character of a symbolic mode may not be a
+             dash (``-'').
+
+     -print  This primary always evaluates to true.  It prints the pathname of
+             the current file to standard output.  If none of -exec, -ls,
+             -print, -print0, or -ok is specified, the given expression shall
+             be effectively replaced by ( given expression ) -print.
+
+     -print0
+             This primary always evaluates to true.  It prints the pathname of
+             the current file to standard output, followed by an ASCII NUL
+             character (character code 0).
+
+     -prune  This primary always evaluates to true.  It causes find to not
+             descend into the current file.  Note, the -prune primary has no
+             effect if the -d option was specified.
+
+     -regex pattern
+             True if the whole path of the file matches pattern using regular
+             expression.  To match a file named ``./foo/xyzzy'', you can use
+             the regular expression ``.*/[xyz]*'' or ``.*/foo/.*'', but not
+             ``xyzzy'' or ``/foo/''.
+
+     -samefile name
+             True if the file is a hard link to name.  If the command option
+             -L is specified, it is also true if the file is a symbolic link
+             and points to name.
+
+     -size n[ckMGTP]
+             True if the file's size, rounded up, in 512-byte blocks is n.  If
+             n is followed by a c, then the primary is true if the file's size
+             is n bytes (characters).  Similarly if n is followed by a scale
+             indicator then the file's size is compared to n scaled as:
+
+             k       kilobytes (1024 bytes)
+             M       megabytes (1024 kilobytes)
+             G       gigabytes (1024 megabytes)
+             T       terabytes (1024 gigabytes)
+             P       petabytes (1024 terabytes)
+
+     -type t
+             True if the file is of the specified type.  Possible file types
+             are as follows:
+
+             b       block special
+             c       character special
+             d       directory
+             f       regular file
+             l       symbolic link
+             p       FIFO
+             s       socket
+
+     -uid uname
+             The same thing as -user uname for compatibility with GNU find.
+             GNU find imposes a restriction that uname is numeric, while
+             find(1) does not.
+
+     -user uname
+             True if the file belongs to the user uname.  If uname is numeric
+             and there is no such user name, then uname is treated as a user
+             ID.
+
+     -wholename pattern
+             The same thing as -path, for GNU find compatibility.
+
+     -xattr  True if the file has any extended attributes.
+
+     -xattrname name
+             True if the file has an extended attribute with the specified
+             name.
+
+OPERATORS
+     The primaries may be combined using the following operators.  The opera-
+     tors are listed in order of decreasing precedence.
+
+     ( expression )
+             This evaluates to true if the parenthesized expression evaluates
+             to true.
+
+     ! expression
+     -not expression
+             This is the unary NOT operator.  It evaluates to true if the
+             expression is false.
+
+     -false  Always false.
+     -true   Always true.
+
+     expression -and expression
+     expression expression
+             The -and operator is the logical AND operator.  As it is implied
+             by the juxtaposition of two expressions it does not have to be
+             specified.  The expression evaluates to true if both expressions
+             are true.  The second expression is not evaluated if the first
+             expression is false.
+
+     expression -or expression
+             The -or operator is the logical OR operator.  The expression
+             evaluates to true if either the first or the second expression is
+             true.  The second expression is not evaluated if the first
+             expression is true.
+
+     All operands and primaries must be separate arguments to find.  Primaries
+     which themselves take arguments expect each argument to be a separate
+     argument to find.
+
+ENVIRONMENT
+     The LANG, LC_ALL, LC_COLLATE, LC_CTYPE, LC_MESSAGES and LC_TIME environ-
+     ment variables affect the execution of the find utility as described in
+     environ(7).
+
+EXAMPLES
+     The following examples are shown as given to the shell:
+
+     find / \! -name &quot;*.c&quot; -print
+             Print out a list of all the files whose names do not end in .c.
+
+     find / -newer ttt -user wnj -print
+             Print out a list of all the files owned by user ``wnj'' that are
+             newer than the file ttt.
+
+     find / \! \( -newer ttt -user wnj \) -print
+             Print out a list of all the files which are not both newer than
+             ttt and owned by ``wnj''.
+
+     find / \( -newer ttt -or -user wnj \) -print
+             Print out a list of all the files that are either owned by
+             ``wnj'' or that are newer than ttt.
+
+     find / -newerct '1 minute ago' -print
+             Print out a list of all the files whose inode change time is more
+             recent than the current time minus one minute.
+
+     find / -type f -exec echo {} \;
+             Use the echo(1) command to print out a list of all the files.
+
+     find -L /usr/ports/packages -type l -exec rm -- {} +
+             Delete all broken symbolic links in /usr/ports/packages.
+
+     find /usr/src -name CVS -prune -o -depth +6 -print
+             Find files and directories that are at least seven levels deep in
+             the working directory /usr/src.
+
+     find /usr/src -name CVS -prune -o -mindepth 7 -print
+             Is not equivalent to the previous example, since -prune is not
+             evaluated below level seven.
+
+COMPATIBILITY
+     The -follow primary is deprecated; the -L option should be used instead.
+     See the STANDARDS section below for details.
+
+SEE ALSO
+     chflags(1), chmod(1), cvs(1), locate(1), lsvfs(1), whereis(1), which(1),
+     xargs(1), stat(2), acl(3), fts(3), getgrent(3), getpwent(3), strmode(3),
+     re_format(7), symlink(7)
+
+STANDARDS
+     The find utility syntax is a superset of the syntax specified by the IEEE
+     Std 1003.1-2001 (``POSIX.1'') standard.
+
+     All the single character options except -H and -L as well as -amin,
+     -anewer, -cmin, -cnewer, -delete, -empty, -fstype, -iname, -inum,
+     -iregex, -ls, -maxdepth, -mindepth, -mmin, -path, -print0, -regex and all
+     of the -B* birthtime related primaries are extensions to IEEE Std
+     1003.1-2001 (``POSIX.1'').
+
+     Historically, the -d, -L and -x options were implemented using the pri-
+     maries -depth, -follow, and -xdev.  These primaries always evaluated to
+     true.  As they were really global variables that took effect before the
+     traversal began, some legal expressions could have unexpected results.
+     An example is the expression -print -o -depth.  As -print always evalu-
+     ates to true, the standard order of evaluation implies that -depth would
+     never be evaluated.  This is not the case.
+
+     The operator -or was implemented as -o, and the operator -and was imple-
+     mented as -a.
+
+     Historic implementations of the -exec and -ok primaries did not replace
+     the string ``{}'' in the utility name or the utility arguments if it had
+     preceding or following non-whitespace characters.  This version replaces
+     it no matter where in the utility name or arguments it appears.
+
+     The -E option was inspired by the equivalent grep(1) and sed(1) options.
+
+HISTORY
+     A find command appeared in Version 1 AT&amp;T UNIX.
+
+BUGS
+     The special characters used by find are also special characters to many
+     shell programs.  In particular, the characters ``*'', ``['', ``]'',
+     ``?'', ``('', ``)'', ``!'', ``\'' and ``;'' may have to be escaped from
+     the shell.
+
+     As there is no delimiter separating options and file names or file names
+     and the expression, it is difficult to specify files named -xdev or !.
+     These problems are handled by the -f option and the getopt(3) ``--'' con-
+     struct.
+
+     The -delete primary does not interact well with other options that cause
+     the file system tree traversal options to be changed.
+
+     The -mindepth and -maxdepth primaries are actually global options (as
+     documented above).  They should probably be replaced by options which
+     look like options.
+
+BSD                           September 28, 2011                           BSD
+</code></pre></div><div class=post-archive><ul class=post-copyright><li><strong>原文作者：</strong><a rel=author href=https://www.shiyuanjie.cn>Yuanjie</a></li><li style=word-break:break-all><strong>原文链接：</strong><a href=https://www.shiyuanjie.cn/posts/Tools/find/>https://www.shiyuanjie.cn/posts/Tools/find/</a></li><li><strong>版权声明：</strong>本作品采用<a rel=license href=https://creativecommons.org/licenses/by-nc-nd/4.0/>知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议</a>进行许可，非商业转载请注明出处（作者，原文链接），商业转载请联系作者获得授权。</li></ul></div><br><div class=post-archive><h2>See Also</h2><ul class=listing><li><a href=/posts/SuperTest/SuperTest/>SuperTest-API测试</a></li><li><a href=/posts/Book/Google-%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E4%B9%8B%E9%81%93/>Google 软件测试之道</a></li><li><a href=/posts/Book/Rework/>Rework 重来:更为简单有效的商业思维</a></li><li><a href=/posts/Book/%E4%B9%96%E6%91%B8%E6%91%B8%E5%A4%B4/>乖，摸摸头</a></li><li><a href=/archives/>归档</a></li></ul></div><div class="post-meta meta-tags"><ul class=clearfix><li><a href=https://www.shiyuanjie.cn/tags/find>find</a></li></ul></div></article><div class="post bg-white"><script src=https://utteranc.es/client.js repo=aimer1124/comments-blog issue-term=pathname theme=github-light crossorigin=anonymous async></script></div></div></div><div id=secondary><section class=widget><h3 class=widget-title>最近文章</h3><ul class=widget-list><li><a href=https://www.shiyuanjie.cn/posts/Upgrade/driver-license/ title=我的驾照历程>我的驾照历程</a></li><li><a href=https://www.shiyuanjie.cn/posts/Book/%E5%8F%AF%E5%A4%8D%E5%88%B6%E7%9A%84%E9%A2%86%E5%AF%BC%E5%8A%9B/ title=可复制的领导力>可复制的领导力</a></li><li><a href=https://www.shiyuanjie.cn/posts/Book/%E5%86%8D%E8%A7%81%E5%BF%8D%E8%80%81%E5%B8%88/ title=再见，忍老师>再见，忍老师</a></li><li><a href=https://www.shiyuanjie.cn/posts/Book/%E5%85%84%E5%BC%9F/ title=兄弟>兄弟</a></li><li><a href=https://www.shiyuanjie.cn/posts/QA/BugReview/ title="Bug Review">Bug Review</a></li><li><a href=https://www.shiyuanjie.cn/posts/Book/%E4%BA%BA%E7%B1%BB%E7%AE%80%E5%8F%B2/ title=人类简史>人类简史</a></li><li><a href=https://www.shiyuanjie.cn/posts/Book/%E5%AD%A6%E4%BC%9A%E6%8F%90%E9%97%AE/ title=学会提问>学会提问</a></li><li><a href=https://www.shiyuanjie.cn/posts/Product/shiyanlou/ title=实验楼>实验楼</a></li><li><a href=https://www.shiyuanjie.cn/posts/Book/%E8%8C%B6%E9%81%93/ title=茶道>茶道</a></li><li><a href=https://www.shiyuanjie.cn/posts/Management/PM-Daily/ title="PM Daily">PM Daily</a></li></ul></section><section class=widget><h3 class=widget-title>分类</h3><ul class=widget-list><li><a href=https://www.shiyuanjie.cn/categories/Book/>Book (57)</a></li><li><a href=https://www.shiyuanjie.cn/categories/Car/>Car (1)</a></li><li><a href=https://www.shiyuanjie.cn/categories/Design/>Design (5)</a></li><li><a href=https://www.shiyuanjie.cn/categories/Management/>Management (6)</a></li><li><a href=https://www.shiyuanjie.cn/categories/Mark/>Mark (32)</a></li><li><a href=https://www.shiyuanjie.cn/categories/Paint/>Paint (3)</a></li><li><a href=https://www.shiyuanjie.cn/categories/Testing/>Testing (9)</a></li><li><a href=https://www.shiyuanjie.cn/categories/Tool/>Tool (34)</a></li><li><a href=https://www.shiyuanjie.cn/categories/Translate/>Translate (16)</a></li></ul></section><section class=widget><h3 class=widget-title>标签</h3><div class=tagcloud><a href=https://www.shiyuanjie.cn/tags/2017/>2017</a>
+<a href=https://www.shiyuanjie.cn/tags/2018/>2018</a>
+<a href=https://www.shiyuanjie.cn/tags/2019/>2019</a>
+<a href=https://www.shiyuanjie.cn/tags/API%E6%B5%8B%E8%AF%95/>API测试</a>
+<a href=https://www.shiyuanjie.cn/tags/Alfred/>Alfred</a>
+<a href=https://www.shiyuanjie.cn/tags/Android/>Android</a>
+<a href=https://www.shiyuanjie.cn/tags/Bug/>Bug</a>
+<a href=https://www.shiyuanjie.cn/tags/CI/>CI</a>
+<a href=https://www.shiyuanjie.cn/tags/Chrome/>Chrome</a>
+<a href=https://www.shiyuanjie.cn/tags/Cucumber/>Cucumber</a>
+<a href=https://www.shiyuanjie.cn/tags/Docker/>Docker</a>
+<a href=https://www.shiyuanjie.cn/tags/E2E/>E2E</a>
+<a href=https://www.shiyuanjie.cn/tags/ECS/>ECS</a>
+<a href=https://www.shiyuanjie.cn/tags/Espresso/>Espresso</a>
+<a href=https://www.shiyuanjie.cn/tags/Evernote/>Evernote</a>
+<a href=https://www.shiyuanjie.cn/tags/Flutter/>Flutter</a>
+<a href=https://www.shiyuanjie.cn/tags/GIF/>GIF</a>
+<a href=https://www.shiyuanjie.cn/tags/Galen/>Galen</a>
+<a href=https://www.shiyuanjie.cn/tags/Gauge/>Gauge</a>
+<a href=https://www.shiyuanjie.cn/tags/Genymotion/>Genymotion</a>
+<a href=https://www.shiyuanjie.cn/tags/Git/>Git</a>
+<a href=https://www.shiyuanjie.cn/tags/Github/>Github</a>
+<a href=https://www.shiyuanjie.cn/tags/Google/>Google</a>
+<a href=https://www.shiyuanjie.cn/tags/Grunt/>Grunt</a>
+<a href=https://www.shiyuanjie.cn/tags/Gulp/>Gulp</a>
+<a href=https://www.shiyuanjie.cn/tags/HTTP/>HTTP</a>
+<a href=https://www.shiyuanjie.cn/tags/Hexo/>Hexo</a>
+<a href=https://www.shiyuanjie.cn/tags/Hugo/>Hugo</a>
+<a href=https://www.shiyuanjie.cn/tags/JMeter/>JMeter</a>
+<a href=https://www.shiyuanjie.cn/tags/JavaScript/>JavaScript</a>
+<a href=https://www.shiyuanjie.cn/tags/Jenkins/>Jenkins</a>
+<a href=https://www.shiyuanjie.cn/tags/Layout%E6%B5%8B%E8%AF%95/>Layout测试</a>
+<a href=https://www.shiyuanjie.cn/tags/Locust/>Locust</a>
+<a href=https://www.shiyuanjie.cn/tags/MarkDown/>MarkDown</a>
+<a href=https://www.shiyuanjie.cn/tags/MarkDown/>MarkDown</a>
+<a href=https://www.shiyuanjie.cn/tags/Node.js/>Node.js</a>
+<a href=https://www.shiyuanjie.cn/tags/PDF/>PDF</a>
+<a href=https://www.shiyuanjie.cn/tags/PM/>PM</a>
+<a href=https://www.shiyuanjie.cn/tags/PageObject/>PageObject</a>
+<a href=https://www.shiyuanjie.cn/tags/Product/>Product</a>
+<a href=https://www.shiyuanjie.cn/tags/Protractor/>Protractor</a>
+<a href=https://www.shiyuanjie.cn/tags/Python/>Python</a>
+<a href=https://www.shiyuanjie.cn/tags/Ruby/>Ruby</a>
+<a href=https://www.shiyuanjie.cn/tags/SSH/>SSH</a>
+<a href=https://www.shiyuanjie.cn/tags/SuperTest/>SuperTest</a>
+<a href=https://www.shiyuanjie.cn/tags/TeamLeader/>TeamLeader</a>
+<a href=https://www.shiyuanjie.cn/tags/Test-scenario/>Test scenario</a>
+<a href=https://www.shiyuanjie.cn/tags/Testing/>Testing</a>
+<a href=https://www.shiyuanjie.cn/tags/TickTick/>TickTick</a>
+<a href=https://www.shiyuanjie.cn/tags/Travis/>Travis</a>
+<a href=https://www.shiyuanjie.cn/tags/Workflow/>Workflow</a>
+<a href=https://www.shiyuanjie.cn/tags/find/>find</a>
+<a href=https://www.shiyuanjie.cn/tags/%E4%B8%83%E7%89%9B/>七牛</a>
+<a href=https://www.shiyuanjie.cn/tags/%E4%B8%9C%E9%87%8E%E5%9C%AD%E5%90%BE/>东野圭吾</a>
+<a href=https://www.shiyuanjie.cn/tags/%E4%B8%9C%E9%87%8E%E5%A5%8E%E5%90%BE/>东野奎吾</a>
+<a href=https://www.shiyuanjie.cn/tags/%E4%B8%AD%E5%8F%B0/>中台</a>
+<a href=https://www.shiyuanjie.cn/tags/%E4%B8%AD%E5%9B%BD%E7%A7%BB%E5%8A%A8/>中国移动</a>
+<a href=https://www.shiyuanjie.cn/tags/%E4%B9%A0%E6%83%AF/>习惯</a>
+<a href=https://www.shiyuanjie.cn/tags/%E4%BA%A7%E5%93%81/>产品</a>
+<a href=https://www.shiyuanjie.cn/tags/%E4%BD%99%E5%8D%8E/>余华</a>
+<a href=https://www.shiyuanjie.cn/tags/%E5%8E%86%E5%8F%B2/>历史</a>
+<a href=https://www.shiyuanjie.cn/tags/%E5%92%A8%E8%AF%A2/>咨询</a>
+<a href=https://www.shiyuanjie.cn/tags/%E5%9B%A2%E9%98%9F/>团队</a>
+<a href=https://www.shiyuanjie.cn/tags/%E5%AD%A9%E5%AD%90/>孩子</a>
+<a href=https://www.shiyuanjie.cn/tags/%E5%B0%8F%E8%AF%B4/>小说</a>
+<a href=https://www.shiyuanjie.cn/tags/%E5%B7%A5%E5%85%B7/>工具</a>
+<a href=https://www.shiyuanjie.cn/tags/%E5%BE%AE%E5%89%8D%E7%AB%AF/>微前端</a>
+<a href=https://www.shiyuanjie.cn/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/>微服务</a>
+<a href=https://www.shiyuanjie.cn/tags/%E6%80%9D%E7%BB%B4/>思维</a>
+<a href=https://www.shiyuanjie.cn/tags/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/>思维导图</a>
+<a href=https://www.shiyuanjie.cn/tags/%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/>性能测试</a>
+<a href=https://www.shiyuanjie.cn/tags/%E6%88%92%E7%83%9F/>戒烟</a>
+<a href=https://www.shiyuanjie.cn/tags/%E6%89%8B%E7%BB%98/>手绘</a>
+<a href=https://www.shiyuanjie.cn/tags/%E6%8B%9B%E8%81%98/>招聘</a>
+<a href=https://www.shiyuanjie.cn/tags/%E6%94%B6%E8%B4%B9%E8%BD%AF%E4%BB%B6/>收费软件</a>
+<a href=https://www.shiyuanjie.cn/tags/%E6%95%8F%E6%8D%B7/>敏捷</a>
+<a href=https://www.shiyuanjie.cn/tags/%E6%95%99%E8%82%B2/>教育</a>
+<a href=https://www.shiyuanjie.cn/tags/%E6%95%B4%E7%90%86/>整理</a>
+<a href=https://www.shiyuanjie.cn/tags/%E6%97%A5%E6%9B%B4/>日更</a>
+<a href=https://www.shiyuanjie.cn/tags/%E6%A8%A1%E6%8B%9F%E5%99%A8/>模拟器</a>
+<a href=https://www.shiyuanjie.cn/tags/%E6%B2%9F%E9%80%9A/>沟通</a>
+<a href=https://www.shiyuanjie.cn/tags/%E6%B8%B8%E6%B3%B3/>游泳</a>
+<a href=https://www.shiyuanjie.cn/tags/%E7%88%AC%E8%99%AB/>爬虫</a>
+<a href=https://www.shiyuanjie.cn/tags/%E7%94%9F%E6%B4%BB/>生活</a>
+<a href=https://www.shiyuanjie.cn/tags/%E7%94%A8%E6%88%B7%E6%95%85%E4%BA%8B/>用户故事</a>
+<a href=https://www.shiyuanjie.cn/tags/%E7%94%B2%E6%96%B9/>甲方</a>
+<a href=https://www.shiyuanjie.cn/tags/%E7%AE%A1%E7%90%86/>管理</a>
+<a href=https://www.shiyuanjie.cn/tags/%E7%BB%83%E5%AD%97/>练字</a>
+<a href=https://www.shiyuanjie.cn/tags/%E8%81%8C%E5%9C%BA/>职场</a>
+<a href=https://www.shiyuanjie.cn/tags/%E8%8C%B6/>茶</a>
+<a href=https://www.shiyuanjie.cn/tags/%E8%AE%BE%E8%AE%A1/>设计</a>
+<a href=https://www.shiyuanjie.cn/tags/%E8%AF%BB%E4%B9%A6/>读书</a>
+<a href=https://www.shiyuanjie.cn/tags/%E8%B7%83%E8%BF%81/>跃迁</a>
+<a href=https://www.shiyuanjie.cn/tags/%E8%B7%91%E6%AD%A5/>跑步</a>
+<a href=https://www.shiyuanjie.cn/tags/%E9%93%B6%E5%B1%8B/>银屋</a>
+<a href=https://www.shiyuanjie.cn/tags/%E9%9C%80%E6%B1%82/>需求</a>
+<a href=https://www.shiyuanjie.cn/tags/%E9%A9%BE%E7%85%A7/>驾照</a></div></section><section class=widget><h3 class=widget-title>产出</h3><ul class=widget-list><li><a target=_blank href=https://www.shiyuanjie.cn/tools/ title=我的小工具>我的小工具</a></li><li><a target=_blank href=https://www.shiyuanjie.cn/posts/Upgrade/%E5%88%A9%E7%94%A821%E5%A4%A9%E7%9A%84%E5%AE%8C%E6%88%90%E4%B8%80%E6%9C%ACMini%E4%B9%A6/ title=利用21天时间完成一本Mini书>利用21天时间完成一本Mini书</a></li><li><a target=_blank href=https://aimer1124.github.io/practice-character/ title=练字记录>练字记录</a></li><li><a target=_blank href=https://aimer1124.github.io/graphic-recorder/ title=GR记录>GR记录</a></li><li><a target=_blank href=https://aimer1124.github.io/100-questions-to-pm/ title=PM的问题集>PM的问题集</a></li><li><a target=_blank href=https://www.shiyuanjie.cn/posts/Blog/%E7%AB%99%E7%82%B9%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/ title=网站时间线Timeline>网站时间线Timeline</a></li></ul></section></div></div></div></div><footer id=footer><div class=container>&copy; 2021, By Yuanjie</a>。
+访客 <span id=busuanzi_value_site_uv></span>人次 | 访问 <span id=busuanzi_value_site_pv></span>次。
+备案号：<a href=http://www.beian.miit.gov.cn target=_blank>陕ICP备20003547号-1</a></div></footer><script type=text/javascript>window.MathJax={tex2jax:{inlineMath:[['$','$']],processEscapes:true}};</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async></script><a id=rocket href=#top></a><script type=text/javascript src="/js/totop.js?v=0.0.0" async></script><script type=text/javascript src=//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js async></script></body></html>

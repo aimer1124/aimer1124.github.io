@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Google on Yuanjie-跑步爱好者，IT从业者。</title><link>https://www.shiyuanjie.cn/tags/Google/</link><description>Recent content in Google on Yuanjie-跑步爱好者，IT从业者。</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 18 Jan 2017 14:50:00 +0000</lastBuildDate><atom:link href="https://www.shiyuanjie.cn/tags/Google/index.xml" rel="self" type="application/rss+xml"/><item><title>获取Chrome浏览器</title><link>https://www.shiyuanjie.cn/posts/Tools/%E8%8E%B7%E5%8F%96Chrome%E6%B5%8F%E8%A7%88%E5%99%A8/</link><pubDate>Wed, 18 Jan 2017 14:50:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Tools/%E8%8E%B7%E5%8F%96Chrome%E6%B5%8F%E8%A7%88%E5%99%A8/</guid><description>&lt;h2 id="由来">由来&lt;/h2>
+&lt;p>项目的测试需求，需要针对64位 Chrome 42+的各个&lt;code>稳定版&lt;/code>本进行测试,但安装环境又无法&lt;code>直接访问外网&lt;/code>进行&lt;code>在线版本&lt;/code>安装，因此需要搜集已发布的&lt;code>离线安装&lt;/code>版本。作为&lt;code>安装源&lt;/code>。&lt;/p>
+&lt;blockquote>
+&lt;p>首先，来认识下Chrome到底有哪些版本。&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="chromewwwgooglecomchrome-vs-chromiumwwwchromiumorg">&lt;a href="www.google.com/chrome">Chrome&lt;/a> VS &lt;a href="www.chromium.org">Chromium&lt;/a>&lt;/h2>
+&lt;h3 id="区别">区别&lt;/h3>
+&lt;blockquote>
+&lt;p>The Chromium projects include Chromium and Chromium OS, the open-source projects behind the Google Chrome browser and Google Chrome OS, respectively. This site houses the documentation and code related to the Chromium projects and is intended for developers interested in learning about and contributing to the open-source projects.&lt;/p>
+&lt;/blockquote>
+&lt;p>简而言之，Chrome是基于 &lt;strong>开源项目&lt;/strong> Chromium的 。新功能会优先在Chromium发布。&lt;/p></description></item><item><title>Google 软件测试之道</title><link>https://www.shiyuanjie.cn/posts/Book/Google-%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E4%B9%8B%E9%81%93/</link><pubDate>Thu, 15 Oct 2015 21:37:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Book/Google-%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E4%B9%8B%E9%81%93/</guid><description>&lt;h2 id="封面">封面&lt;/h2>
+&lt;p>&lt;!-- raw HTML omitted -->&lt;/p></description></item></channel></rss>

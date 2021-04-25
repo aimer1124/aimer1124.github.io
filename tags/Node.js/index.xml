@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Node.js on Yuanjie-跑步爱好者，IT从业者。</title><link>https://www.shiyuanjie.cn/tags/Node.js/</link><description>Recent content in Node.js on Yuanjie-跑步爱好者，IT从业者。</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Thu, 26 Dec 2019 09:20:00 +0000</lastBuildDate><atom:link href="https://www.shiyuanjie.cn/tags/Node.js/index.xml" rel="self" type="application/rss+xml"/><item><title>更新package中依赖包版本</title><link>https://www.shiyuanjie.cn/posts/Tools/%E6%9B%B4%E6%96%B0package%E4%B8%AD%E4%BE%9D%E8%B5%96%E5%8C%85%E7%89%88%E6%9C%AC/</link><pubDate>Thu, 26 Dec 2019 09:20:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Tools/%E6%9B%B4%E6%96%B0package%E4%B8%AD%E4%BE%9D%E8%B5%96%E5%8C%85%E7%89%88%E6%9C%AC/</guid><description>需求：更新package.json中dependencies的版本号至最新 解决方案 安装npm-check-updates npm install -g npm-check-updates https://www.npmjs.com/package/npm-check-updates 运行ncu -u 更新package.json中依赖包版本 以上需求已解决 参考 https://flaviocopes.com/update-npm-dependencies/</description></item><item><title>轻量级微服务架构(上册)</title><link>https://www.shiyuanjie.cn/posts/Book/%E8%BD%BB%E9%87%8F%E7%BA%A7%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%9E%B6%E6%9E%84%E4%B8%8A%E5%86%8C/</link><pubDate>Fri, 20 Jan 2017 14:40:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Book/%E8%BD%BB%E9%87%8F%E7%BA%A7%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%9E%B6%E6%9E%84%E4%B8%8A%E5%86%8C/</guid><description>&lt;h2 id="书">书&lt;/h2>
+&lt;p>&lt;!-- raw HTML omitted -->&lt;/p>
+&lt;h2 id="读后总结">读后总结&lt;/h2>
+&lt;blockquote>
+&lt;p>微服务的架构实践，书中的内容更偏重于&lt;code>落地的&lt;/code>实践操作。 详细的讲解了如何&lt;code>搭建&lt;/code>一套微服务框架环境，适合于寻找实践操作的书籍&lt;/p>
+&lt;/blockquote>
+&lt;ul>
+&lt;li>微服务就是将功能&lt;code>分而治之&lt;/code>&lt;/li>
+&lt;li>架构框架落地
+&lt;ul>
+&lt;li>Spring Boot做开发框架&lt;/li>
+&lt;li>Node.js做网关&lt;/li>
+&lt;li>Zookeeper做微服务注册与发现&lt;/li>
+&lt;li>Docker封装微服务&amp;ndash;&lt;code>容器化&lt;/code>&lt;/li>
+&lt;li>Jenkins实现CI&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>章节中，重点讲解了每个&lt;code>落地&lt;/code>步骤的&lt;code>操作方法&lt;/code>&lt;/li>
+&lt;/ul></description></item><item><title>Layout测试</title><link>https://www.shiyuanjie.cn/posts/UITest/Layout%E6%B5%8B%E8%AF%95/</link><pubDate>Mon, 28 Nov 2016 15:40:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/UITest/Layout%E6%B5%8B%E8%AF%95/</guid><description>&lt;p>Web页面Layout测试，一直是测试人员比较头疼的事情。原因有&lt;/p>
+&lt;ul>
+&lt;li>当前市面中设备的&lt;code>分辨率&lt;/code>千差万别&lt;/li>
+&lt;li>浏览器版本众多，工作量很大&lt;/li>
+&lt;/ul>
+&lt;p>如何使用&lt;code>高效&lt;/code>的方式来测试Web Layout是否能正常，下面来看下&lt;a href="http://galenframework.com/">Galen&lt;/a>是如何帮助我们的&lt;/p>
+&lt;h2 id="galenhttpgalenframeworkcom的特点">&lt;a href="http://galenframework.com/">Galen&lt;/a>的特点&lt;/h2>
+&lt;ul>
+&lt;li>开源项目，License基于&lt;a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0&lt;/a>&lt;/li>
+&lt;li>可测试页面布局、响应式设计，支持功能测试&lt;/li>
+&lt;li>基于&lt;a href="http://www.seleniumhq.org/">Selenium&lt;/a>，对Selenium Grid支持很好，可直接在&lt;a href="https://saucelabs.com/">Sauce Labs&lt;/a>和 &lt;a href="https://www.browserstack.com/">BrowserStack&lt;/a>&lt;/li>
+&lt;li>支持并行测试，减少测试时间&lt;/li>
+&lt;li>语法简洁&lt;/li>
+&lt;/ul></description></item><item><title>Node.js开发指南</title><link>https://www.shiyuanjie.cn/posts/Book/Node.js%E5%BC%80%E5%8F%91%E6%8C%87%E5%8D%97/</link><pubDate>Mon, 31 Oct 2016 20:00:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Book/Node.js%E5%BC%80%E5%8F%91%E6%8C%87%E5%8D%97/</guid><description>&lt;h4 id="阅读时间20160930-20161031">阅读时间：&lt;code>20160930-20161031&lt;/code>&lt;/h4>
+&lt;h2 id="读后感">读后感&lt;/h2>
+&lt;blockquote>
+&lt;p>国内仅有的几本Node书，内容还算不错。但由于Node.js的版本更新太快，有些模块会有点陈旧，但思路不陈旧。&lt;/p>
+&lt;/blockquote>
+&lt;ul>
+&lt;li>
+&lt;p>玩Node.js也快有1年了，第一次完整的读一本书，整体内容还不错，阅读起来挺快的。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>书中的有些概念作者讲的也比较清晰，让自己也有一定的收获。&lt;/p>
+&lt;/li>
+&lt;/ul></description></item><item><title>Node入门</title><link>https://www.shiyuanjie.cn/posts/Book/Node%E5%85%A5%E9%97%A8/</link><pubDate>Tue, 20 Sep 2016 20:44:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Book/Node%E5%85%A5%E9%97%A8/</guid><description>&lt;h2 id="书">书&lt;/h2>
+&lt;ul>
+&lt;li>在线版本: &lt;a href="http://www.nodebeginner.org/index-zh-cn.html">Node入门&lt;/a>，可在线&lt;code>阅读全文&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;h2 id="读后感">读后感&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>Node.js的入门，没有讲任何的框架。但从最基础的知识点把Node如何使用讲的比较清晰&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>书中的例子做完后(只有&lt;strong>42&lt;/strong>页)，可以实现一个&lt;code>文件上传&lt;/code>的完整功能，不需要其它复杂的框架&lt;/p>
+&lt;/li>
+&lt;/ul></description></item><item><title>简书爬虫</title><link>https://www.shiyuanjie.cn/posts/Tools/%E7%AE%80%E4%B9%A6%E7%88%AC%E8%99%AB/</link><pubDate>Tue, 19 Jul 2016 19:50:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Tools/%E7%AE%80%E4%B9%A6%E7%88%AC%E8%99%AB/</guid><description>简书爬虫 此功能纯粹为个人意想功能,利用业余时间来学习Node。所有内容均已开源,欢迎各种PR和Fork。最后更新时间: 20161129。 项目 源代码 https://github.com/aimer1124/JianshuSpider 需求 Teambition-简书爬虫 效果图 Home Article Author Collections Search ShowCase Home Articles Authors Collections Search 代码 启动 DB: sudo mongod 程序: gulp 测试: gulp test 版本 Node: 4.4.3 Mongo: 3.0.3 引用包列表 Backend express: http://expressjs.com/,node web框架</description></item><item><title>API开发神器-Postman</title><link>https://www.shiyuanjie.cn/posts/APITest/API%E5%BC%80%E5%8F%91%E7%A5%9E%E5%99%A8-Postman/</link><pubDate>Fri, 24 Jun 2016 19:50:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/APITest/API%E5%BC%80%E5%8F%91%E7%A5%9E%E5%99%A8-Postman/</guid><description>&lt;p>&lt;code>Postman helps you develop APIs faster.&lt;/code>&lt;/p>
+&lt;h1 id="豪华午餐">豪华午餐&lt;/h1>
+&lt;p>&lt;img src="https://www.shiyuanjie.cn/img/Postman.png" alt="Postman">&lt;/p>
+&lt;h2 id="postman">Postman&lt;/h2>
+&lt;p>&lt;code>构建、管理、文档化&lt;/code>API&lt;/p>
+&lt;ul>
+&lt;li>在线安装&lt;/li>
+&lt;li>Chrome插件版
+&lt;a href="https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop">https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop&lt;/a>&lt;/li>
+&lt;li>MAC版
+&lt;a href="https://www.getpostman.com/app/postman-osx">https://www.getpostman.com/app/postman-osx&lt;/a>&lt;/li>
+&lt;li>离线安装
+使用已经安装好的Postman文件夹，&lt;code>机器&lt;/code>默认存放目录：/Library/Application\ Support/Google/Chrome/Default/Extensions
+进入&lt;code>chrome://extensions/&lt;/code>，选择&lt;code>Load unpacked extensions&lt;/code>，加载Postman的文件夹&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://www.shiyuanjie.cn/img/Postman-Newman.png" alt="Newman(我真的不是MP3)">&lt;/p></description></item><item><title>Jenkins with Grunt</title><link>https://www.shiyuanjie.cn/posts/CICD/Jenkins-with-SuperTest-and-Grunt/</link><pubDate>Thu, 03 Mar 2016 20:45:38 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/CICD/Jenkins-with-SuperTest-and-Grunt/</guid><description>&lt;h1 id="jenkins">Jenkins&lt;/h1>
+&lt;pre>&lt;code>In a nutshell, Jenkins is the leading open source automation server.
+Built with Java, it provides hundreds of plugins to support building,
+testing, deploying and automation for virtually any project
+&lt;/code>&lt;/pre>&lt;pre>&lt;code>Jenkins是一个开源软件项目，旨在提供一个开放易用的软件平台，使软件的持续集成变成可能。
+&lt;/code>&lt;/pre></description></item><item><title>Node.js时间格式处理</title><link>https://www.shiyuanjie.cn/posts/Tools/Node-js%E6%97%B6%E9%97%B4%E6%A0%BC%E5%BC%8F%E5%A4%84%E7%90%86/</link><pubDate>Tue, 26 Jan 2016 22:18:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Tools/Node-js%E6%97%B6%E9%97%B4%E6%A0%BC%E5%BC%8F%E5%A4%84%E7%90%86/</guid><description>moment库 专门用于Javascript的时间转化、验证、处理、展示 安装moment npm install moment 使用moment 引用moment 1 var moment = require(&amp;#39;moment&amp;#39;); 转化时间 1 2 3 4 5 6 7 //将时间格式转化为：2016-01-22 21:21:26 moment(new Date()).format(&amp;#34;YYYY-MM-DD HH:mm:ss&amp;#34;); moment().format(&amp;#39;MMMM Do YYYY, h:mm:ss a&amp;#39;); // January 26th 2016, 10:25:00 pm moment().format(&amp;#39;dddd&amp;#39;); // Tuesday moment().format(&amp;#34;MMM Do YY&amp;#34;); // Jan 26th 16 moment().format(&amp;#39;YYYY [escaped] YYYY&amp;#39;); // 2016 escaped 2016 moment().format(); // 2016-01-26T22:25:24+08:00 相对时间 1 2</description></item><item><title>Node.js调用数据库:Mysql</title><link>https://www.shiyuanjie.cn/posts/Tools/JS%E8%B0%83%E7%94%A8%E6%95%B0%E6%8D%AE%E5%BA%93/</link><pubDate>Tue, 26 Jan 2016 22:01:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Tools/JS%E8%B0%83%E7%94%A8%E6%95%B0%E6%8D%AE%E5%BA%93/</guid><description>安装Mysql包 npm install mysql 调用 Mysql包 1 var mysql = require(&amp;#39;mysql&amp;#39;); 数据库查询 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 var mysql = require(&amp;#39;mysql&amp;#39;); var connection = mysql.createConnection({ host : &amp;#39;10.29.10.29&amp;#39;, port : 3307, user : &amp;#39;root&amp;#39;, password : &amp;#39;&amp;#39;, database : &amp;#39;emall&amp;#39;, //charset : &amp;#39;UTF8_GENERAL_CI&amp;#39;, debug : false }); connection.connect(); connection.query(&amp;#34;use emall&amp;#34;); connection.query(&amp;#39;select id from users&amp;#39;, function(err,results) { if (err) { throw err; } }); connection.end(); 数据库插入 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 var mysql = require(&amp;#39;mysql&amp;#39;); var connection = mysql.createConnection({ host : &amp;#39;10.29.10.29&amp;#39;, port : 3307, user : &amp;#39;root&amp;#39;, password : &amp;#39;&amp;#39;, database</description></item></channel></rss>

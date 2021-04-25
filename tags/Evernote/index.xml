@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Evernote on Yuanjie-跑步爱好者，IT从业者。</title><link>https://www.shiyuanjie.cn/tags/Evernote/</link><description>Recent content in Evernote on Yuanjie-跑步爱好者，IT从业者。</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Thu, 23 Aug 2018 14:50:00 +0000</lastBuildDate><atom:link href="https://www.shiyuanjie.cn/tags/Evernote/index.xml" rel="self" type="application/rss+xml"/><item><title>印象笔记支持Markdown</title><link>https://www.shiyuanjie.cn/posts/Tools/%E5%8D%B0%E8%B1%A1%E7%AC%94%E8%AE%B0%E6%94%AF%E6%8C%81Markdown/</link><pubDate>Thu, 23 Aug 2018 14:50:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Tools/%E5%8D%B0%E8%B1%A1%E7%AC%94%E8%AE%B0%E6%94%AF%E6%8C%81Markdown/</guid><description>最近很长一断时间都比较喜欢用Markdown来编写文件，自己日常的工作和记录也一直都在用Evernote来进行. 看到Evernote在8.20发布的Mac 8.2.0 beta1版本支持Markdown格式的笔记了，赶紧来试下用。 版本支持 仅Mac的Beta版本支持此功能 版本下载 地址：http</description></item><item><title>MarkDown保存至印象笔记</title><link>https://www.shiyuanjie.cn/posts/Tools/MarkDown%E4%BF%9D%E5%AD%98%E8%87%B3%E5%8D%B0%E8%B1%A1%E7%AC%94%E8%AE%B0/</link><pubDate>Sun, 15 Oct 2017 14:30:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Tools/MarkDown%E4%BF%9D%E5%AD%98%E8%87%B3%E5%8D%B0%E8%B1%A1%E7%AC%94%E8%AE%B0/</guid><description>&lt;pre>&lt;code>通过 Sumlime Text3 来实现将 MarkDown 文件完美保存至 印象笔记中。
+&lt;/code>&lt;/pre>&lt;h1 id="step1-安装evernote包">Step1: 安装Evernote包&lt;/h1>
+&lt;ul>
+&lt;li>打开 Sumlime Text3&lt;/li>
+&lt;li>&lt;code>cmd + shift + p&lt;/code>打开command pattern&lt;/li>
+&lt;li>输入&lt;code>Package Controll: Install Package&lt;/code>，回车&lt;/li>
+&lt;li>输入Evernote，等待安装成功。Evernote包地址：&lt;a href="https://packagecontrol.io/packages/Evernote">https://packagecontrol.io/packages/Evernote&lt;/a>&lt;/li>
+&lt;li>安装结束后，在&lt;code>Package Setting&lt;/code>中会有&lt;code>Evernote&lt;/code>&lt;/li>
+&lt;li>&lt;code>cmd + shift + p&lt;/code>打开command pattern，输入Evernote，查看是否有Evernote对应的功能列表显示&lt;/li>
+&lt;/ul>
+&lt;h1 id="step2-获取印象笔记的developer-token">Step2: 获取印象笔记的Developer Token&lt;/h1>
+&lt;ul>
+&lt;li>登录&lt;a href="https://app.yinxiang.com/api/DeveloperToken.action">https://app.yinxiang.com/api/DeveloperToken.action&lt;/a>&lt;/li>
+&lt;li>如果没有内容，选择新增一个developer token&lt;/li>
+&lt;/ul>
+&lt;h1 id="step3-配制sublime-text中的-evernote">Step3: 配制Sublime Text中的 Evernote&lt;/h1>
+&lt;ul>
+&lt;li>&lt;code>Package Settings&lt;/code> &amp;ndash;&amp;gt; &lt;code>Evernote&lt;/code> &amp;ndash;&amp;gt; &lt;code>Settings User&lt;/code>&lt;/li>
+&lt;li>默认打开内容为空，设置内容如下(Step2中获取的内容)&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-json" data-lang="json">{
+&lt;span style="color:#f92672">&amp;#34;token&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;Token内容，那一串长的字符&amp;#34;&lt;/span>,
+&lt;span style="color:#f92672">&amp;#34;noteStoreUrl&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;StoreUrl&amp;#34;&lt;/span>
+}
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>至此，已经配制&lt;code>完成&lt;/code>。&lt;/p></description></item></channel></rss>

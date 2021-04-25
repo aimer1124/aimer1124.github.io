@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Github on Yuanjie-跑步爱好者，IT从业者。</title><link>https://www.shiyuanjie.cn/tags/Github/</link><description>Recent content in Github on Yuanjie-跑步爱好者，IT从业者。</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Mon, 18 Feb 2019 20:00:00 +0000</lastBuildDate><atom:link href="https://www.shiyuanjie.cn/tags/Github/index.xml" rel="self" type="application/rss+xml"/><item><title>个人网站搭建</title><link>https://www.shiyuanjie.cn/posts/Blog/%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/</link><pubDate>Mon, 18 Feb 2019 20:00:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Blog/%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/</guid><description>&lt;h3 id="套餐">套餐&lt;/h3>
+&lt;p>Github + Hexo + Travis&lt;/p>
+&lt;p>&lt;img src="https://www.shiyuanjie.cn/img/SelfBlog/Relationship.png" alt="Relationship">&lt;/p>
+&lt;ul>
+&lt;li>Github&lt;/li>
+&lt;/ul>
+&lt;p>源文件和网站资源的管理&lt;/p>
+&lt;ul>
+&lt;li>Hexo&lt;/li>
+&lt;/ul>
+&lt;p>网站内容的生成&lt;/p>
+&lt;ul>
+&lt;li>Travis&lt;/li>
+&lt;/ul>
+&lt;p>打通Github+Travis&lt;/p></description></item><item><title>七牛床图迁移至Github</title><link>https://www.shiyuanjie.cn/posts/Tools/%E4%B8%83%E7%89%9B%E5%BA%8A%E5%9B%BE%E8%BF%81%E7%A7%BB%E8%87%B3Github/</link><pubDate>Thu, 18 Oct 2018 15:10:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Tools/%E4%B8%83%E7%89%9B%E5%BA%8A%E5%9B%BE%E8%BF%81%E7%A7%BB%E8%87%B3Github/</guid><description>&lt;p>问题由于网站的大部分床图一直使用的是七牛的，近期&lt;a href="https://developer.qiniu.com/fusion/kb/1319/test-domain-access-restriction-rules">官网更新&lt;/a>，导致原测试域名已失效，之前在测试域名存储的图片无法&lt;code>访问、查看、下载&lt;/code>，网站文章关联的图片无法正常查看。所以决定&lt;strong>把图片从七牛迁移至Github来存储，弃用七牛云&lt;/strong>。&lt;/p>
+&lt;pre>&lt;code>七牛融合 CDN 测试域名（以 clouddn.com/qiniucdn.com/qiniudn.com/qnssl.com/qbox.me 结尾），每个域名每日限总流量 10GB，
+每个测试域名自创建起 30 个自然日后系统会自动回收，仅供测试使用，详情查看 七牛测试域名使用规范 。
+&lt;/code>&lt;/pre></description></item></channel></rss>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>敏捷 on Yuanjie-跑步爱好者，IT从业者。</title><link>https://www.shiyuanjie.cn/tags/%E6%95%8F%E6%8D%B7/</link><description>Recent content in 敏捷 on Yuanjie-跑步爱好者，IT从业者。</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Tue, 04 Jul 2017 17:00:00 +0000</lastBuildDate><atom:link href="https://www.shiyuanjie.cn/tags/%E6%95%8F%E6%8D%B7/index.xml" rel="self" type="application/rss+xml"/><item><title>用户故事地图</title><link>https://www.shiyuanjie.cn/posts/Book/%E7%94%A8%E6%88%B7%E6%95%85%E4%BA%8B%E5%9C%B0%E5%9B%BE/</link><pubDate>Tue, 04 Jul 2017 17:00:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Book/%E7%94%A8%E6%88%B7%E6%95%85%E4%BA%8B%E5%9C%B0%E5%9B%BE/</guid><description>书 用户故事地图 读后感 如果你在玩敏捷，定要看此书； 如果还没玩敏捷，更要看此书。 极力推荐！！！ 开始做产品前，一定要构建出产品全景图。不要担心花时间，只有这里理讲产品的故事路线，后面的故事情节才能不偏离主线。 故事地图，一定要完整 确立精准的用户画像 从用户的角度来讲解故事的发展 确定计划 使用</description></item><item><title>Showcase的正确姿势</title><link>https://www.shiyuanjie.cn/posts/Agile/Showcase%E7%9A%84%E6%AD%A3%E7%A1%AE%E5%A7%BF%E5%8A%BF/</link><pubDate>Tue, 18 Apr 2017 18:00:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Agile/Showcase%E7%9A%84%E6%AD%A3%E7%A1%AE%E5%A7%BF%E5%8A%BF/</guid><description>&lt;h2 id="为什么要进行showcase">为什么要进行Showcase&lt;/h2>
+&lt;blockquote>
+&lt;p>Showcase目的：&lt;strong>将迭代开发过程中，已完成的内容&lt;code>定期&lt;/code>给客户演示，让客户对迭代中的内容有&lt;code>直观&lt;/code>的了解&lt;/strong>&lt;/p>
+&lt;/blockquote>
+&lt;p>因此Showcase可以&lt;code>帮助&lt;/code>&lt;/p>
+&lt;ul>
+&lt;li>客户&lt;code>尽早&lt;/code>了解到迭代中的功能，做出及时&lt;code>调整&lt;/code>&lt;/li>
+&lt;li>团队&lt;code>少走&lt;/code>弯路，减少不必要的功能开发&lt;/li>
+&lt;li>客户与团队更好的沟通，达成一致的&lt;code>交付目标&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;h2 id="6步完成showcase">&lt;code>6&lt;/code>步完成Showcase&lt;/h2>
+&lt;p>&lt;img src="https://www.shiyuanjie.cn/img/Showcase/Showcase.png" alt="6步法">&lt;/p></description></item><item><title>如何组织一场Retro</title><link>https://www.shiyuanjie.cn/posts/Agile/%E5%A6%82%E4%BD%95%E7%BB%84%E7%BB%87%E4%B8%80%E5%9C%BARetro/</link><pubDate>Mon, 27 Mar 2017 16:40:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Agile/%E5%A6%82%E4%BD%95%E7%BB%84%E7%BB%87%E4%B8%80%E5%9C%BARetro/</guid><description>&lt;h2 id="retro">Retro&lt;/h2>
+&lt;h2 id="retro是什么">Retro是什么&lt;/h2>
+&lt;ul>
+&lt;li>敏捷团队中，针对一定周期内的活动进行的回顾会议。&lt;/li>
+&lt;li>&lt;code>Retrospective&lt;/code>的缩写&lt;/li>
+&lt;/ul>
+&lt;h2 id="retro要做什么">Retro要做什么&lt;/h2>
+&lt;blockquote>
+&lt;p>团队中的每个成员，&lt;code>均&lt;/code>可暴露以下&lt;code>所有行为&lt;/code>的&lt;strong>任何&lt;/strong>问题&lt;/p>
+&lt;/blockquote>
+&lt;ul>
+&lt;li>敏捷实践的落实情况&lt;/li>
+&lt;li>团队内部协作、工作流程&lt;/li>
+&lt;li>工作环境&lt;/li>
+&lt;li>&lt;code>其他角色&lt;/code>的工作方式、行为&lt;/li>
+&lt;li>&lt;strong>任何你想吐槽的问题&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>暴露问题的时候，一定有足够的&lt;code>事实&lt;/code>做依据和自己理想的&lt;code>做法&lt;/code>。&lt;/p>
+&lt;/blockquote></description></item><item><title>如何判断一个团队是敏捷团队？</title><link>https://www.shiyuanjie.cn/posts/Book/%E5%A6%82%E4%BD%95%E5%88%A4%E6%96%AD%E4%B8%80%E4%B8%AA%E5%9B%A2%E9%98%9F%E6%98%AF%E6%95%8F%E6%8D%B7%E5%9B%A2%E9%98%9F/</link><pubDate>Tue, 14 Mar 2017 14:30:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Book/%E5%A6%82%E4%BD%95%E5%88%A4%E6%96%AD%E4%B8%80%E4%B8%AA%E5%9B%A2%E9%98%9F%E6%98%AF%E6%95%8F%E6%8D%B7%E5%9B%A2%E9%98%9F/</guid><description>&lt;p>经常被客户问到，你们的敏捷团队是怎么定义的？敏捷的落实情况如何，项目开发中的敏捷实践有多少？&lt;/p>
+&lt;hr>
+&lt;p>个人的理解&lt;/p>
+&lt;ul>
+&lt;li>敏捷是一种团队状态，不是一个人的实践&lt;/li>
+&lt;li>评判一个团队是否敏捷，不能单看是否有敏捷实践，而是要看团队成员对敏捷的实践的落地&lt;/li>
+&lt;li>敏捷不是口号，而是实践。在迭代过程中，对敏捷实践的落地&lt;/li>
+&lt;li>敏捷是一个持续的过程，不能说今天我敏捷，明天我就不敏捷&lt;/li>
+&lt;li>敏捷是拥抱变化，但我们拥抱的是有节制、规划的变化&lt;/li>
+&lt;li>敏捷不是没有文档，只是轻文档，减少不必要的文档输出&lt;/li>
+&lt;/ul></description></item></channel></rss>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>工具 on Yuanjie-跑步爱好者，IT从业者。</title><link>https://www.shiyuanjie.cn/tags/%E5%B7%A5%E5%85%B7/</link><description>Recent content in 工具 on Yuanjie-跑步爱好者，IT从业者。</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Thu, 26 Dec 2019 18:30:00 +0000</lastBuildDate><atom:link href="https://www.shiyuanjie.cn/tags/%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml"/><item><title>PDF转换神器</title><link>https://www.shiyuanjie.cn/posts/Tools/PDF%E8%BD%AC%E6%8D%A2%E7%A5%9E%E5%99%A8/</link><pubDate>Thu, 26 Dec 2019 18:30:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Tools/PDF%E8%BD%AC%E6%8D%A2%E7%A5%9E%E5%99%A8/</guid><description>&lt;h3 id="前情">前情&lt;/h3>
+&lt;h4 id="背景今天要处理公司的一个会签材料两个pdf文件近70页的内容两个文件中分别有一处小错误需要修正后再合并为一个pdf文件">背景：今天要处理公司的一个会签材料，两个PDF文件，近70页的内容。两个文件中分别有一处小错误，需要修正后，再合并为一个PDF文件。&lt;/h4>
+&lt;h4 id="处理方法">处理方法&lt;/h4>
+&lt;ol>
+&lt;li>在原文件中，把小错误改了&lt;/li>
+&lt;li>再把错误页单独打印&lt;/li>
+&lt;li>再&lt;code>全部扫描&lt;/code>，从第一页到70页，扫了10分钟&lt;/li>
+&lt;li>发给审核人员。被告知，有一个小错误没有修复好，MMP，我想骂人&lt;/li>
+&lt;li>再次&lt;code>Repeat&lt;/code> 1-4步骤，10几分钟过去了&amp;hellip;.&lt;/li>
+&lt;/ol>
+&lt;p>内心各种CNM，有没有人来拯救我&lt;/p></description></item><item><title>更新package中依赖包版本</title><link>https://www.shiyuanjie.cn/posts/Tools/%E6%9B%B4%E6%96%B0package%E4%B8%AD%E4%BE%9D%E8%B5%96%E5%8C%85%E7%89%88%E6%9C%AC/</link><pubDate>Thu, 26 Dec 2019 09:20:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Tools/%E6%9B%B4%E6%96%B0package%E4%B8%AD%E4%BE%9D%E8%B5%96%E5%8C%85%E7%89%88%E6%9C%AC/</guid><description>需求：更新package.json中dependencies的版本号至最新 解决方案 安装npm-check-updates npm install -g npm-check-updates https://www.npmjs.com/package/npm-check-updates 运行ncu -u 更新package.json中依赖包版本 以上需求已解决 参考 https://flaviocopes.com/update-npm-dependencies/</description></item><item><title>网易蜗牛读书会员</title><link>https://www.shiyuanjie.cn/posts/Tools/%E7%BD%91%E6%98%93%E8%9C%97%E7%89%9B%E8%AF%BB%E4%B9%A6%E4%BC%9A%E5%91%98/</link><pubDate>Sat, 13 Jul 2019 17:10:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Tools/%E7%BD%91%E6%98%93%E8%9C%97%E7%89%9B%E8%AF%BB%E4%B9%A6%E4%BC%9A%E5%91%98/</guid><description>&lt;p>8本文为购买&lt;code>网易蜗牛读书&lt;/code>会员的过程，记录下来。&lt;/p>
+&lt;p>&lt;img src="https://yuedust.yuedu.126.net/snail_st/static/images/web_intro/logo_header.png?11ac8d10" alt="">&lt;/p>
+&lt;pre>&lt;code>时间出新知
+&lt;/code>&lt;/pre></description></item><item><title>洋葱阅读法</title><link>https://www.shiyuanjie.cn/posts/Book/%E6%B4%8B%E8%91%B1%E9%98%85%E8%AF%BB%E6%B3%95/</link><pubDate>Mon, 26 Nov 2018 15:40:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Book/%E6%B4%8B%E8%91%B1%E9%98%85%E8%AF%BB%E6%B3%95/</guid><description>&lt;h2 id="书">书&lt;/h2>
+&lt;p>&lt;img src="https://images-cn.ssl-images-amazon.com/images/I/5162btsZOPL.jpg" alt="">&lt;/p>
+&lt;hr>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>书名&lt;/th>
+&lt;th>洋葱阅读法&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>作者&lt;/td>
+&lt;td>彭小六&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>豆瓣评分&lt;/td>
+&lt;td>6.8&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>分类&lt;/td>
+&lt;td>工具&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>In 豆瓣&lt;/td>
+&lt;td>&lt;a href="https://book.douban.com/subject/30253066/">洋葱阅读法&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>读书方法&lt;/td>
+&lt;td>快速阅读&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>阅读时间&lt;/td>
+&lt;td>20181115-20181117(2H)&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table></description></item></channel></rss>

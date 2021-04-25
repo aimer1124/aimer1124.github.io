@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>E2E on Yuanjie-跑步爱好者，IT从业者。</title><link>https://www.shiyuanjie.cn/tags/E2E/</link><description>Recent content in E2E on Yuanjie-跑步爱好者，IT从业者。</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Fri, 02 Mar 2018 12:20:00 +0000</lastBuildDate><atom:link href="https://www.shiyuanjie.cn/tags/E2E/index.xml" rel="self" type="application/rss+xml"/><item><title>构建Headless 的 E2E 测试</title><link>https://www.shiyuanjie.cn/posts/UITest/%E5%A6%82%E4%BD%95%E6%9E%84%E5%BB%BA-Headless-%E7%9A%84-E2E-%E6%B5%8B%E8%AF%95/</link><pubDate>Fri, 02 Mar 2018 12:20:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/UITest/%E5%A6%82%E4%BD%95%E6%9E%84%E5%BB%BA-Headless-%E7%9A%84-E2E-%E6%B5%8B%E8%AF%95/</guid><description>&lt;h2 id="为什么要构建-headless-的-e2e-测试">为什么要&lt;code>构建 Headless 的 E2E 测试&lt;/code>&lt;/h2>
+&lt;pre>&lt;code>A headless browser is a great tool for automated testing and server environments where you don't need a visible UI shell. For example, you may want to run some tests against a real web page, create a PDF of it, or just inspect how the browser renders an URL.
+&lt;/code>&lt;/pre>&lt;p>结合上面的原因，我们还可以&lt;/p>
+&lt;ul>
+&lt;li>Headless结合 E2E 测试，可以让E2E 测试在非 GUI 的操作系统中运行&lt;/li>
+&lt;li>可以集成至 CI 环境中。让版本得到快速验证&lt;/li>
+&lt;/ul>
+&lt;h3 id="chrome-headless-的选取">Chrome Headless 的选取&lt;/h3>
+&lt;ul>
+&lt;li>Mac/Linux 的Chrome从59版本后，已经支持 Healess 模式的运行。Windows 的从60版本开始支持&lt;/li>
+&lt;li>所以选择一个你想要的 Chrome 版本，便可以进行 Headless 的测试&lt;/li>
+&lt;/ul>
+&lt;pre>&lt;code>chrome \
+--headless \ # Runs Chrome in headless mode.
+--disable-gpu \ # Temporarily needed if running on Windows.
+https://www.chromestatus.com # URL to open. Defaults to about:blank.
+&lt;/code>&lt;/pre></description></item><item><title>Layout测试</title><link>https://www.shiyuanjie.cn/posts/UITest/Layout%E6%B5%8B%E8%AF%95/</link><pubDate>Mon, 28 Nov 2016 15:40:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/UITest/Layout%E6%B5%8B%E8%AF%95/</guid><description>&lt;p>Web页面Layout测试，一直是测试人员比较头疼的事情。原因有&lt;/p>
+&lt;ul>
+&lt;li>当前市面中设备的&lt;code>分辨率&lt;/code>千差万别&lt;/li>
+&lt;li>浏览器版本众多，工作量很大&lt;/li>
+&lt;/ul>
+&lt;p>如何使用&lt;code>高效&lt;/code>的方式来测试Web Layout是否能正常，下面来看下&lt;a href="http://galenframework.com/">Galen&lt;/a>是如何帮助我们的&lt;/p>
+&lt;h2 id="galenhttpgalenframeworkcom的特点">&lt;a href="http://galenframework.com/">Galen&lt;/a>的特点&lt;/h2>
+&lt;ul>
+&lt;li>开源项目，License基于&lt;a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0&lt;/a>&lt;/li>
+&lt;li>可测试页面布局、响应式设计，支持功能测试&lt;/li>
+&lt;li>基于&lt;a href="http://www.seleniumhq.org/">Selenium&lt;/a>，对Selenium Grid支持很好，可直接在&lt;a href="https://saucelabs.com/">Sauce Labs&lt;/a>和 &lt;a href="https://www.browserstack.com/">BrowserStack&lt;/a>&lt;/li>
+&lt;li>支持并行测试，减少测试时间&lt;/li>
+&lt;li>语法简洁&lt;/li>
+&lt;/ul></description></item><item><title>Android UI自动化测试神器-Espresso录制</title><link>https://www.shiyuanjie.cn/posts/Android/Android-UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E7%A5%9E%E5%99%A8-Espresso%E5%BD%95%E5%88%B6/</link><pubDate>Fri, 25 Nov 2016 13:46:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Android/Android-UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E7%A5%9E%E5%99%A8-Espresso%E5%BD%95%E5%88%B6/</guid><description>&lt;p>Espresso Test Recorder的好处&lt;/p>
+&lt;ul>
+&lt;li>直接录制与APP的所有交互操作&lt;/li>
+&lt;li>支持在录制过程中添加断言&lt;/li>
+&lt;li>可直接生成&lt;code>可回放&lt;/code>的测试脚本，基本不需要做任何修改&lt;/li>
+&lt;/ul>
+&lt;p>原文地址: &lt;a href="https://developer.android.com/studio/test/espresso-test-recorder.html">Create UI Tests with Espresso Test Recorder&lt;/a>，以下为正文&lt;/p>
+&lt;hr>
+&lt;blockquote>
+&lt;p>注意: Espresso Test Recorder在AndroidStudio 2.2 Beta版本之后才有。&lt;/p>
+&lt;/blockquote>
+&lt;p>Espresso Test Recorder可以在不写一行代码的情况下创建UI测试。通过录制一个测试场景，你可以记录设备的交互并在APP的部分快照中添加断言来验证元素。Espresso Test Recorder会保存录制并自动生成对应的UI测试，并可直接运行来测试你的APP。&lt;/p>
+&lt;p>Espresso Test Recorder编写的测试基于&lt;a href="https://google.github.io/android-testing-support-library/docs/espresso/">Espresso Testing framework&lt;/a>，API在&lt;a href="https://developer.android.com/topic/libraries/testing-support-library/index.html">Android Testing Support Library&lt;/a>。Espresso API鼓励你创建基于用户操作的简洁且可信赖的UI测试。通过使用expectations、interactions和assertions而不是底层APP的Activity和Views，这样的结构防止了测试的脆弱性并优化测试运行速度。&lt;/p></description></item><item><title>PageObject分离E2E测试</title><link>https://www.shiyuanjie.cn/posts/UITest/PageObject%E5%88%86%E7%A6%BBE2E%E6%B5%8B%E8%AF%95/</link><pubDate>Thu, 24 Nov 2016 14:20:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/UITest/PageObject%E5%88%86%E7%A6%BBE2E%E6%B5%8B%E8%AF%95/</guid><description>&lt;h2 id="pageobject">PageObject&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="http://martinfowler.com">老马&lt;/a>关于&lt;a href="http://martinfowler.com/bliki/PageObject.html">PageObject&lt;/a>的定义&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>It should allow a software client to do anything and see anything that a human can&lt;/p>
+&lt;/blockquote>
+&lt;ul>
+&lt;li>PageObject到底是个啥&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>将针对Page的&lt;code>所有操作&lt;/code>进行&lt;code>统一&lt;/code>封装，如: 输入框中输入内容、点击按钮等&lt;/p>
+&lt;/blockquote></description></item><item><title>E2E测试之Headless browser容器化</title><link>https://www.shiyuanjie.cn/posts/UITest/E2E%E6%B5%8B%E8%AF%95%E4%B9%8BHeadless-browser%E5%AE%B9%E5%99%A8%E5%8C%96/</link><pubDate>Mon, 01 Aug 2016 20:00:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/UITest/E2E%E6%B5%8B%E8%AF%95%E4%B9%8BHeadless-browser%E5%AE%B9%E5%99%A8%E5%8C%96/</guid><description>&lt;h1 id="目的">目的&lt;/h1>
+&lt;ul>
+&lt;li>E2E测试执行过程中&lt;strong>不依赖UI&lt;/strong>界面&lt;/li>
+&lt;li>可在*nix系统中运行&lt;/li>
+&lt;li>为什么不用&lt;code>PhantomJS&lt;/code>,&lt;a href="http://www.protractortest.org/#/browser-setup#setting-up-phantomjs">Protractor官方不推荐使用&lt;code>PhantomJS&lt;/code>来测试&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;pre>&lt;code>We recommend against using PhantomJS for tests with Protractor. There are many reported issues with PhantomJS crashing and behaving differently from real browsers.
+&lt;/code>&lt;/pre>&lt;h1 id="docker">Docker&lt;/h1>
+&lt;h2 id="安装">安装&lt;/h2>
+&lt;ul>
+&lt;li>下载系统所需要的安装包，下载地址：&lt;a href="https://www.docker.com/products/docker">https://www.docker.com/products/docker&lt;/a>&lt;/li>
+&lt;li>注册&lt;a href="https://hub.docker.com/">https://hub.docker.com/&lt;/a>账号&lt;/li>
+&lt;li>使用&lt;code>pull&lt;/code>来获取docker 镜像&lt;code>protractor-headless&lt;/code>，此过程会比较慢，耐心等待
+docker hub地址：&lt;a href="https://hub.docker.com/r/webnicer/protractor-headless/">https://hub.docker.com/r/webnicer/protractor-headless/&lt;/a>
+git hub地址：&lt;a href="https://github.com/jciolek/docker-protractor-headless">https://github.com/jciolek/docker-protractor-headless&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;pre>&lt;code>docker pull webnicer/protractor-headless
+&lt;/code>&lt;/pre></description></item><item><title>Protractor End to End Testing</title><link>https://www.shiyuanjie.cn/posts/UITest/Protractor-End-to-End-Testing/</link><pubDate>Thu, 28 Apr 2016 11:06:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/UITest/Protractor-End-to-End-Testing/</guid><description>&lt;h1 id="protractor">Protractor&lt;/h1>
+&lt;pre>&lt;code>Protractor is an end-to-end test framework for AngularJS applications.
+Protractor runs tests against your application running in a real browser, interacting with it as a user would.
+&lt;/code>&lt;/pre>&lt;h2 id="是什么">是什么&lt;/h2>
+&lt;ul>
+&lt;li>基于&lt;code>Node.js&lt;/code>的程序&lt;/li>
+&lt;li>使用&lt;code>Jasmine&lt;/code>测试框架测试接口,针对&lt;code>AngularJS&lt;/code>的应用程序&lt;/li>
+&lt;li>官网： &lt;a href="http://angular.github.io/protractor/#/">http://angular.github.io/protractor/#/&lt;/a>&lt;/li>
+&lt;li>Github: &lt;a href="https://github.com/angular/protractor">https://github.com/angular/protractor&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="功能">功能&lt;/h2>
+&lt;ul>
+&lt;li>模拟真实的用户操作行为&lt;/li>
+&lt;li>针对&lt;code>AngularJS&lt;/code>中的Element不需要做特殊的处理，普通HTML元素也同样支持&lt;/li>
+&lt;li>智能等待，不需要为页面中的加载和同步显示做特殊的等待时间处理&lt;/li>
+&lt;/ul></description></item></channel></rss>

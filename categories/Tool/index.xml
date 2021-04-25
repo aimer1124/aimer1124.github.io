@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tool on Yuanjie-跑步爱好者，IT从业者。</title><link>https://www.shiyuanjie.cn/categories/Tool/</link><description>Recent content in Tool on Yuanjie-跑步爱好者，IT从业者。</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Thu, 26 Mar 2020 17:21:38 +0800</lastBuildDate><atom:link href="https://www.shiyuanjie.cn/categories/Tool/index.xml" rel="self" type="application/rss+xml"/><item><title>ECS Tips</title><link>https://www.shiyuanjie.cn/posts/Aliyun/ECS-tips/</link><pubDate>Thu, 26 Mar 2020 17:21:38 +0800</pubDate><guid>https://www.shiyuanjie.cn/posts/Aliyun/ECS-tips/</guid><description>SSH 设置密钥对后，无法使用账号登录 设置使用SSH的密钥对登录后，无法正常使用账号+密码的方式进行登录 官方解释： 如果使用SSH密钥对登录Linux实例，将会禁用密码登录，以提高安全性。 参考：https://help.aliyun.com/document_detail/51792.h</description></item><item><title>一行命令连接ECS</title><link>https://www.shiyuanjie.cn/posts/Aliyun/one-command-connect-ecs/</link><pubDate>Wed, 25 Mar 2020 16:40:04 +0800</pubDate><guid>https://www.shiyuanjie.cn/posts/Aliyun/one-command-connect-ecs/</guid><description>目标：一行命令，直接连接至阿里云的ECS。不需要手动输入IP/Port/User/Pwd。 ECS 创建密钥对 打开ECS的&amp;quot;网络与安全&amp;rdquo;..&amp;gt;&amp;quot;密钥对&amp;rdquo; 左上角“创建密钥对”，完成密钥创建 保存生成的密钥对至本机 绑定密钥对 在生成的密钥中，点击</description></item><item><title>Alfred中的Workflow配制</title><link>https://www.shiyuanjie.cn/posts/Tools/Alfred_Workflows/</link><pubDate>Sat, 11 Jan 2020 12:00:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Tools/Alfred_Workflows/</guid><description>是什么 Alfred https://www.alfredapp.com/ 官方定义： 1 Alfred is an award-winning app for macOS which boosts your efficiency with hotkeys, keywords, text expansion and more. Search your Mac and the web, and be more productive with custom actions to control your Mac. 自己理解 通过定制化的方法，提高使用macOS 效率的工具。 补充： Alfred提供了Powerpack的收费功能，用于深度定制。 建议购买Powerpack。 Workflows Workflows是用于定制Alf</description></item><item><title>选择一个好的Hexo主题</title><link>https://www.shiyuanjie.cn/posts/Blog/%E9%80%89%E6%8B%A9%E4%B8%80%E4%B8%AA%E5%A5%BD%E7%9A%84Hexo%E4%B8%BB%E9%A2%98/</link><pubDate>Sat, 04 Jan 2020 15:55:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Blog/%E9%80%89%E6%8B%A9%E4%B8%80%E4%B8%AA%E5%A5%BD%E7%9A%84Hexo%E4%B8%BB%E9%A2%98/</guid><description>诉求：找一个好用的Hexo主题 方法 去官网看了下，Theme有285个，按名字排名。没有任何星级或者推荐之类的，看了下，眼花缭乱。https://hexo.io/themes/ 在知乎上面搜索了下，高赞答案：爬取Theme的Star数量，用数据说话。https://www.zhihu</description></item><item><title>PDF转换神器</title><link>https://www.shiyuanjie.cn/posts/Tools/PDF%E8%BD%AC%E6%8D%A2%E7%A5%9E%E5%99%A8/</link><pubDate>Thu, 26 Dec 2019 18:30:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Tools/PDF%E8%BD%AC%E6%8D%A2%E7%A5%9E%E5%99%A8/</guid><description>&lt;h3 id="前情">前情&lt;/h3>
+&lt;h4 id="背景今天要处理公司的一个会签材料两个pdf文件近70页的内容两个文件中分别有一处小错误需要修正后再合并为一个pdf文件">背景：今天要处理公司的一个会签材料，两个PDF文件，近70页的内容。两个文件中分别有一处小错误，需要修正后，再合并为一个PDF文件。&lt;/h4>
+&lt;h4 id="处理方法">处理方法&lt;/h4>
+&lt;ol>
+&lt;li>在原文件中，把小错误改了&lt;/li>
+&lt;li>再把错误页单独打印&lt;/li>
+&lt;li>再&lt;code>全部扫描&lt;/code>，从第一页到70页，扫了10分钟&lt;/li>
+&lt;li>发给审核人员。被告知，有一个小错误没有修复好，MMP，我想骂人&lt;/li>
+&lt;li>再次&lt;code>Repeat&lt;/code> 1-4步骤，10几分钟过去了&amp;hellip;.&lt;/li>
+&lt;/ol>
+&lt;p>内心各种CNM，有没有人来拯救我&lt;/p></description></item><item><title>更新package中依赖包版本</title><link>https://www.shiyuanjie.cn/posts/Tools/%E6%9B%B4%E6%96%B0package%E4%B8%AD%E4%BE%9D%E8%B5%96%E5%8C%85%E7%89%88%E6%9C%AC/</link><pubDate>Thu, 26 Dec 2019 09:20:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Tools/%E6%9B%B4%E6%96%B0package%E4%B8%AD%E4%BE%9D%E8%B5%96%E5%8C%85%E7%89%88%E6%9C%AC/</guid><description>需求：更新package.json中dependencies的版本号至最新 解决方案 安装npm-check-updates npm install -g npm-check-updates https://www.npmjs.com/package/npm-check-updates 运行ncu -u 更新package.json中依赖包版本 以上需求已解决 参考 https://flaviocopes.com/update-npm-dependencies/</description></item><item><title>网易蜗牛读书会员</title><link>https://www.shiyuanjie.cn/posts/Tools/%E7%BD%91%E6%98%93%E8%9C%97%E7%89%9B%E8%AF%BB%E4%B9%A6%E4%BC%9A%E5%91%98/</link><pubDate>Sat, 13 Jul 2019 17:10:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Tools/%E7%BD%91%E6%98%93%E8%9C%97%E7%89%9B%E8%AF%BB%E4%B9%A6%E4%BC%9A%E5%91%98/</guid><description>&lt;p>8本文为购买&lt;code>网易蜗牛读书&lt;/code>会员的过程，记录下来。&lt;/p>
+&lt;p>&lt;img src="https://yuedust.yuedu.126.net/snail_st/static/images/web_intro/logo_header.png?11ac8d10" alt="">&lt;/p>
+&lt;pre>&lt;code>时间出新知
+&lt;/code>&lt;/pre></description></item><item><title>整理TickTick和邮箱</title><link>https://www.shiyuanjie.cn/posts/Upgrade/%E6%95%B4%E7%90%86TickTick%E5%92%8C%E9%82%AE%E7%AE%B1/</link><pubDate>Tue, 11 Jun 2019 16:00:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Upgrade/%E6%95%B4%E7%90%86TickTick%E5%92%8C%E9%82%AE%E7%AE%B1/</guid><description>&lt;h3 id="邮箱">邮箱&lt;/h3>
+&lt;p>自己在工作中使用Gmail有4年了，一直坚持在使用一些过滤器和分组整理各种邮件。今天邮箱里面的Filter和Label重新进行了梳理，感觉再次清爽了很多。&lt;/p>
+&lt;h4 id="规则">规则&lt;/h4>
+&lt;ul>
+&lt;li>把Filter后不重要或不需要阅读的邮件，直接标记为&lt;code>已读&lt;/code>&lt;/li>
+&lt;li>将Label的分组，依据当前的工作状态与时间关系再次&lt;code>分组&lt;/code>。如将&lt;code>去年&lt;/code>的同类Label进行归纳至&lt;code>年份&lt;/code>Label&lt;/li>
+&lt;li>将不重要的Label组设置为&lt;code>show if unread&lt;/code>&lt;/li>
+&lt;li>删除几乎不会有邮件进入的Label(不记得自己之前为什么会创建这些Label)&lt;/li>
+&lt;li>合并部分重叠度很多的Label&lt;/li>
+&lt;/ul></description></item><item><title>印象笔记支持Markdown</title><link>https://www.shiyuanjie.cn/posts/Tools/%E5%8D%B0%E8%B1%A1%E7%AC%94%E8%AE%B0%E6%94%AF%E6%8C%81Markdown/</link><pubDate>Thu, 23 Aug 2018 14:50:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Tools/%E5%8D%B0%E8%B1%A1%E7%AC%94%E8%AE%B0%E6%94%AF%E6%8C%81Markdown/</guid><description>最近很长一断时间都比较喜欢用Markdown来编写文件，自己日常的工作和记录也一直都在用Evernote来进行. 看到Evernote在8.20发布的Mac 8.2.0 beta1版本支持Markdown格式的笔记了，赶紧来试下用。 版本支持 仅Mac的Beta版本支持此功能 版本下载 地址：http</description></item><item><title>我的工具集</title><link>https://www.shiyuanjie.cn/posts/Tools/%E6%88%91%E7%9A%84%E5%B7%A5%E5%85%B7%E9%9B%86/</link><pubDate>Wed, 21 Mar 2018 14:30:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Tools/%E6%88%91%E7%9A%84%E5%B7%A5%E5%85%B7%E9%9B%86/</guid><description>&lt;pre>&lt;code>把自己经常使用的工具和网址梳理出来，进行一个较完整的回顾。
+Last Update:20200323，持续维护...
+&lt;/code>&lt;/pre>&lt;p>&lt;img src="https://www.shiyuanjie.cn/img/%E6%88%91%E7%9A%84%E5%B7%A5%E5%85%B7%E9%9B%86.png" alt="我的工具集">&lt;/p>
+&lt;ul>
+&lt;li>工具下载地址(持续更新)：
+&lt;ul>
+&lt;li>链接: &lt;a href="https://pan.baidu.com/s/1z9NNFc2XQeqbPDq8jdcQhQ">https://pan.baidu.com/s/1z9NNFc2XQeqbPDq8jdcQhQ&lt;/a>&lt;/li>
+&lt;li>提取码: wgav&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>我的设备&lt;/p>
+&lt;pre>&lt;code>PC：Mac
+手机：Android
+&lt;/code>&lt;/pre></description></item><item><title>MarkDown保存至印象笔记</title><link>https://www.shiyuanjie.cn/posts/Tools/MarkDown%E4%BF%9D%E5%AD%98%E8%87%B3%E5%8D%B0%E8%B1%A1%E7%AC%94%E8%AE%B0/</link><pubDate>Sun, 15 Oct 2017 14:30:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Tools/MarkDown%E4%BF%9D%E5%AD%98%E8%87%B3%E5%8D%B0%E8%B1%A1%E7%AC%94%E8%AE%B0/</guid><description>&lt;pre>&lt;code>通过 Sumlime Text3 来实现将 MarkDown 文件完美保存至 印象笔记中。
+&lt;/code>&lt;/pre>&lt;h1 id="step1-安装evernote包">Step1: 安装Evernote包&lt;/h1>
+&lt;ul>
+&lt;li>打开 Sumlime Text3&lt;/li>
+&lt;li>&lt;code>cmd + shift + p&lt;/code>打开command pattern&lt;/li>
+&lt;li>输入&lt;code>Package Controll: Install Package&lt;/code>，回车&lt;/li>
+&lt;li>输入Evernote，等待安装成功。Evernote包地址：&lt;a href="https://packagecontrol.io/packages/Evernote">https://packagecontrol.io/packages/Evernote&lt;/a>&lt;/li>
+&lt;li>安装结束后，在&lt;code>Package Setting&lt;/code>中会有&lt;code>Evernote&lt;/code>&lt;/li>
+&lt;li>&lt;code>cmd + shift + p&lt;/code>打开command pattern，输入Evernote，查看是否有Evernote对应的功能列表显示&lt;/li>
+&lt;/ul>
+&lt;h1 id="step2-获取印象笔记的developer-token">Step2: 获取印象笔记的Developer Token&lt;/h1>
+&lt;ul>
+&lt;li>登录&lt;a href="https://app.yinxiang.com/api/DeveloperToken.action">https://app.yinxiang.com/api/DeveloperToken.action&lt;/a>&lt;/li>
+&lt;li>如果没有内容，选择新增一个developer token&lt;/li>
+&lt;/ul>
+&lt;h1 id="step3-配制sublime-text中的-evernote">Step3: 配制Sublime Text中的 Evernote&lt;/h1>
+&lt;ul>
+&lt;li>&lt;code>Package Settings&lt;/code> &amp;ndash;&amp;gt; &lt;code>Evernote&lt;/code> &amp;ndash;&amp;gt; &lt;code>Settings User&lt;/code>&lt;/li>
+&lt;li>默认打开内容为空，设置内容如下(Step2中获取的内容)&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-json" data-lang="json">{
+&lt;span style="color:#f92672">&amp;#34;token&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;Token内容，那一串长的字符&amp;#34;&lt;/span>,
+&lt;span style="color:#f92672">&amp;#34;noteStoreUrl&amp;#34;&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;StoreUrl&amp;#34;&lt;/span>
+}
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>至此，已经配制&lt;code>完成&lt;/code>。&lt;/p></description></item><item><title>JMeter与Docker</title><link>https://www.shiyuanjie.cn/posts/JMeter/jmeter%E4%B8%8EDocker/</link><pubDate>Wed, 25 Jan 2017 21:50:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/JMeter/jmeter%E4%B8%8EDocker/</guid><description>&lt;h1 id="jmeter_docker">JMeter_docker&lt;/h1>
+&lt;p>Use JMeter with Docker&lt;/p>
+&lt;ul>
+&lt;li>Replace &lt;code>Demo.jmx&lt;/code>&lt;/li>
+&lt;li>Change the following about &lt;code>Demo.jmx&lt;/code> file&lt;/li>
+&lt;/ul>
+&lt;pre>&lt;code>COPY Demo.jmx /opt/jmeter
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>build Docker file in root folder&lt;/li>
+&lt;/ul>
+&lt;pre>&lt;code>docker build -t performanceDocker .
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>run docker with performance testing&lt;/li>
+&lt;/ul></description></item><item><title>获取Chrome浏览器</title><link>https://www.shiyuanjie.cn/posts/Tools/%E8%8E%B7%E5%8F%96Chrome%E6%B5%8F%E8%A7%88%E5%99%A8/</link><pubDate>Wed, 18 Jan 2017 14:50:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Tools/%E8%8E%B7%E5%8F%96Chrome%E6%B5%8F%E8%A7%88%E5%99%A8/</guid><description>&lt;h2 id="由来">由来&lt;/h2>
+&lt;p>项目的测试需求，需要针对64位 Chrome 42+的各个&lt;code>稳定版&lt;/code>本进行测试,但安装环境又无法&lt;code>直接访问外网&lt;/code>进行&lt;code>在线版本&lt;/code>安装，因此需要搜集已发布的&lt;code>离线安装&lt;/code>版本。作为&lt;code>安装源&lt;/code>。&lt;/p>
+&lt;blockquote>
+&lt;p>首先，来认识下Chrome到底有哪些版本。&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="chromewwwgooglecomchrome-vs-chromiumwwwchromiumorg">&lt;a href="www.google.com/chrome">Chrome&lt;/a> VS &lt;a href="www.chromium.org">Chromium&lt;/a>&lt;/h2>
+&lt;h3 id="区别">区别&lt;/h3>
+&lt;blockquote>
+&lt;p>The Chromium projects include Chromium and Chromium OS, the open-source projects behind the Google Chrome browser and Google Chrome OS, respectively. This site houses the documentation and code related to the Chromium projects and is intended for developers interested in learning about and contributing to the open-source projects.&lt;/p>
+&lt;/blockquote>
+&lt;p>简而言之，Chrome是基于 &lt;strong>开源项目&lt;/strong> Chromium的 。新功能会优先在Chromium发布。&lt;/p></description></item><item><title>Layout测试</title><link>https://www.shiyuanjie.cn/posts/UITest/Layout%E6%B5%8B%E8%AF%95/</link><pubDate>Mon, 28 Nov 2016 15:40:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/UITest/Layout%E6%B5%8B%E8%AF%95/</guid><description>&lt;p>Web页面Layout测试，一直是测试人员比较头疼的事情。原因有&lt;/p>
+&lt;ul>
+&lt;li>当前市面中设备的&lt;code>分辨率&lt;/code>千差万别&lt;/li>
+&lt;li>浏览器版本众多，工作量很大&lt;/li>
+&lt;/ul>
+&lt;p>如何使用&lt;code>高效&lt;/code>的方式来测试Web Layout是否能正常，下面来看下&lt;a href="http://galenframework.com/">Galen&lt;/a>是如何帮助我们的&lt;/p>
+&lt;h2 id="galenhttpgalenframeworkcom的特点">&lt;a href="http://galenframework.com/">Galen&lt;/a>的特点&lt;/h2>
+&lt;ul>
+&lt;li>开源项目，License基于&lt;a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0&lt;/a>&lt;/li>
+&lt;li>可测试页面布局、响应式设计，支持功能测试&lt;/li>
+&lt;li>基于&lt;a href="http://www.seleniumhq.org/">Selenium&lt;/a>，对Selenium Grid支持很好，可直接在&lt;a href="https://saucelabs.com/">Sauce Labs&lt;/a>和 &lt;a href="https://www.browserstack.com/">BrowserStack&lt;/a>&lt;/li>
+&lt;li>支持并行测试，减少测试时间&lt;/li>
+&lt;li>语法简洁&lt;/li>
+&lt;/ul></description></item><item><title>Android UI自动化测试神器-Espresso录制</title><link>https://www.shiyuanjie.cn/posts/Android/Android-UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E7%A5%9E%E5%99%A8-Espresso%E5%BD%95%E5%88%B6/</link><pubDate>Fri, 25 Nov 2016 13:46:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Android/Android-UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E7%A5%9E%E5%99%A8-Espresso%E5%BD%95%E5%88%B6/</guid><description>&lt;p>Espresso Test Recorder的好处&lt;/p>
+&lt;ul>
+&lt;li>直接录制与APP的所有交互操作&lt;/li>
+&lt;li>支持在录制过程中添加断言&lt;/li>
+&lt;li>可直接生成&lt;code>可回放&lt;/code>的测试脚本，基本不需要做任何修改&lt;/li>
+&lt;/ul>
+&lt;p>原文地址: &lt;a href="https://developer.android.com/studio/test/espresso-test-recorder.html">Create UI Tests with Espresso Test Recorder&lt;/a>，以下为正文&lt;/p>
+&lt;hr>
+&lt;blockquote>
+&lt;p>注意: Espresso Test Recorder在AndroidStudio 2.2 Beta版本之后才有。&lt;/p>
+&lt;/blockquote>
+&lt;p>Espresso Test Recorder可以在不写一行代码的情况下创建UI测试。通过录制一个测试场景，你可以记录设备的交互并在APP的部分快照中添加断言来验证元素。Espresso Test Recorder会保存录制并自动生成对应的UI测试，并可直接运行来测试你的APP。&lt;/p>
+&lt;p>Espresso Test Recorder编写的测试基于&lt;a href="https://google.github.io/android-testing-support-library/docs/espresso/">Espresso Testing framework&lt;/a>，API在&lt;a href="https://developer.android.com/topic/libraries/testing-support-library/index.html">Android Testing Support Library&lt;/a>。Espresso API鼓励你创建基于用户操作的简洁且可信赖的UI测试。通过使用expectations、interactions和assertions而不是底层APP的Activity和Views，这样的结构防止了测试的脆弱性并优化测试运行速度。&lt;/p></description></item><item><title>PageObject分离E2E测试</title><link>https://www.shiyuanjie.cn/posts/UITest/PageObject%E5%88%86%E7%A6%BBE2E%E6%B5%8B%E8%AF%95/</link><pubDate>Thu, 24 Nov 2016 14:20:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/UITest/PageObject%E5%88%86%E7%A6%BBE2E%E6%B5%8B%E8%AF%95/</guid><description>&lt;h2 id="pageobject">PageObject&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="http://martinfowler.com">老马&lt;/a>关于&lt;a href="http://martinfowler.com/bliki/PageObject.html">PageObject&lt;/a>的定义&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>It should allow a software client to do anything and see anything that a human can&lt;/p>
+&lt;/blockquote>
+&lt;ul>
+&lt;li>PageObject到底是个啥&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>将针对Page的&lt;code>所有操作&lt;/code>进行&lt;code>统一&lt;/code>封装，如: 输入框中输入内容、点击按钮等&lt;/p>
+&lt;/blockquote></description></item><item><title>MAC制作GIF及设置GIF循环播放</title><link>https://www.shiyuanjie.cn/posts/UITest/Mac%E5%88%B6%E4%BD%9CGIF%E5%8F%8A%E8%AE%BE%E7%BD%AEGIF%E5%BE%AA%E7%8E%AF%E6%92%AD%E6%94%BE/</link><pubDate>Wed, 23 Nov 2016 16:20:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/UITest/Mac%E5%88%B6%E4%BD%9CGIF%E5%8F%8A%E8%AE%BE%E7%BD%AEGIF%E5%BE%AA%E7%8E%AF%E6%92%AD%E6%94%BE/</guid><description>&lt;blockquote>
+&lt;p>需求：在Mac电脑中录制操作，并生成GIF文件。GIF文件需要循环播放。&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="工具选择">工具选择&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="http://recordit.co/">Recordit&lt;/a>，7.2M大小，Free&lt;/li>
+&lt;li>&lt;a href="http://www.lcdf.org/gifsicle/">gifsicle&lt;/a>，&lt;code>加工&lt;/code>GIF图片工具&lt;/li>
+&lt;/ul></description></item><item><title>Espresso入门</title><link>https://www.shiyuanjie.cn/posts/UITest/Espresso%E5%85%A5%E9%97%A8/</link><pubDate>Wed, 23 Nov 2016 14:20:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/UITest/Espresso%E5%85%A5%E9%97%A8/</guid><description>&lt;h2 id="espresso">Espresso&lt;/h2>
+&lt;ul>
+&lt;li>Espresso是什么&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>由Google提供的开源native测试框架。支持所有版本的Android API.&lt;/p>
+&lt;/blockquote>
+&lt;ul>
+&lt;li>如何测试
+&lt;ul>
+&lt;li>通过使用&lt;code>Rule&lt;/code>来获取&lt;code>Activity&lt;/code>&lt;/li>
+&lt;li>针对&lt;code>Activity&lt;/code>中的元素进行操作，进而达到测试的目的
+&lt;img src="https://www.shiyuanjie.cn/img/espressoDemo/Espresso%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86.png" alt="Espresso工作原理">&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul></description></item><item><title>Android模拟器环境搭建</title><link>https://www.shiyuanjie.cn/posts/Android/Android%E6%A8%A1%E6%8B%9F%E5%99%A8%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link><pubDate>Tue, 22 Nov 2016 14:20:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Android/Android%E6%A8%A1%E6%8B%9F%E5%99%A8%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</guid><description>&lt;h2 id="目的">目的&lt;/h2>
+&lt;ul>
+&lt;li>Mac电脑上面搭建Android模拟器&lt;/li>
+&lt;li>将APP运行在模拟器中&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>自己最近刚把电脑重新安装，顺便梳理下整修安装过程。为后面研究&lt;a href="https://developer.android.com/training/testing/ui-testing/espresso-testing.html">Espresso&lt;/a>做准备&lt;/p>
+&lt;/blockquote></description></item><item><title>JMeter与BeanShell的化学反应</title><link>https://www.shiyuanjie.cn/posts/JMeter/JMeter%E4%B8%8EBeanshell%E7%9A%84%E5%8C%96%E5%AD%A6%E5%8F%8D%E5%BA%94/</link><pubDate>Tue, 01 Nov 2016 15:53:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/JMeter/JMeter%E4%B8%8EBeanshell%E7%9A%84%E5%8C%96%E5%AD%A6%E5%8F%8D%E5%BA%94/</guid><description>&lt;h2 id="jmeter是什么">JMeter是什么&lt;/h2>
+&lt;p>&lt;a href="http://jmeter.apache.org/">http://jmeter.apache.org/&lt;/a>，性能测试工具。&lt;/p>
+&lt;ul>
+&lt;li>基于&lt;code>Java&lt;/code>的&lt;code>开源&lt;/code>性能测试工具&lt;/li>
+&lt;li>支持测试的协议
+&lt;ul>
+&lt;li>Web - HTTP, HTTPS&lt;/li>
+&lt;li>SOAP / REST&lt;/li>
+&lt;li>FTP&lt;/li>
+&lt;li>Database&lt;/li>
+&lt;li>LDAP&lt;/li>
+&lt;li>Message-oriented middleware (MOM)&lt;/li>
+&lt;li>Mail&lt;/li>
+&lt;li>Native commands or shell scripts&lt;/li>
+&lt;li>TCP&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>支持多线程并发&lt;/li>
+&lt;li>完善的GUI界面，用于快速设计测试计划和调试测试脚本&lt;/li>
+&lt;li>完整测试结果，便于结果分析&lt;/li>
+&lt;li>JMeter不会执行HTML中的JavaScript脚本&lt;/li>
+&lt;/ul>
+&lt;h2 id="beanshell是什么">BeanShell是什么&lt;/h2>
+&lt;p>&lt;a href="http://beanshell.org/">http://beanshell.org/&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>基于&lt;code>Java&lt;/code>的免费解释器&lt;/li>
+&lt;li>松散类型的脚本语言&lt;/li>
+&lt;li>动态执行的Java代码&lt;/li>
+&lt;li>只有150K大小的JAR包&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>BeanShell既然可以编写Java代码，那么我们就可以在使用JMeter测试的过程中，使用Java语法功能，且支持关键字&lt;code>高亮&lt;/code>，进行业务逻辑的处理，进而达到&lt;code>场景&lt;/code>功能的设计。&lt;/p>
+&lt;/blockquote></description></item><item><title>JMeter-自动生成测试Report</title><link>https://www.shiyuanjie.cn/posts/JMeter/JMeter-%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90%E6%B5%8B%E8%AF%95Report/</link><pubDate>Fri, 23 Sep 2016 18:53:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/JMeter/JMeter-%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90%E6%B5%8B%E8%AF%95Report/</guid><description>&lt;h1 id="dashboard-report">Dashboard Report&lt;/h1>
+&lt;p>&lt;a href="http://jmeter.apache.org/changes.html">JMeter3.0&lt;/a>版本发布后，开始支持&lt;code>动态&lt;/code>报表报告。让测试人员编写&lt;code>性能测试报告&lt;/code>更加容易。&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>支持在&lt;code>测试结束&lt;/code>后，生成测试报告&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;code>导入&lt;/code>之前测试结果，生成测试报告&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>下面就看下如何使用这个&lt;code>新特性&lt;/code>，生成测试报告&lt;/p></description></item><item><title>API开发神器-Postman</title><link>https://www.shiyuanjie.cn/posts/APITest/API%E5%BC%80%E5%8F%91%E7%A5%9E%E5%99%A8-Postman/</link><pubDate>Fri, 24 Jun 2016 19:50:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/APITest/API%E5%BC%80%E5%8F%91%E7%A5%9E%E5%99%A8-Postman/</guid><description>&lt;p>&lt;code>Postman helps you develop APIs faster.&lt;/code>&lt;/p>
+&lt;h1 id="豪华午餐">豪华午餐&lt;/h1>
+&lt;p>&lt;img src="https://www.shiyuanjie.cn/img/Postman.png" alt="Postman">&lt;/p>
+&lt;h2 id="postman">Postman&lt;/h2>
+&lt;p>&lt;code>构建、管理、文档化&lt;/code>API&lt;/p>
+&lt;ul>
+&lt;li>在线安装&lt;/li>
+&lt;li>Chrome插件版
+&lt;a href="https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop">https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop&lt;/a>&lt;/li>
+&lt;li>MAC版
+&lt;a href="https://www.getpostman.com/app/postman-osx">https://www.getpostman.com/app/postman-osx&lt;/a>&lt;/li>
+&lt;li>离线安装
+使用已经安装好的Postman文件夹，&lt;code>机器&lt;/code>默认存放目录：/Library/Application\ Support/Google/Chrome/Default/Extensions
+进入&lt;code>chrome://extensions/&lt;/code>，选择&lt;code>Load unpacked extensions&lt;/code>，加载Postman的文件夹&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://www.shiyuanjie.cn/img/Postman-Newman.png" alt="Newman(我真的不是MP3)">&lt;/p></description></item><item><title>Protractor End to End Testing</title><link>https://www.shiyuanjie.cn/posts/UITest/Protractor-End-to-End-Testing/</link><pubDate>Thu, 28 Apr 2016 11:06:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/UITest/Protractor-End-to-End-Testing/</guid><description>&lt;h1 id="protractor">Protractor&lt;/h1>
+&lt;pre>&lt;code>Protractor is an end-to-end test framework for AngularJS applications.
+Protractor runs tests against your application running in a real browser, interacting with it as a user would.
+&lt;/code>&lt;/pre>&lt;h2 id="是什么">是什么&lt;/h2>
+&lt;ul>
+&lt;li>基于&lt;code>Node.js&lt;/code>的程序&lt;/li>
+&lt;li>使用&lt;code>Jasmine&lt;/code>测试框架测试接口,针对&lt;code>AngularJS&lt;/code>的应用程序&lt;/li>
+&lt;li>官网： &lt;a href="http://angular.github.io/protractor/#/">http://angular.github.io/protractor/#/&lt;/a>&lt;/li>
+&lt;li>Github: &lt;a href="https://github.com/angular/protractor">https://github.com/angular/protractor&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="功能">功能&lt;/h2>
+&lt;ul>
+&lt;li>模拟真实的用户操作行为&lt;/li>
+&lt;li>针对&lt;code>AngularJS&lt;/code>中的Element不需要做特殊的处理，普通HTML元素也同样支持&lt;/li>
+&lt;li>智能等待，不需要为页面中的加载和同步显示做特殊的等待时间处理&lt;/li>
+&lt;/ul></description></item><item><title>SuperTestWithGulp</title><link>https://www.shiyuanjie.cn/posts/SuperTest/SuperTestWithGulp/</link><pubDate>Fri, 15 Apr 2016 15:51:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/SuperTest/SuperTestWithGulp/</guid><description>&lt;h1 id="gulp">Gulp&lt;/h1>
+&lt;p>Automate and enhance your workflow&lt;/p>
+&lt;p>&lt;code>用自动化构建工具增强你的工作流程！&lt;/code>&lt;/p>
+&lt;ul>
+&lt;li>官网：&lt;a href="http://gulpjs.com/">http://gulpjs.com/&lt;/a>&lt;/li>
+&lt;li>中文官网：&lt;a href="http://www.gulpjs.com.cn/">http://www.gulpjs.com.cn/&lt;/a>&lt;/li>
+&lt;li>简体中文文档: &lt;a href="https://github.com/lisposter/gulp-docs-zh-cn">https://github.com/lisposter/gulp-docs-zh-cn&lt;/a>&lt;/li>
+&lt;li>安装&lt;code>npm install --global gulp&lt;/code>&lt;/li>
+&lt;li>验证&lt;/li>
+&lt;/ul>
+&lt;pre>&lt;code>➜ Downloads gulp -v
+[15:59:38] CLI version 3.9.1
+[15:59:38] Local version 3.9.1
+&lt;/code>&lt;/pre></description></item><item><title>Chrome设置网络延迟与带宽</title><link>https://www.shiyuanjie.cn/posts/Tools/Chrome%E8%AE%BE%E7%BD%AE%E7%BD%91%E7%BB%9C%E5%BB%B6%E8%BF%9F%E4%B8%8E%E5%B8%A6%E5%AE%BD/</link><pubDate>Wed, 09 Mar 2016 20:20:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Tools/Chrome%E8%AE%BE%E7%BD%AE%E7%BD%91%E7%BB%9C%E5%BB%B6%E8%BF%9F%E4%B8%8E%E5%B8%A6%E5%AE%BD/</guid><description>Developer Tools开发者工具查看网络请求 Windows: F12键 Mac OS: option+command+i键 打开网络请求Network 请求网址http://aimer1124.github.io/后，Network中便会有本次的网络请求内容 点击第一条请求http://aimer1124.github.io</description></item><item><title>Git添加ignore文件</title><link>https://www.shiyuanjie.cn/posts/Tools/Git%E6%B7%BB%E5%8A%A0ignore%E6%96%87%E4%BB%B6/</link><pubDate>Tue, 08 Mar 2016 20:57:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Tools/Git%E6%B7%BB%E5%8A%A0ignore%E6%96%87%E4%BB%B6/</guid><description>Git Ignore 忽略特殊指定的文件 gitignore - Specifies intentionally untracked files to ignore 操作 全局忽略 直接使用命令git config --global core.excludesfile ~/.gitignore_global 未添加到仓库的文件 直接在仓库根目录创建.gitignore文件 在文件中配制所需要ignore的文件清单 还原的话，直接在.gitignore中删除对应的配制行即可 已提交到仓库的文件 先更新仓库至最新版本 添加指</description></item><item><title>Jenkins with Grunt</title><link>https://www.shiyuanjie.cn/posts/CICD/Jenkins-with-SuperTest-and-Grunt/</link><pubDate>Thu, 03 Mar 2016 20:45:38 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/CICD/Jenkins-with-SuperTest-and-Grunt/</guid><description>&lt;h1 id="jenkins">Jenkins&lt;/h1>
+&lt;pre>&lt;code>In a nutshell, Jenkins is the leading open source automation server.
+Built with Java, it provides hundreds of plugins to support building,
+testing, deploying and automation for virtually any project
+&lt;/code>&lt;/pre>&lt;pre>&lt;code>Jenkins是一个开源软件项目，旨在提供一个开放易用的软件平台，使软件的持续集成变成可能。
+&lt;/code>&lt;/pre></description></item><item><title>Http-Header</title><link>https://www.shiyuanjie.cn/posts/APITest/Http-Header/</link><pubDate>Mon, 29 Feb 2016 20:14:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/APITest/Http-Header/</guid><description>&lt;h1 id="header">Header&lt;/h1>
+&lt;h2 id="定义">定义&lt;/h2>
+&lt;p>提供HTTP所需要的信息或发送的信息&lt;/p>
+&lt;p>&lt;code>HTTP header fields provide required information about the request or response, or about the object sent in the message body.&lt;/code>&lt;/p></description></item><item><title>SuperTest-header:Auth设置</title><link>https://www.shiyuanjie.cn/posts/SuperTest/SuperTest-header-Auth%E8%AE%BE%E7%BD%AE/</link><pubDate>Sun, 28 Feb 2016 21:36:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/SuperTest/SuperTest-header-Auth%E8%AE%BE%E7%BD%AE/</guid><description>SuperTest SuperTest-API测试 Auth分类 Basic:基本身份认证，直接采用：用户名密码 基本用法 1 2 3 4 5 6 it(&amp;#39;should receive a status code of 200 with login&amp;#39;, function(done) { request(url) .get(&amp;#39;/staging&amp;#39;) .auth(&amp;#39;the-username&amp;#39;, &amp;#39;the-password&amp;#39;) .expect(200, done); }); Base64加密 1 .set(&amp;#34;Authorization&amp;#34;, &amp;#34;basic &amp;#34; + new Buffer(&amp;#34;username:password&amp;#34;).toString(&amp;#34;base64&amp;#34;)) Digest:摘要式身份认证 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 request.get(&amp;#39;http://some.server.com/&amp;#39;).auth(&amp;#39;username&amp;#39;, &amp;#39;password&amp;#39;, false); // or request.get(&amp;#39;http://some.server.com/&amp;#39;, { &amp;#39;auth&amp;#39;: { &amp;#39;user&amp;#39;: &amp;#39;username&amp;#39;, &amp;#39;pass&amp;#39;: &amp;#39;password&amp;#39;, &amp;#39;sendImmediately&amp;#39;: false } }); // or request.get(&amp;#39;http://some.server.com/&amp;#39;).auth(null, null,</description></item><item><title>Gauge学习</title><link>https://www.shiyuanjie.cn/posts/APITest/Gauge%E5%AD%A6%E4%B9%A0/</link><pubDate>Fri, 19 Feb 2016 16:53:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/APITest/Gauge%E5%AD%A6%E4%B9%A0/</guid><description>&lt;p>&lt;img src="https://www.shiyuanjie.cn/img/github.Gauge.png" alt="Gauge脑图">&lt;/p>
+&lt;p>之前梳理的&lt;a href="http://getgauge.io/">Gauge&lt;/a>的资料，存放到这里，便于以后使用。&lt;/p></description></item><item><title>Node.js时间格式处理</title><link>https://www.shiyuanjie.cn/posts/Tools/Node-js%E6%97%B6%E9%97%B4%E6%A0%BC%E5%BC%8F%E5%A4%84%E7%90%86/</link><pubDate>Tue, 26 Jan 2016 22:18:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Tools/Node-js%E6%97%B6%E9%97%B4%E6%A0%BC%E5%BC%8F%E5%A4%84%E7%90%86/</guid><description>moment库 专门用于Javascript的时间转化、验证、处理、展示 安装moment npm install moment 使用moment 引用moment 1 var moment = require(&amp;#39;moment&amp;#39;); 转化时间 1 2 3 4 5 6 7 //将时间格式转化为：2016-01-22 21:21:26 moment(new Date()).format(&amp;#34;YYYY-MM-DD HH:mm:ss&amp;#34;); moment().format(&amp;#39;MMMM Do YYYY, h:mm:ss a&amp;#39;); // January 26th 2016, 10:25:00 pm moment().format(&amp;#39;dddd&amp;#39;); // Tuesday moment().format(&amp;#34;MMM Do YY&amp;#34;); // Jan 26th 16 moment().format(&amp;#39;YYYY [escaped] YYYY&amp;#39;); // 2016 escaped 2016 moment().format(); // 2016-01-26T22:25:24+08:00 相对时间 1 2</description></item><item><title>Node.js调用数据库:Mysql</title><link>https://www.shiyuanjie.cn/posts/Tools/JS%E8%B0%83%E7%94%A8%E6%95%B0%E6%8D%AE%E5%BA%93/</link><pubDate>Tue, 26 Jan 2016 22:01:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Tools/JS%E8%B0%83%E7%94%A8%E6%95%B0%E6%8D%AE%E5%BA%93/</guid><description>安装Mysql包 npm install mysql 调用 Mysql包 1 var mysql = require(&amp;#39;mysql&amp;#39;); 数据库查询 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 var mysql = require(&amp;#39;mysql&amp;#39;); var connection = mysql.createConnection({ host : &amp;#39;10.29.10.29&amp;#39;, port : 3307, user : &amp;#39;root&amp;#39;, password : &amp;#39;&amp;#39;, database : &amp;#39;emall&amp;#39;, //charset : &amp;#39;UTF8_GENERAL_CI&amp;#39;, debug : false }); connection.connect(); connection.query(&amp;#34;use emall&amp;#34;); connection.query(&amp;#39;select id from users&amp;#39;, function(err,results) { if (err) { throw err; } }); connection.end(); 数据库插入 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 var mysql = require(&amp;#39;mysql&amp;#39;); var connection = mysql.createConnection({ host : &amp;#39;10.29.10.29&amp;#39;, port : 3307, user : &amp;#39;root&amp;#39;, password : &amp;#39;&amp;#39;, database</description></item><item><title>find</title><link>https://www.shiyuanjie.cn/posts/Tools/find/</link><pubDate>Wed, 20 Jan 2016 21:27:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Tools/find/</guid><description>find 查找文件，可指定遍历路径 用法举例 查看当前目录下具体的文件 ~ find a.txt 在指定目录查找文件 ~ find ./Download -name &amp;quot;*.jpg&amp;quot; 查看目录下所有包括a的文件列表 ~ find . -name &amp;quot;Thought*&amp;quot; 查找大于100K的文件表列 ~ find . -name &amp;quot;Thought*&amp;quot; -size +100k 查找创建时间大于2天的 ~ find . -name &amp;quot;*.txt&amp;quot; -mtime +2 查看find的详细用法 FIND(1) BSD General Commands Manual FIND(1) NAME find -- walk a file hierarchy SYNOPSIS find [-H | -L | -P] [-EXdsx] [-f path] path ...</description></item><item><title>SuperTest-API测试</title><link>https://www.shiyuanjie.cn/posts/SuperTest/SuperTest/</link><pubDate>Sun, 17 Jan 2016 19:51:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/SuperTest/SuperTest/</guid><description>什么是SuperTest The motivation with this module is to provide a high-level abstraction for testing HTTP, while still allowing you to drop down to the lower-level API provided by super-agent. 简单说明：用来测试HTTP请求，提供简单的super-agent来实现API请求 安装SuperTest npm安装 官网下载对应的操作系统版本-NPM，下载完成后，直接进行安装即可 cnpm,若翻墙网络比较</description></item></channel></rss>

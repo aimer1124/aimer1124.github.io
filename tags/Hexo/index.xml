@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hexo on Yuanjie-跑步爱好者，IT从业者。</title><link>https://www.shiyuanjie.cn/tags/Hexo/</link><description>Recent content in Hexo on Yuanjie-跑步爱好者，IT从业者。</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Tue, 31 Mar 2020 16:16:25 +0800</lastBuildDate><atom:link href="https://www.shiyuanjie.cn/tags/Hexo/index.xml" rel="self" type="application/rss+xml"/><item><title>转移hexo文章至Hugo</title><link>https://www.shiyuanjie.cn/posts/Blog/migrate-from-hexo-to-hugo/</link><pubDate>Tue, 31 Mar 2020 16:16:25 +0800</pubDate><guid>https://www.shiyuanjie.cn/posts/Blog/migrate-from-hexo-to-hugo/</guid><description>Github源代码地址：https://github.com/aimer1124/python-format-md 为什么做这个： 把原来博客的文章从Hexo转移至Hugo，但两者在MD文件头部处理不一致。 Hexo格式 1 2 3 4 5 6 7 8 9 title: &amp;#39;Http-Header&amp;#39; tags: - API测试 - SuperTest categories: - Tool date: 2016-02-29 20:14:00 thumbnail: /img/a.png --- Hugo</description></item><item><title>选择一个好的Hexo主题</title><link>https://www.shiyuanjie.cn/posts/Blog/%E9%80%89%E6%8B%A9%E4%B8%80%E4%B8%AA%E5%A5%BD%E7%9A%84Hexo%E4%B8%BB%E9%A2%98/</link><pubDate>Sat, 04 Jan 2020 15:55:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Blog/%E9%80%89%E6%8B%A9%E4%B8%80%E4%B8%AA%E5%A5%BD%E7%9A%84Hexo%E4%B8%BB%E9%A2%98/</guid><description>诉求：找一个好用的Hexo主题 方法 去官网看了下，Theme有285个，按名字排名。没有任何星级或者推荐之类的，看了下，眼花缭乱。https://hexo.io/themes/ 在知乎上面搜索了下，高赞答案：爬取Theme的Star数量，用数据说话。https://www.zhihu</description></item><item><title>个人网站搭建</title><link>https://www.shiyuanjie.cn/posts/Blog/%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/</link><pubDate>Mon, 18 Feb 2019 20:00:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Blog/%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/</guid><description>&lt;h3 id="套餐">套餐&lt;/h3>
+&lt;p>Github + Hexo + Travis&lt;/p>
+&lt;p>&lt;img src="https://www.shiyuanjie.cn/img/SelfBlog/Relationship.png" alt="Relationship">&lt;/p>
+&lt;ul>
+&lt;li>Github&lt;/li>
+&lt;/ul>
+&lt;p>源文件和网站资源的管理&lt;/p>
+&lt;ul>
+&lt;li>Hexo&lt;/li>
+&lt;/ul>
+&lt;p>网站内容的生成&lt;/p>
+&lt;ul>
+&lt;li>Travis&lt;/li>
+&lt;/ul>
+&lt;p>打通Github+Travis&lt;/p></description></item><item><title>站点搭建过程</title><link>https://www.shiyuanjie.cn/posts/Blog/%E7%AB%99%E7%82%B9%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/</link><pubDate>Sat, 30 Jan 2016 11:20:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Blog/%E7%AB%99%E7%82%B9%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/</guid><description>20200402 启用网站本地搜索功能 启用本地搜索功能 使用百度搜索 20200401 CodeStyle变更为monokai 调整Code Style为monokai 20200325 ECS+备案 重大更新 站点生成从Hexo转移至Hugo 将源公开站点信息拖管至Github的Private仓库 将站点资源部署在阿里云的ECS中，在阿里云中</description></item></channel></rss>

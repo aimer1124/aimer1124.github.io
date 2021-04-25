@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Travis on Yuanjie-跑步爱好者，IT从业者。</title><link>https://www.shiyuanjie.cn/tags/Travis/</link><description>Recent content in Travis on Yuanjie-跑步爱好者，IT从业者。</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sat, 04 Jan 2020 15:55:00 +0000</lastBuildDate><atom:link href="https://www.shiyuanjie.cn/tags/Travis/index.xml" rel="self" type="application/rss+xml"/><item><title>选择一个好的Hexo主题</title><link>https://www.shiyuanjie.cn/posts/Blog/%E9%80%89%E6%8B%A9%E4%B8%80%E4%B8%AA%E5%A5%BD%E7%9A%84Hexo%E4%B8%BB%E9%A2%98/</link><pubDate>Sat, 04 Jan 2020 15:55:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Blog/%E9%80%89%E6%8B%A9%E4%B8%80%E4%B8%AA%E5%A5%BD%E7%9A%84Hexo%E4%B8%BB%E9%A2%98/</guid><description>诉求：找一个好用的Hexo主题 方法 去官网看了下，Theme有285个，按名字排名。没有任何星级或者推荐之类的，看了下，眼花缭乱。https://hexo.io/themes/ 在知乎上面搜索了下，高赞答案：爬取Theme的Star数量，用数据说话。https://www.zhihu</description></item><item><title>个人网站搭建</title><link>https://www.shiyuanjie.cn/posts/Blog/%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/</link><pubDate>Mon, 18 Feb 2019 20:00:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Blog/%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/</guid><description>&lt;h3 id="套餐">套餐&lt;/h3>
+&lt;p>Github + Hexo + Travis&lt;/p>
+&lt;p>&lt;img src="https://www.shiyuanjie.cn/img/SelfBlog/Relationship.png" alt="Relationship">&lt;/p>
+&lt;ul>
+&lt;li>Github&lt;/li>
+&lt;/ul>
+&lt;p>源文件和网站资源的管理&lt;/p>
+&lt;ul>
+&lt;li>Hexo&lt;/li>
+&lt;/ul>
+&lt;p>网站内容的生成&lt;/p>
+&lt;ul>
+&lt;li>Travis&lt;/li>
+&lt;/ul>
+&lt;p>打通Github+Travis&lt;/p></description></item></channel></rss>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>JMeter on Yuanjie-跑步爱好者，IT从业者。</title><link>https://www.shiyuanjie.cn/tags/JMeter/</link><description>Recent content in JMeter on Yuanjie-跑步爱好者，IT从业者。</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sat, 11 Jan 2020 18:00:00 +0000</lastBuildDate><atom:link href="https://www.shiyuanjie.cn/tags/JMeter/index.xml" rel="self" type="application/rss+xml"/><item><title>JMeter5.2.1更新内容</title><link>https://www.shiyuanjie.cn/posts/JMeter/JMeter5.2.1/</link><pubDate>Sat, 11 Jan 2020 18:00:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/JMeter/JMeter5.2.1/</guid><description>版本发布时间于20191113，本次版本主要是BugFix。 主要内容 本次更新主要为BugFix，更新内容参考5.2。 版本下载 JMeter5.2.1</description></item><item><title>JMeter5.2更新内容</title><link>https://www.shiyuanjie.cn/posts/JMeter/JMeter5.2%E6%9B%B4%E6%96%B0%E5%86%85%E5%AE%B9/</link><pubDate>Wed, 08 Jan 2020 15:30:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/JMeter/JMeter5.2%E6%9B%B4%E6%96%B0%E5%86%85%E5%AE%B9/</guid><description>版本发布时间于20191008，本次版本基本没有什么更新，主要是切换版本号。 主要内容 本次为版本发布，更新内容参考5.1.1 提升 HTTP(S) Test Script Recorder 会在名字后追加数字显示，参考Bug 64350 修复：当在XPath表达式中使用XPath Assertion返回Boolean值时，True if nothing matches</description></item><item><title>JMeter历史版本更新内容</title><link>https://www.shiyuanjie.cn/posts/JMeter/JMeterUpdateHistory/</link><pubDate>Sat, 30 Mar 2019 18:00:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/JMeter/JMeterUpdateHistory/</guid><description>将自己翻译的JMeter历史版本的更新记录进行汇总，方便后期查阅。 JMeter版本 发布时间 更新内容 下载地址 5.2.1 20191113 [更新内容](http://shiyuanjie.cn/2019/01/11/JMeter5.2.1/ https://github.com/apache/jmeter/archive/v5.2.1-rc1.zip 5.2 20191008 [更新内容](http://shiyuanjie.cn/201</description></item><item><title>JMeter5.1.1更新内容</title><link>https://www.shiyuanjie.cn/posts/JMeter/JMeter5.1.1/</link><pubDate>Wed, 20 Mar 2019 09:00:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/JMeter/JMeter5.1.1/</guid><description>&lt;pre>&lt;code>此版本主要用于BUG修复
+&lt;/code>&lt;/pre>&lt;h2 id="实时报告和测试报告">实时报告和测试报告&lt;/h2>
+&lt;p>在&lt;code>工具&lt;/code>菜单中，新增直接通过&lt;code>CS/JTL&lt;/code>文件来生成测试报告.&lt;/p>
+&lt;p>&lt;img src="http://jmeter.apache.org/images/screenshots/changes/5.1.1/01_menu_generate_report.png" alt="Menu_Generate_Report">&lt;/p>
+&lt;p>&lt;img src="http://jmeter.apache.org/images/screenshots/changes/5.1.1/02_windows_generate_report.png" alt="Select_File to Generate_Report">&lt;/p></description></item><item><title>JMeter5.1更新内容</title><link>https://www.shiyuanjie.cn/posts/JMeter/JMeter5.1%E6%9B%B4%E6%96%B0%E5%86%85%E5%AE%B9/</link><pubDate>Tue, 19 Mar 2019 20:00:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/JMeter/JMeter5.1%E6%9B%B4%E6%96%B0%E5%86%85%E5%AE%B9/</guid><description>&lt;h2 id="核心能力提升">核心能力提升&lt;/h2>
+&lt;ul>
+&lt;li>JDBC测试已被提升，可以直接设置SQL语句并支持查询超时功能。&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="http://jmeter.apache.org/images/screenshots/changes/5.1/jdbc-connection-config-init-request.png" alt="JDBC Connection">&lt;/p>
+&lt;ul>
+&lt;li>变量问题已被修复，像使用&lt;code>HTTP(S) Test Script Recorder&lt;/code>录制HTTPS请求时收集正确的请求头信息。&lt;/li>
+&lt;li>在5.0版本中，JMeter已调整使用自定义的命令策略来重命名子结果(&lt;a href="https://bz.apache.org/bugzilla/show_bug.cgi?id=62550">BUG_62550&lt;/a>)，这个变更对功能测试很麻烦，新的属性&lt;code>subresults.disable_renaming=true&lt;/code>用于解决这个问题。替代方法是使用在功能测试的测试计划中校验(&lt;a href="https://bz.apache.org/bugzilla/show_bug.cgi?id=63055">BUG_63055&lt;/a>)。&lt;/li>
+&lt;/ul></description></item><item><title>JMeter5.0更新内容</title><link>https://www.shiyuanjie.cn/posts/JMeter/JMeter5.0%E6%9B%B4%E6%96%B0%E5%86%85%E5%AE%B9/</link><pubDate>Wed, 17 Oct 2018 15:20:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/JMeter/JMeter5.0%E6%9B%B4%E6%96%B0%E5%86%85%E5%AE%B9/</guid><description>&lt;p>&lt;a href="http://jmeter.apache.org/">JMeter&lt;/a>官方在&lt;code>20180918&lt;/code>发布了JMeter 5.0版本，主要涉及的更新内容如下：&lt;/p>
+&lt;ul>
+&lt;li>新增&lt;code>XPath2 extractor&lt;/code>元素，用于XML处理&lt;/li>
+&lt;li>增强&lt;code>Flow Control Action&lt;/code> &lt;code>Result Status Action Handler&lt;/code>控制器的能力&lt;/li>
+&lt;li>强化搜索功能，便于在编写JMeter过程中进行搜索&lt;/li>
+&lt;li>强化&lt;code>录制功能&lt;/code>，使用顶部悬浮的特点，便于对录制过程的处理&lt;/li>
+&lt;li>UI界面中，新增&lt;code>重启&lt;/code>功能&lt;/li>
+&lt;li>&lt;code>HTML Web&lt;/code>报告中，新增&lt;code>实时&lt;/code>吞吐量显示&lt;/li>
+&lt;li>&lt;code>HTML Web&lt;/code>报告中，新增&lt;code>Custom Graphs section&lt;/code>用于个性化图表定制&lt;/li>
+&lt;/ul>
+&lt;p>原文链接：&lt;a href="http://jmeter.apache.org/changes.html">http://jmeter.apache.org/changes.html&lt;/a>
+JMeter5.0下载：&lt;a href="http://jmeter.apache.org/download_jmeter.cgi">http://jmeter.apache.org/download_jmeter.cgi&lt;/a>&lt;/p></description></item><item><title>JMeter4.0更新内容</title><link>https://www.shiyuanjie.cn/posts/JMeter/JMeter4.0%E6%9B%B4%E6%96%B0%E5%86%85%E5%AE%B9/</link><pubDate>Wed, 28 Feb 2018 15:20:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/JMeter/JMeter4.0%E6%9B%B4%E6%96%B0%E5%86%85%E5%AE%B9/</guid><description>&lt;pre>&lt;code>等了这么久，20180210，终于有较大的更新。无论是从 UI 还是功能优化，都让人耳目一新。下面我们就详细看下具体变化。
+&lt;/code>&lt;/pre>&lt;p>原文地址：&lt;a href="http://jmeter.apache.org/changes.html">http://jmeter.apache.org/changes.html&lt;/a>
+下载地址：&lt;a href="http://ftp.cuhk.edu.hk/pub/packages/apache.org//jmeter/binaries/apache-jmeter-4.0.zip">apache-jmeter-4.0.zip&lt;/a>&lt;/p>
+&lt;h2 id="重要更新">重要更新&lt;/h2>
+&lt;h3 id="主要变更">主要变更&lt;/h3>
+&lt;p>JMeter 现在支持 JAVA 9.&lt;/p>
+&lt;p>新的&lt;a href="http://jmeter.apache.org/usermanual/component_reference.html#Boundary_Extractor">Boundary Extractor&lt;/a>元素可以提供更好的元素提取性能&lt;/p>
+&lt;p>&lt;img src="http://jmeter.apache.org/images/screenshots/changes/4.0/boundary_extractor.png" alt="">&lt;/p>
+&lt;p>新的&lt;a href="http://jmeter.apache.org/usermanual/component_reference.html#JSON_Assertion">JSON Assertion&lt;/a>元素可用于 JSON 响应的断言。&lt;/p>
+&lt;p>&lt;img src="http://jmeter.apache.org/images/screenshots/changes/4.0/json_assertion.png" alt="">&lt;/p>
+&lt;p>JMS Point-to-Point 样例增加了&lt;strong>read,browser,clear&lt;/strong>选项。&lt;/p>
+&lt;p>&lt;img src="http://jmeter.apache.org/images/screenshots/changes/4.0/jmsptp_communication_styles.png" alt="">&lt;/p></description></item><item><title>JMeter3.3更新内容</title><link>https://www.shiyuanjie.cn/posts/JMeter/JMeter3.3%E6%9B%B4%E6%96%B0%E5%86%85%E5%AE%B9/</link><pubDate>Mon, 09 Oct 2017 10:50:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/JMeter/JMeter3.3%E6%9B%B4%E6%96%B0%E5%86%85%E5%AE%B9/</guid><description>&lt;ul>
+&lt;li>&lt;code>2017.9.21&lt;/code>，JMeter3.3版本发布。&lt;/li>
+&lt;li>原文地址：&lt;a href="http://jmeter.apache.org/changes.html">Apache JMeter 3.3 Release Notes &lt;/a>,历史版本变更记录&lt;a href="http://jmeter.apache.org/changes_history.html">http://jmeter.apache.org/changes_history.html&lt;/a>&lt;/li>
+&lt;li>下载地址： &lt;a href="http://jmeter.apache.org/download_jmeter.cgi">Download Apache JMeter 3.3&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="重要变更">重要变更&lt;/h2>
+&lt;pre>&lt;code>JMeter 还不支持 Java9，下个版本将会支持，你可以给出帮助并查看此跟踪记录[Bug 61529](https://bz.apache.org/bugzilla/show_bug.cgi?id=61529)。
+&lt;/code>&lt;/pre>&lt;pre>&lt;code>建议：使用最新版本的 Java8 ，避免出现 JDK 的问题。
+&lt;/code>&lt;/pre>&lt;h3 id="主要提升">主要提升&lt;/h3>
+&lt;p>HTTP 样例支持&lt;a href="https://news.ycombinator.com/item?id=10257305">Brotli&lt;/a>解压算法。&lt;/p>
+&lt;p>CacheManager 现在完全支持变量头方式。&lt;/p>
+&lt;p>InfluxDB BackendListener 现在支持通过 UDP 协议发送结果至 InfluxDB。&lt;/p>
+&lt;p>&lt;img src="http://jmeter.apache.org/images/screenshots/changes/3.3/influxdb_udp.png" alt="InfluxDB BackendListener">&lt;/p>
+&lt;p>已经被增强来通过响应状态码和消息针对每一个 Transaction 发送错误数量。&lt;/p>
+&lt;p>TCP 样例现在可以计算延迟，详情查看&lt;a href="https://bz.apache.org/bugzilla/show_bug.cgi?id=60156">Bug 60156&lt;/a>&lt;/p>
+&lt;p>更新依赖至最新版本，用于提升性能和修复 BUG。&lt;/p>
+&lt;p>持续提升代码质量和测试覆盖率。查看&lt;a href="https://builds.apache.org/analysis/overview?id=12927">质量报告&lt;/a>&lt;/p></description></item><item><title>JMeter3.2更新内容</title><link>https://www.shiyuanjie.cn/posts/JMeter/JMeter3.2%E6%9B%B4%E6%96%B0%E5%86%85%E5%AE%B9/</link><pubDate>Sat, 13 May 2017 14:50:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/JMeter/JMeter3.2%E6%9B%B4%E6%96%B0%E5%86%85%E5%AE%B9/</guid><description>&lt;ul>
+&lt;li>&lt;code>2017.4.14&lt;/code>，JMeter3.2版本发布。&lt;/li>
+&lt;li>原文地址：&lt;a href="http://jmeter.apache.org/changes.html">Apache JMeter 3.2 Release Notes &lt;/a>,&lt;/li>
+&lt;li>下载地址： &lt;a href="http://jmeter.apache.org/download_jmeter.cgi">Download Apache JMeter 3.2&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="重要变更">重要变更&lt;/h2>
+&lt;p>JMeter现在需要&lt;code>Java8&lt;/code>。确保你使用的最新版本的Java。
+JMeter日志已经被迁移至SLF4J和Log4j 2。这个影响配制和第三方插件，查看下面的『日志变更』.
+在使用JMeter的3.2版本时，在结果树中的结果数里从默认修改为500.如果你想查看更多，必须修改属性&lt;code>view.results.tree.max_results&lt;/code>为一个更高的数值或者你不想限制数量可改为0。你可以在&lt;code>bin/user.properties&lt;/code>中设置。更多的信息可查看&lt;a href="http://jmeter.apache.org/usermanual/component_reference.html#View_Results_Tree">这里&lt;/a>&lt;/p>
+&lt;h3 id="主要提升">主要提升&lt;/h3>
+&lt;ul>
+&lt;li>JMeter现在提供一个新的&lt;code>BackendListener&lt;/code>与&lt;code>InfluxDB&lt;/code>交互
+&lt;img src="http://jmeter.apache.org/images/screenshots/changes/3.2/backend_influxdb.png" alt="BackendListener">
+这个功能使用异步的HTTP请求发送数据至InfluxDB通过&lt;a href="https://docs.influxdata.com/influxdb/v1.2/guides/writing_data/">HTTP API&lt;/a>并提供下面的图形展示结果
+&lt;img src="http://jmeter.apache.org/images/screenshots/backend_listener_influxdb_graph.png" alt="Graph">&lt;/li>
+&lt;/ul></description></item><item><title>JMeter3.1更新内容</title><link>https://www.shiyuanjie.cn/posts/JMeter/JMeter3.1%E6%9B%B4%E6%96%B0%E5%86%85%E5%AE%B9/</link><pubDate>Thu, 09 Mar 2017 16:30:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/JMeter/JMeter3.1%E6%9B%B4%E6%96%B0%E5%86%85%E5%AE%B9/</guid><description>&lt;blockquote>
+&lt;p>&lt;code>2016.11.20&lt;/code>，&lt;a href="http://jmeter.apache.org/">JMeter&lt;/a>官网已经正式发布了3.1的版本，今天尝试翻译下更新内容，内容中肯定还有很多不足，希望大家多多谅解。&lt;/p>
+&lt;/blockquote>
+&lt;ul>
+&lt;li>原文地址：&lt;a href="http://jmeter.apache.org/changes.html">Apache JMeter 3.1 Release Notes &lt;/a>,&lt;/li>
+&lt;li>下载地址： &lt;a href="http://jmeter.apache.org/download_jmeter.cgi">Download Apache JMeter&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="提升报告和仪表盘">提升报告和仪表盘&lt;/h2>
+&lt;p>仪表盘新增三个图表和一个概要表格&lt;/p>
+&lt;ul>
+&lt;li>连接时间
+&lt;img src="http://jmeter.apache.org/images/screenshots/dashboard/report_connect_time_over_time.png" alt="">&lt;/li>
+&lt;li>成功百分比响应时间
+&lt;img src="http://jmeter.apache.org/images/screenshots/dashboard/response_time_percentiles_over_time.png" alt="">&lt;/li>
+&lt;li>响应时间分布
+&lt;img src="http://jmeter.apache.org/images/screenshots/dashboard/response_time_overview.png" alt="">&lt;/li>
+&lt;li>执行样例中的错误Top5
+&lt;img src="http://jmeter.apache.org/images/screenshots/dashboard/top_5_errors_by_sampler.png" alt="">&lt;/li>
+&lt;/ul></description></item><item><title>性能测试-JMeter入门手册</title><link>https://www.shiyuanjie.cn/posts/PerformanceTest/%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95-JMeter%E5%85%A5%E9%97%A8/</link><pubDate>Tue, 28 Feb 2017 16:15:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/PerformanceTest/%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95-JMeter%E5%85%A5%E9%97%A8/</guid><description>Github地址(源文件及脚本) 本文目的 面向新手，学习后可以使用JMeter独立完成项目的性能测试 快速分析并使用JMeter定位出项目性能测试结果 产出有价值的性能测试报告 目录 简介 认识JMeter 了解并启动JMeter 认识JMeter 第一个测试 提高JMeter 线程高并发 逻辑控件器 断</description></item><item><title>JMeter与Docker</title><link>https://www.shiyuanjie.cn/posts/JMeter/jmeter%E4%B8%8EDocker/</link><pubDate>Wed, 25 Jan 2017 21:50:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/JMeter/jmeter%E4%B8%8EDocker/</guid><description>&lt;h1 id="jmeter_docker">JMeter_docker&lt;/h1>
+&lt;p>Use JMeter with Docker&lt;/p>
+&lt;ul>
+&lt;li>Replace &lt;code>Demo.jmx&lt;/code>&lt;/li>
+&lt;li>Change the following about &lt;code>Demo.jmx&lt;/code> file&lt;/li>
+&lt;/ul>
+&lt;pre>&lt;code>COPY Demo.jmx /opt/jmeter
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>build Docker file in root folder&lt;/li>
+&lt;/ul>
+&lt;pre>&lt;code>docker build -t performanceDocker .
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>run docker with performance testing&lt;/li>
+&lt;/ul></description></item><item><title>JMeter与BeanShell的化学反应</title><link>https://www.shiyuanjie.cn/posts/JMeter/JMeter%E4%B8%8EBeanshell%E7%9A%84%E5%8C%96%E5%AD%A6%E5%8F%8D%E5%BA%94/</link><pubDate>Tue, 01 Nov 2016 15:53:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/JMeter/JMeter%E4%B8%8EBeanshell%E7%9A%84%E5%8C%96%E5%AD%A6%E5%8F%8D%E5%BA%94/</guid><description>&lt;h2 id="jmeter是什么">JMeter是什么&lt;/h2>
+&lt;p>&lt;a href="http://jmeter.apache.org/">http://jmeter.apache.org/&lt;/a>，性能测试工具。&lt;/p>
+&lt;ul>
+&lt;li>基于&lt;code>Java&lt;/code>的&lt;code>开源&lt;/code>性能测试工具&lt;/li>
+&lt;li>支持测试的协议
+&lt;ul>
+&lt;li>Web - HTTP, HTTPS&lt;/li>
+&lt;li>SOAP / REST&lt;/li>
+&lt;li>FTP&lt;/li>
+&lt;li>Database&lt;/li>
+&lt;li>LDAP&lt;/li>
+&lt;li>Message-oriented middleware (MOM)&lt;/li>
+&lt;li>Mail&lt;/li>
+&lt;li>Native commands or shell scripts&lt;/li>
+&lt;li>TCP&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>支持多线程并发&lt;/li>
+&lt;li>完善的GUI界面，用于快速设计测试计划和调试测试脚本&lt;/li>
+&lt;li>完整测试结果，便于结果分析&lt;/li>
+&lt;li>JMeter不会执行HTML中的JavaScript脚本&lt;/li>
+&lt;/ul>
+&lt;h2 id="beanshell是什么">BeanShell是什么&lt;/h2>
+&lt;p>&lt;a href="http://beanshell.org/">http://beanshell.org/&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>基于&lt;code>Java&lt;/code>的免费解释器&lt;/li>
+&lt;li>松散类型的脚本语言&lt;/li>
+&lt;li>动态执行的Java代码&lt;/li>
+&lt;li>只有150K大小的JAR包&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>BeanShell既然可以编写Java代码，那么我们就可以在使用JMeter测试的过程中，使用Java语法功能，且支持关键字&lt;code>高亮&lt;/code>，进行业务逻辑的处理，进而达到&lt;code>场景&lt;/code>功能的设计。&lt;/p>
+&lt;/blockquote></description></item><item><title>利用21天的完成一本Mini书</title><link>https://www.shiyuanjie.cn/posts/Upgrade/%E5%88%A9%E7%94%A821%E5%A4%A9%E7%9A%84%E5%AE%8C%E6%88%90%E4%B8%80%E6%9C%ACMini%E4%B9%A6/</link><pubDate>Mon, 26 Sep 2016 13:17:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/Upgrade/%E5%88%A9%E7%94%A821%E5%A4%A9%E7%9A%84%E5%AE%8C%E6%88%90%E4%B8%80%E6%9C%ACMini%E4%B9%A6/</guid><description>&lt;p>自己之前也没有任何写&lt;code>书&lt;/code>的经验，这次写这本书，也是经一位朋友的建议，把自己了解的关于&lt;a href="http://jmeter.apache.org/">JMeter&lt;/a>内容&lt;code>梳理&lt;/code>下来，整本书仅&lt;code>79&lt;/code>页。&lt;/p>
+&lt;p>书中的内容是&lt;code>性能测试工具&lt;/code>&lt;a href="http://jmeter.apache.org/">JMeter&lt;/a>的&lt;strong>入门级&lt;/strong>使用。在准备写的时候，在心里做了简单的规划，如下:&lt;/p>
+&lt;p>&lt;img src="https://www.shiyuanjie.cn/img/JMeterBook/Mind.png" alt="整体结构">&lt;/p></description></item><item><title>JMeter-自动生成测试Report</title><link>https://www.shiyuanjie.cn/posts/JMeter/JMeter-%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90%E6%B5%8B%E8%AF%95Report/</link><pubDate>Fri, 23 Sep 2016 18:53:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/JMeter/JMeter-%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90%E6%B5%8B%E8%AF%95Report/</guid><description>&lt;h1 id="dashboard-report">Dashboard Report&lt;/h1>
+&lt;p>&lt;a href="http://jmeter.apache.org/changes.html">JMeter3.0&lt;/a>版本发布后，开始支持&lt;code>动态&lt;/code>报表报告。让测试人员编写&lt;code>性能测试报告&lt;/code>更加容易。&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>支持在&lt;code>测试结束&lt;/code>后，生成测试报告&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;code>导入&lt;/code>之前测试结果，生成测试报告&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>下面就看下如何使用这个&lt;code>新特性&lt;/code>，生成测试报告&lt;/p></description></item><item><title>性能测试之远程并发模式</title><link>https://www.shiyuanjie.cn/posts/PerformanceTest/%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95%E4%B9%8B%E8%BF%9C%E7%A8%8B%E6%A8%A1%E5%BC%8F/</link><pubDate>Mon, 12 Sep 2016 19:15:38 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/PerformanceTest/%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95%E4%B9%8B%E8%BF%9C%E7%A8%8B%E6%A8%A1%E5%BC%8F/</guid><description>&lt;p>事实上，你的JMeter客户端机器是不能表现出完美的压力请求，来模拟足够多的用户或由于网络限制去向服务施加压力，一种解决方法是通过一个JMeter去控制多个/远程JMeter。通过运行JMeter的远程模式，你可以通过多个低配制的电脑复制测试计划用于模拟一个大数据量的压力并发在服务器上。一个JMeter客户端实例可以控制多个远程JMeter实例，并收集所有数据信息。特点如下:&lt;/p>
+&lt;ul>
+&lt;li>保存测试样例在本机电脑&lt;/li>
+&lt;li>通过一台机器来管理多台JMeter测试机&lt;/li>
+&lt;li>不需要复制测试计划到每一台JMeter测试机-JMeter客户端会发送至所有的服务器&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>提示: 相同的测试计划将会被运行在所有的服务器中。JMeter不会在服务器间分发压力，每一个均会完整执行测试计划。因此，如果你设置了1000个线程并有6个JMeter服务，你将会完成6000线程注入。&lt;/p>
+&lt;/blockquote></description></item><item><title>性能测试最佳实践之JMeter</title><link>https://www.shiyuanjie.cn/posts/PerformanceTest/%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5%E4%B9%8BJMeter/</link><pubDate>Wed, 31 Aug 2016 20:45:38 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/PerformanceTest/%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5%E4%B9%8BJMeter/</guid><description>&lt;h1 id="保持使用最新版本">保持使用最新版本&lt;/h1>
+&lt;p>JMeter被经常推荐用来测试性能，鼓励用户使用最新的版本。&lt;/p>
+&lt;p>确保你要经常去阅读&lt;a href="http://jmeter.apache.org/changes.html">变更记录&lt;/a>中的新功能和模块的提升。你不应该再使用3.0之前的版本了&lt;/p>
+&lt;h1 id="使用正确的线程数">使用正确的线程数&lt;/h1>
+&lt;p>你硬件设备的能力及测试计划将都会影响你的JMeter可运行的线程数。数量也依赖于你的服务有多快(一个可快速响应的服务可以让JMeter变更更加给力)。像其它性能测试工具一样，如果你没有正确的线程数，你将面对不准备或错误结果的&lt;code>Coordinated Omission&lt;/code>问题。如果你需要大数量级的压力测试，考虑使用分布式模式在多台机器上运行无GUI的JMeter实例。当使用分布式模式时，结果将被聚合在控制器的结果中，如果使用多个自已的实例，结果文件可以聚合用于持续性分析。对于如何在一个给定的平台上使用JMeter测试，&lt;code>JavaTest Sampler&lt;/code>可以考虑使用。它不需要任何网络请求便可返回一些信息在最大的吞吐量。&lt;/p>
+&lt;p>JMeter有选项用于延迟线程创建直到线程正常启动，如在其它线程组延迟之后和线程自身的启动时间。这样就允许一个非常大数量级的线程数，不需要太多的线程同时并发。&lt;/p></description></item><item><title>性能测试与持续集成</title><link>https://www.shiyuanjie.cn/posts/CICD/%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95%E4%B8%8E%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90/</link><pubDate>Sun, 07 Aug 2016 14:23:00 +0000</pubDate><guid>https://www.shiyuanjie.cn/posts/CICD/%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95%E4%B8%8E%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90/</guid><description>&lt;h2 id="目的">目的&lt;/h2>
+&lt;ul>
+&lt;li>将性能测试与持续集成挂接起来&lt;/li>
+&lt;li>性能测试： &lt;a href="http://jmeter.apache.org/">JMeter&lt;/a>&lt;/li>
+&lt;li>持续集成： &lt;a href="https://jenkins.io/">Jenkins&lt;/a>&lt;/li>
+&lt;/ul></description></item></channel></rss>
