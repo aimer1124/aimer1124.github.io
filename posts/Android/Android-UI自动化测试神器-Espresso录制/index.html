@@ -1,108 +1,108 @@
-<!doctype html><html lang=zh-cn><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><title>Android UI自动化测试神器-Espresso录制 | Yuanjie-跑步爱好者，IT从业者。</title><meta property="og:title" content="Android UI自动化测试神器-Espresso录制 - Yuanjie-跑步爱好者，IT从业者。"><meta property="og:type" content="article"><meta property="article:published_time" content="2016-11-25T13:46:00+08:00"><meta property="article:modified_time" content="2016-11-25T13:46:00+08:00"><meta name=Keywords content="测试,敏捷,跑步,项目管理,学习"><meta name=description content="Android UI自动化测试神器-Espresso录制"><meta name=author content="Yuanjie"><meta property="og:url" content="https://www.shiyuanjie.cn/posts/Android/Android-UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E7%A5%9E%E5%99%A8-Espresso%E5%BD%95%E5%88%B6/"><link rel="shortcut icon" href=/favicon.ico type=image/x-icon><link rel=stylesheet href=/css/normalize.css><link rel=stylesheet href=/css/style.css><script type=text/javascript src=//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js></script><script>var _hmt=_hmt||[];(function(){var hm=document.createElement("script");hm.src="https://hm.baidu.com/hm.js?ac69e1e54b317232c0d3a881b738cfe8";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm,s);})();</script></head><body><header id=header class=clearfix><div class=container><div class=col-group><div class=site-name><a id=logo href=https://www.shiyuanjie.cn>Yuanjie-跑步爱好者，IT从业者。</a><p class=description>跑步爱好者，IT从业者。</p></div><div><nav id=nav-menu class=clearfix><a href=https://www.shiyuanjie.cn>首页</a>
-<a href=https://www.shiyuanjie.cn/tools/ title=小工具>小工具</a>
-<a href=https://www.shiyuanjie.cn/archives/ title=归档>归档</a>
-<a href=https://www.shiyuanjie.cn/about/ title=关于>关于</a></nav></div></div></div></header><div id=body><div class=container><div class=col-group><div class=col-8 id=main><div class=res-cons><style type=text/css>.post-toc{position:fixed;width:200px;margin-left:-210px;padding:5px 10px;font-family:Athelas,STHeiti,Microsoft Yahei,serif;font-size:12px;border:1px solid rgba(0,0,0,.07);border-radius:5px;background-color:rgba(255,255,255,.98);background-clip:padding-box;-webkit-box-shadow:1px 1px 2px rgba(0,0,0,.125);box-shadow:1px 1px 2px rgba(0,0,0,.125);word-wrap:break-word;white-space:nowrap;-webkit-box-sizing:border-box;box-sizing:border-box;z-index:999;cursor:pointer;max-height:70%;overflow-y:auto;overflow-x:hidden}.post-toc .post-toc-title{width:100%;margin:0 auto;font-size:20px;font-weight:400;text-transform:uppercase;text-align:center}.post-toc .post-toc-content{font-size:15px}.post-toc .post-toc-content>nav>ul{margin:10px 0}.post-toc .post-toc-content ul{padding-left:20px;list-style:square;margin:.5em;line-height:1.8em}.post-toc .post-toc-content ul ul{padding-left:15px;display:none}@media print,screen and (max-width:1057px){.post-toc{display:none}}</style><div class=post-toc style=position:absolute;top:188px><h2 class=post-toc-title>文章目录</h2><div class=post-toc-content><nav id=TableOfContents><ul><li><a href=#关闭你设备中的动画>关闭你设备中的动画</a></li><li><a href=#录制一个espresso测试>录制一个Espresso测试</a></li><li><a href=#录制ui交互>录制UI交互</a></li><li><a href=#添加断言来验证ui元素>添加断言来验证UI元素</a></li><li><a href=#保存录制>保存录制</a></li><li><a href=#本地运行espresso测试>本地运行Espresso测试</a></li><li><a href=#运行android的espresso测试在-firebase-test-lab>运行Android的Espresso测试在 Firebase Test Lab</a></li></ul></nav></div></div><script type=text/javascript>$(document).ready(function(){var postToc=$(".post-toc");if(postToc.length){var leftPos=$("#main").offset().left;if(leftPos<220){postToc.css({"width":leftPos-10,"margin-left":(0-leftPos)})}
+<!doctype html><html lang=zh-cn><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><title>Android UI自动化测试神器-Espresso录制 | Yuanjie-跑步爱好者，IT从业者。</title><meta property="og:title" content="Android UI自动化测试神器-Espresso录制 - Yuanjie-跑步爱好者，IT从业者。"><meta property="og:type" content="article"><meta property="article:published_time" content="2016-11-25T13:46:00+08:00"><meta property="article:modified_time" content="2016-11-25T13:46:00+08:00"><meta name=Keywords content="测试,敏捷,跑步,项目管理,学习"><meta name=description content="Android UI自动化测试神器-Espresso录制"><meta name=author content="Yuanjie"><meta property="og:url" content="https://shiyuanjie.cn/posts/Android/Android-UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E7%A5%9E%E5%99%A8-Espresso%E5%BD%95%E5%88%B6/"><link rel="shortcut icon" href=/favicon.ico type=image/x-icon><link rel=stylesheet href=/css/normalize.css><link rel=stylesheet href=/css/style.css><script type=text/javascript src=//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js></script><script>var _hmt=_hmt||[];(function(){var hm=document.createElement("script");hm.src="https://hm.baidu.com/hm.js?ac69e1e54b317232c0d3a881b738cfe8";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm,s);})();</script></head><body><header id=header class=clearfix><div class=container><div class=col-group><div class=site-name><a id=logo href=https://shiyuanjie.cn>Yuanjie-跑步爱好者，IT从业者。</a><p class=description>跑步爱好者，IT从业者。</p></div><div><nav id=nav-menu class=clearfix><a href=https://shiyuanjie.cn>首页</a>
+<a href=https://shiyuanjie.cn/tools/ title=小工具>小工具</a>
+<a href=https://shiyuanjie.cn/archives/ title=归档>归档</a>
+<a href=https://shiyuanjie.cn/about/ title=关于>关于</a></nav></div></div></div></header><div id=body><div class=container><div class=col-group><div class=col-8 id=main><div class=res-cons><style type=text/css>.post-toc{position:fixed;width:200px;margin-left:-210px;padding:5px 10px;font-family:Athelas,STHeiti,Microsoft Yahei,serif;font-size:12px;border:1px solid rgba(0,0,0,.07);border-radius:5px;background-color:rgba(255,255,255,.98);background-clip:padding-box;-webkit-box-shadow:1px 1px 2px rgba(0,0,0,.125);box-shadow:1px 1px 2px rgba(0,0,0,.125);word-wrap:break-word;white-space:nowrap;-webkit-box-sizing:border-box;box-sizing:border-box;z-index:999;cursor:pointer;max-height:70%;overflow-y:auto;overflow-x:hidden}.post-toc .post-toc-title{width:100%;margin:0 auto;font-size:20px;font-weight:400;text-transform:uppercase;text-align:center}.post-toc .post-toc-content{font-size:15px}.post-toc .post-toc-content>nav>ul{margin:10px 0}.post-toc .post-toc-content ul{padding-left:20px;list-style:square;margin:.5em;line-height:1.8em}.post-toc .post-toc-content ul ul{padding-left:15px;display:none}@media print,screen and (max-width:1057px){.post-toc{display:none}}</style><div class=post-toc style=position:absolute;top:188px><h2 class=post-toc-title>文章目录</h2><div class=post-toc-content><nav id=TableOfContents><ul><li><a href=#关闭你设备中的动画>关闭你设备中的动画</a></li><li><a href=#录制一个espresso测试>录制一个Espresso测试</a></li><li><a href=#录制ui交互>录制UI交互</a></li><li><a href=#添加断言来验证ui元素>添加断言来验证UI元素</a></li><li><a href=#保存录制>保存录制</a></li><li><a href=#本地运行espresso测试>本地运行Espresso测试</a></li><li><a href=#运行android的espresso测试在-firebase-test-lab>运行Android的Espresso测试在 Firebase Test Lab</a></li></ul></nav></div></div><script type=text/javascript>$(document).ready(function(){var postToc=$(".post-toc");if(postToc.length){var leftPos=$("#main").offset().left;if(leftPos<220){postToc.css({"width":leftPos-10,"margin-left":(0-leftPos)})}
 var t=postToc.offset().top-20,a={start:{position:"absolute",top:t},process:{position:"fixed",top:20},};$(window).scroll(function(){var e=$(window).scrollTop();e<t?postToc.css(a.start):postToc.css(a.process)})}})</script><article class=post><header><h1 class=post-title>Android UI自动化测试神器-Espresso录制</h1></header><date class="post-meta meta-date">2016年11月25日</date><div class=post-meta><span>|</span>
-<span class=meta-category><a href=https://www.shiyuanjie.cn/categories/Tool>Tool</a></span></div><div class=post-meta><span id=busuanzi_container_page_pv>|<span id=busuanzi_value_page_pv></span><span>
+<span class=meta-category><a href=https://shiyuanjie.cn/categories/Tool>Tool</a></span></div><div class=post-meta><span id=busuanzi_container_page_pv>|<span id=busuanzi_value_page_pv></span><span>
 阅读</span></span></div><div class=post-content><p>Espresso Test Recorder的好处</p><ul><li>直接录制与APP的所有交互操作</li><li>支持在录制过程中添加断言</li><li>可直接生成<code>可回放</code>的测试脚本，基本不需要做任何修改</li></ul><p>原文地址: <a href=https://developer.android.com/studio/test/espresso-test-recorder.html>Create UI Tests with Espresso Test Recorder</a>，以下为正文</p><hr><blockquote><p>注意: Espresso Test Recorder在AndroidStudio 2.2 Beta版本之后才有。</p></blockquote><p>Espresso Test Recorder可以在不写一行代码的情况下创建UI测试。通过录制一个测试场景，你可以记录设备的交互并在APP的部分快照中添加断言来验证元素。Espresso Test Recorder会保存录制并自动生成对应的UI测试，并可直接运行来测试你的APP。</p><p>Espresso Test Recorder编写的测试基于<a href=https://google.github.io/android-testing-support-library/docs/espresso/>Espresso Testing framework</a>，API在<a href=https://developer.android.com/topic/libraries/testing-support-library/index.html>Android Testing Support Library</a>。Espresso API鼓励你创建基于用户操作的简洁且可信赖的UI测试。通过使用expectations、interactions和assertions而不是底层APP的Activity和Views，这样的结构防止了测试的脆弱性并优化测试运行速度。</p><p>查看下面的视频可对Espresso Test Recorder有一个快速的了解，一个新的特性在AndroidStudio2.2:</p><h2 id=关闭你设备中的动画>关闭你设备中的动画</h2><p>在使用Espresso Test Recorder之前，确保你关闭你设备中的动画以防止出现非预期的结果。依据"安装Espresso"说中在<a href=https://developer.android.com/training/testing/ui-testing/espresso-testing.html#setup>测试UI在单个APP中</a>中，但是记得你不需要手工设置依赖相关配制到Espresso库中，因为Test Recorder会自动帮你做，当你录制的时候。这些步骤只需要在一个已有的项目中做一次。</p><h2 id=录制一个espresso测试>录制一个Espresso测试</h2><p>Espresso测试由两个主要部分组成: 在View元素中的UI交互和断言。UI交互包括一个人可以用来与你APP交互的点击和输入动作。断言验证在屏幕中的可见元素的存在或内容。比如，针对<a href=https://github.com/googlecodelabs/android-testing>Notes testing app</a>的一个Espresso测试，包括UI交互针对点击一个按钮和写一个新的笔记，但使用断言来验证按钮的存在和笔记内容。</p><h2 id=录制ui交互>录制UI交互</h2><p>为了开始录制一个Espresso Test Recorder，参考下面的步骤</p><ol><li>点击 <strong>Run > Record Espresso Test</strong>。</li><li>在 <strong>Select Deployment Target</strong> 窗口中，选择你想要录制的测试的设备。如果有必要，<a href=https://developer.android.com/studio/run/managing-avds.html>创建一个新安卓虚拟设备</a>。点击 <strong>OK</strong>。</li><li>Espresso Test Recorder会激活构建你的项目，APP一定要在Espresso Test Recorder允许你交互之前，安装且启动。在APP启动之后，<strong>Record Your Test</strong> 窗口会显示，如果你还没有跟设备交互，主面板会显示"No event recorded yet.&rdquo; 与你的设备开始交互来启动记录事件，比如"点击"和"输入"动作。</li></ol><blockquote><p>注意:在你开始记录交互操作之前，在设备中你也许会看到一个对话框显示"Waiting for Debugger"或"Attaching Debugger&rdquo;。Espresso Test Recorder使用debugger来记录UI事件。当debugger被attach，对话框将会自动关闭，不要点击 <strong>Force Close</strong>.</p></blockquote><p>录制的交互将会显示在主面板中的 <strong>Record Your Test</strong> ，像下图1显示。当你开始运行测试，Espresso测试执行这些测试按相同的次序。</p><p><img src=https://developer.android.com/studio/images/test/espresso-test-recorder-window_2-2_2x.png alt=图1></p><h2 id=添加断言来验证ui元素>添加断言来验证UI元素</h2><p>断言通过三种主要的方式验证一个<a href=https://developer.android.com/reference/android/view/View.html>View</a>元素的存在或内容:</p><ul><li><strong>text is</strong> : 校验选择元素的文件内容</li><li><strong>exists</strong> : 屏幕中当前的View内，校验元素是存在的</li><li><strong>does not exist</strong> : 当前的View内，校验元素是不存在的</li></ul><p>给测试中添加断言，参考下面的步骤:</p><ol><li>点击 <strong>Add Assertion</strong> 。一个 &ldquo;屏幕截图"对话会显示出来，当Espresso获取到关于当前APP状态的UI结构或其它信息。一旦Espresso获取到屏幕截图，对话框将会关闭。</li><li>在当前面板 <strong>Record Your Test</strong> 窗口的右侧会显示当前屏幕显示的布局样式。选择一个需要创建断言的可见元素，在截图中点击元素或点击在窗口底部的 <strong>Edit assertion</strong> 对话框的第一个下拉菜单。被选择的View对象会在红框中高亮。</li><li>在__Edit assertion__ 对话框的第二个下拉菜单中选择你想使用的断言。Espresso交会弹出针对选择元素的断言</li></ol><ul><li>如果你选择"text is"断言，Espresso会自动插入当前选择元素中的值。你可以在 <strong>Edit assertion</strong> 编辑文本来匹配你想得到的断言结果。</li></ul><ol start=4><li>点击 <strong>Save and Add Another</strong> 来创建另外一个断言或点击 <strong>Save Assertion</strong> 来关闭断言面板。</li></ol><p>在图2中，显示了"text is"断言被创建用于验证笔记的标题是"Happy Testing!":
 <img src=https://developer.android.com/studio/images/test/espresso-test-recorder-assertion_2-2_2x.png alt=图2></p><p>当创建一个断言时，你可以继续与你的APP交互，只要断言面板 <strong>Record Your Test</strong> 窗口仍然打开。Espresso Test Recorder将持续录制你的动作，一旦你正在编辑的断言保存后，新的交互会显示在后面。针对断方的截屏会保存当你在设备或模拟器中点击"Add Assertion"时的APP布局。</p><blockquote><p>注意：Espresso Test Recorder还是一个实验性的特性，工具当前仅支持可见层断言。你可以通过添加断言来确定屏幕中的元素，屏幕截取仍显示可见模式，并且选择的元素的红色边框和无素在屏幕中的实际位置是不匹配的。</p></blockquote><h2 id=保存录制>保存录制</h2><p>一旦，你完成与你APP的交互并添加了断言，使用下面的步骤来保存你的记录并生成Espresso测试脚本：</p><ol><li>点击 <strong>Complete Recording</strong> 。<strong>Pick a test class name for your test</strong> 窗口将会显示。</li><li>Espresso Test Recorder将会对测试一个基于启动的Activity的唯一名字。如果你想改变测试名的话，使用 <strong>Test class name</strong> 。点击 <strong>Save</strong> 。</li></ol><blockquote><p>如果你没有给项目添加Espresso依赖， <strong>Missing Espresso dependencies</strong> 对话框会在你保存的时候显示。 点击 <strong>Yes</strong> 将会自动添加依赖至你的 build.gradle 文件中。</p></blockquote><ol start=3><li>在Espresso Test Recorder生在文件之后，会自动打开。并且 Android Studio将会在IDE的 <strong>Project</strong> 窗口中找开测试类。</li></ol><blockquote><p>测试被保存的位置依据你的<a href=https://developer.android.com/training/testing/unit-testing/instrumented-unit-tests.html>instrumentation test</a>，也与启动的Activity包名有关。比如，测试<a href=https://github.com/googlecodelabs/android-testing>Notes testing app</a>保存在 <strong>src > androidTest > java > com.example.username.appname</strong> 录制测试的APP模块下。</p></blockquote><h2 id=本地运行espresso测试>本地运行Espresso测试</h2><p>为了运行Espresso测试，使用在IDE左侧的 <strong>Project</strong> 窗口：</p><ol><li>打开APP模块文件夹，找到你想运行的测试。测试的位置依据你的<a href=https://developer.android.com/training/testing/unit-testing/instrumented-unit-tests.html>instrumentation test</a>位置和启动Activity包名。下面的例子说明<a href=https://github.com/googlecodelabs/android-testing>Notes testing app</a>的测试应该保存在哪：</li></ol><ul><li>如果你在窗口中使用<a href=https://developer.android.com/studio/projects/index.html#ProjectFiles>Android视图</a>，进入 <strong>java > com.example.username.appname(androidTest)</strong> .</li><li>如果你在窗口中使用 <strong>Project视图</strong>， 进入 <strong>src > androidTest > java > com.example.username.appname</strong> 模板文件夹。</li></ul><ol start=2><li>在测试代码上点击右键，选择 <strong>Run &lsquo;testName&rsquo;</strong> .</li></ol><ul><li>同样，你可以打开测试文件，在生成的测试类或方法中右键点击来运行测试。了解更多关于如何运行测试在<a href=https://developer.android.com/studio/test/index.html#run_a_test>测试你的APP</a>。</li></ul><ol start=3><li>在 <strong>Select Deployment Target</strong> 窗口，选择你想要运行测试的测试设备。如果有需要，<a href=https://developer.android.com/studio/run/managing-avds.html>创建一个新安卓虚拟设备</a>。点击 <strong>OK</strong> 。</li></ol><p>在IDE的底部 <strong>Run</strong> 窗口中，会显示测试的运行过程。Android Studio运行项目的完整构建并在 <strong>Run</strong> 窗口中打开一个测试名称的页签，如图3展示。你可以在页签中检查是否你的测试通过或失败，以及你的测试运行的多久。当测试结束后，页签将会显示 &ldquo;Tests ran to completion.&rdquo;
 <img src=https://developer.android.com/studio/images/test/run-window-espresso-test_2-2-preview-7_2x.png alt=图3></p><p>了解更多的编写测试的运行配制，可以去<a href=https://developer.android.com/studio/run/rundebugconfig.html#creating>创建并编辑 运行、调试 配制</a>看"Defining a test configuration for a class or method"部分</p><h2 id=运行android的espresso测试在-firebase-test-lab>运行Android的Espresso测试在 Firebase Test Lab</h2><p>你可以在<a href=https://firebase.google.com/docs/test-lab/>Firebase Test Lab</a>运行的Espresso测试在数以百计设备配制中。在Test Lab中可以使用<a href=https://firebase.google.com/docs/test-lab/overview#quota_for_spark_and_flame_plans>free daily quota on the Spark plan</a>来免费运行测试。为了在<a href=https://firebase.google.com/docs/test-lab/>Firebase Test Lab</a>中运行测试，为你的APP<a href=https://firebase.google.com/docs/test-lab/web-ui#create_a_firebase_project>创建一个Firebase项目</a>，并按Android Studio的操作说明来<a href=https://developer.android.com/training/testing/unit-testing/instrumented-unit-tests.html#run-ctl>运行你的测试使用Firebase Test Lab</a>.
-<img src=https://developer.android.com/images/training/ctl-test-results.png alt="图4 在Run窗口的使用Firebase Test Lab测试多个设备的结果展示"></p></div><div class=post-archive><ul class=post-copyright><li><strong>原文作者：</strong><a rel=author href=https://www.shiyuanjie.cn>Yuanjie</a></li><li style=word-break:break-all><strong>原文链接：</strong><a href=https://www.shiyuanjie.cn/posts/Android/Android-UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E7%A5%9E%E5%99%A8-Espresso%E5%BD%95%E5%88%B6/>https://www.shiyuanjie.cn/posts/Android/Android-UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E7%A5%9E%E5%99%A8-Espresso%E5%BD%95%E5%88%B6/</a></li><li><strong>版权声明：</strong>本作品采用<a rel=license href=https://creativecommons.org/licenses/by-nc-nd/4.0/>知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议</a>进行许可，非商业转载请注明出处（作者，原文链接），商业转载请联系作者获得授权。</li></ul></div><br><div class=post-archive><h2>See Also</h2><ul class=listing><li><a href=/posts/UITest/PageObject%E5%88%86%E7%A6%BBE2E%E6%B5%8B%E8%AF%95/>PageObject分离E2E测试</a></li><li><a href=/posts/UITest/Espresso%E5%85%A5%E9%97%A8/>Espresso入门</a></li><li><a href=/posts/Android/Android%E6%A8%A1%E6%8B%9F%E5%99%A8%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/>Android模拟器环境搭建</a></li><li><a href=/posts/UITest/E2E%E6%B5%8B%E8%AF%95%E4%B9%8BHeadless-browser%E5%AE%B9%E5%99%A8%E5%8C%96/>E2E测试之Headless browser容器化</a></li><li><a href=/posts/UITest/Protractor-End-to-End-Testing/>Protractor End to End Testing</a></li></ul></div><div class="post-meta meta-tags"><ul class=clearfix><li><a href=https://www.shiyuanjie.cn/tags/Espresso>Espresso</a></li><li><a href=https://www.shiyuanjie.cn/tags/E2E>E2E</a></li><li><a href=https://www.shiyuanjie.cn/tags/Android>Android</a></li></ul></div></article><div class="post bg-white"><script src=https://utteranc.es/client.js repo=aimer1124/comments-blog issue-term=pathname theme=github-light crossorigin=anonymous async></script></div></div></div><div id=secondary><section class=widget><h3 class=widget-title>最近文章</h3><ul class=widget-list><li><a href=https://www.shiyuanjie.cn/posts/Upgrade/driver-license/ title=我的驾照历程>我的驾照历程</a></li><li><a href=https://www.shiyuanjie.cn/posts/Book/%E5%8F%AF%E5%A4%8D%E5%88%B6%E7%9A%84%E9%A2%86%E5%AF%BC%E5%8A%9B/ title=可复制的领导力>可复制的领导力</a></li><li><a href=https://www.shiyuanjie.cn/posts/Book/%E5%86%8D%E8%A7%81%E5%BF%8D%E8%80%81%E5%B8%88/ title=再见，忍老师>再见，忍老师</a></li><li><a href=https://www.shiyuanjie.cn/posts/Book/%E5%85%84%E5%BC%9F/ title=兄弟>兄弟</a></li><li><a href=https://www.shiyuanjie.cn/posts/QA/BugReview/ title="Bug Review">Bug Review</a></li><li><a href=https://www.shiyuanjie.cn/posts/Book/%E4%BA%BA%E7%B1%BB%E7%AE%80%E5%8F%B2/ title=人类简史>人类简史</a></li><li><a href=https://www.shiyuanjie.cn/posts/Book/%E5%AD%A6%E4%BC%9A%E6%8F%90%E9%97%AE/ title=学会提问>学会提问</a></li><li><a href=https://www.shiyuanjie.cn/posts/Product/shiyanlou/ title=实验楼>实验楼</a></li><li><a href=https://www.shiyuanjie.cn/posts/Book/%E8%8C%B6%E9%81%93/ title=茶道>茶道</a></li><li><a href=https://www.shiyuanjie.cn/posts/Management/PM-Daily/ title="PM Daily">PM Daily</a></li></ul></section><section class=widget><h3 class=widget-title>分类</h3><ul class=widget-list><li><a href=https://www.shiyuanjie.cn/categories/Book/>Book (57)</a></li><li><a href=https://www.shiyuanjie.cn/categories/Car/>Car (1)</a></li><li><a href=https://www.shiyuanjie.cn/categories/Design/>Design (5)</a></li><li><a href=https://www.shiyuanjie.cn/categories/Management/>Management (6)</a></li><li><a href=https://www.shiyuanjie.cn/categories/Mark/>Mark (32)</a></li><li><a href=https://www.shiyuanjie.cn/categories/Paint/>Paint (3)</a></li><li><a href=https://www.shiyuanjie.cn/categories/Testing/>Testing (9)</a></li><li><a href=https://www.shiyuanjie.cn/categories/Tool/>Tool (34)</a></li><li><a href=https://www.shiyuanjie.cn/categories/Translate/>Translate (16)</a></li></ul></section><section class=widget><h3 class=widget-title>标签</h3><div class=tagcloud><a href=https://www.shiyuanjie.cn/tags/2017/>2017</a>
-<a href=https://www.shiyuanjie.cn/tags/2018/>2018</a>
-<a href=https://www.shiyuanjie.cn/tags/2019/>2019</a>
-<a href=https://www.shiyuanjie.cn/tags/API%E6%B5%8B%E8%AF%95/>API测试</a>
-<a href=https://www.shiyuanjie.cn/tags/Alfred/>Alfred</a>
-<a href=https://www.shiyuanjie.cn/tags/Android/>Android</a>
-<a href=https://www.shiyuanjie.cn/tags/Bug/>Bug</a>
-<a href=https://www.shiyuanjie.cn/tags/CI/>CI</a>
-<a href=https://www.shiyuanjie.cn/tags/Chrome/>Chrome</a>
-<a href=https://www.shiyuanjie.cn/tags/Cucumber/>Cucumber</a>
-<a href=https://www.shiyuanjie.cn/tags/Docker/>Docker</a>
-<a href=https://www.shiyuanjie.cn/tags/E2E/>E2E</a>
-<a href=https://www.shiyuanjie.cn/tags/ECS/>ECS</a>
-<a href=https://www.shiyuanjie.cn/tags/Espresso/>Espresso</a>
-<a href=https://www.shiyuanjie.cn/tags/Evernote/>Evernote</a>
-<a href=https://www.shiyuanjie.cn/tags/Flutter/>Flutter</a>
-<a href=https://www.shiyuanjie.cn/tags/GIF/>GIF</a>
-<a href=https://www.shiyuanjie.cn/tags/Galen/>Galen</a>
-<a href=https://www.shiyuanjie.cn/tags/Gauge/>Gauge</a>
-<a href=https://www.shiyuanjie.cn/tags/Genymotion/>Genymotion</a>
-<a href=https://www.shiyuanjie.cn/tags/Git/>Git</a>
-<a href=https://www.shiyuanjie.cn/tags/Github/>Github</a>
-<a href=https://www.shiyuanjie.cn/tags/Google/>Google</a>
-<a href=https://www.shiyuanjie.cn/tags/Grunt/>Grunt</a>
-<a href=https://www.shiyuanjie.cn/tags/Gulp/>Gulp</a>
-<a href=https://www.shiyuanjie.cn/tags/HTTP/>HTTP</a>
-<a href=https://www.shiyuanjie.cn/tags/Hexo/>Hexo</a>
-<a href=https://www.shiyuanjie.cn/tags/Hugo/>Hugo</a>
-<a href=https://www.shiyuanjie.cn/tags/JMeter/>JMeter</a>
-<a href=https://www.shiyuanjie.cn/tags/JavaScript/>JavaScript</a>
-<a href=https://www.shiyuanjie.cn/tags/Jenkins/>Jenkins</a>
-<a href=https://www.shiyuanjie.cn/tags/Layout%E6%B5%8B%E8%AF%95/>Layout测试</a>
-<a href=https://www.shiyuanjie.cn/tags/Locust/>Locust</a>
-<a href=https://www.shiyuanjie.cn/tags/MarkDown/>MarkDown</a>
-<a href=https://www.shiyuanjie.cn/tags/MarkDown/>MarkDown</a>
-<a href=https://www.shiyuanjie.cn/tags/Node.js/>Node.js</a>
-<a href=https://www.shiyuanjie.cn/tags/PDF/>PDF</a>
-<a href=https://www.shiyuanjie.cn/tags/PM/>PM</a>
-<a href=https://www.shiyuanjie.cn/tags/PageObject/>PageObject</a>
-<a href=https://www.shiyuanjie.cn/tags/Product/>Product</a>
-<a href=https://www.shiyuanjie.cn/tags/Protractor/>Protractor</a>
-<a href=https://www.shiyuanjie.cn/tags/Python/>Python</a>
-<a href=https://www.shiyuanjie.cn/tags/Ruby/>Ruby</a>
-<a href=https://www.shiyuanjie.cn/tags/SSH/>SSH</a>
-<a href=https://www.shiyuanjie.cn/tags/SuperTest/>SuperTest</a>
-<a href=https://www.shiyuanjie.cn/tags/TeamLeader/>TeamLeader</a>
-<a href=https://www.shiyuanjie.cn/tags/Test-scenario/>Test scenario</a>
-<a href=https://www.shiyuanjie.cn/tags/Testing/>Testing</a>
-<a href=https://www.shiyuanjie.cn/tags/TickTick/>TickTick</a>
-<a href=https://www.shiyuanjie.cn/tags/Travis/>Travis</a>
-<a href=https://www.shiyuanjie.cn/tags/Workflow/>Workflow</a>
-<a href=https://www.shiyuanjie.cn/tags/find/>find</a>
-<a href=https://www.shiyuanjie.cn/tags/%E4%B8%83%E7%89%9B/>七牛</a>
-<a href=https://www.shiyuanjie.cn/tags/%E4%B8%9C%E9%87%8E%E5%9C%AD%E5%90%BE/>东野圭吾</a>
-<a href=https://www.shiyuanjie.cn/tags/%E4%B8%9C%E9%87%8E%E5%A5%8E%E5%90%BE/>东野奎吾</a>
-<a href=https://www.shiyuanjie.cn/tags/%E4%B8%AD%E5%8F%B0/>中台</a>
-<a href=https://www.shiyuanjie.cn/tags/%E4%B8%AD%E5%9B%BD%E7%A7%BB%E5%8A%A8/>中国移动</a>
-<a href=https://www.shiyuanjie.cn/tags/%E4%B9%A0%E6%83%AF/>习惯</a>
-<a href=https://www.shiyuanjie.cn/tags/%E4%BA%A7%E5%93%81/>产品</a>
-<a href=https://www.shiyuanjie.cn/tags/%E4%BD%99%E5%8D%8E/>余华</a>
-<a href=https://www.shiyuanjie.cn/tags/%E5%8E%86%E5%8F%B2/>历史</a>
-<a href=https://www.shiyuanjie.cn/tags/%E5%92%A8%E8%AF%A2/>咨询</a>
-<a href=https://www.shiyuanjie.cn/tags/%E5%9B%A2%E9%98%9F/>团队</a>
-<a href=https://www.shiyuanjie.cn/tags/%E5%AD%A9%E5%AD%90/>孩子</a>
-<a href=https://www.shiyuanjie.cn/tags/%E5%B0%8F%E8%AF%B4/>小说</a>
-<a href=https://www.shiyuanjie.cn/tags/%E5%B7%A5%E5%85%B7/>工具</a>
-<a href=https://www.shiyuanjie.cn/tags/%E5%BE%AE%E5%89%8D%E7%AB%AF/>微前端</a>
-<a href=https://www.shiyuanjie.cn/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/>微服务</a>
-<a href=https://www.shiyuanjie.cn/tags/%E6%80%9D%E7%BB%B4/>思维</a>
-<a href=https://www.shiyuanjie.cn/tags/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/>思维导图</a>
-<a href=https://www.shiyuanjie.cn/tags/%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/>性能测试</a>
-<a href=https://www.shiyuanjie.cn/tags/%E6%88%92%E7%83%9F/>戒烟</a>
-<a href=https://www.shiyuanjie.cn/tags/%E6%89%8B%E7%BB%98/>手绘</a>
-<a href=https://www.shiyuanjie.cn/tags/%E6%8B%9B%E8%81%98/>招聘</a>
-<a href=https://www.shiyuanjie.cn/tags/%E6%94%B6%E8%B4%B9%E8%BD%AF%E4%BB%B6/>收费软件</a>
-<a href=https://www.shiyuanjie.cn/tags/%E6%95%8F%E6%8D%B7/>敏捷</a>
-<a href=https://www.shiyuanjie.cn/tags/%E6%95%99%E8%82%B2/>教育</a>
-<a href=https://www.shiyuanjie.cn/tags/%E6%95%B4%E7%90%86/>整理</a>
-<a href=https://www.shiyuanjie.cn/tags/%E6%97%A5%E6%9B%B4/>日更</a>
-<a href=https://www.shiyuanjie.cn/tags/%E6%A8%A1%E6%8B%9F%E5%99%A8/>模拟器</a>
-<a href=https://www.shiyuanjie.cn/tags/%E6%B2%9F%E9%80%9A/>沟通</a>
-<a href=https://www.shiyuanjie.cn/tags/%E6%B8%B8%E6%B3%B3/>游泳</a>
-<a href=https://www.shiyuanjie.cn/tags/%E7%88%AC%E8%99%AB/>爬虫</a>
-<a href=https://www.shiyuanjie.cn/tags/%E7%94%9F%E6%B4%BB/>生活</a>
-<a href=https://www.shiyuanjie.cn/tags/%E7%94%A8%E6%88%B7%E6%95%85%E4%BA%8B/>用户故事</a>
-<a href=https://www.shiyuanjie.cn/tags/%E7%94%B2%E6%96%B9/>甲方</a>
-<a href=https://www.shiyuanjie.cn/tags/%E7%AE%A1%E7%90%86/>管理</a>
-<a href=https://www.shiyuanjie.cn/tags/%E7%BB%83%E5%AD%97/>练字</a>
-<a href=https://www.shiyuanjie.cn/tags/%E8%81%8C%E5%9C%BA/>职场</a>
-<a href=https://www.shiyuanjie.cn/tags/%E8%8C%B6/>茶</a>
-<a href=https://www.shiyuanjie.cn/tags/%E8%AE%BE%E8%AE%A1/>设计</a>
-<a href=https://www.shiyuanjie.cn/tags/%E8%AF%BB%E4%B9%A6/>读书</a>
-<a href=https://www.shiyuanjie.cn/tags/%E8%B7%83%E8%BF%81/>跃迁</a>
-<a href=https://www.shiyuanjie.cn/tags/%E8%B7%91%E6%AD%A5/>跑步</a>
-<a href=https://www.shiyuanjie.cn/tags/%E9%93%B6%E5%B1%8B/>银屋</a>
-<a href=https://www.shiyuanjie.cn/tags/%E9%9C%80%E6%B1%82/>需求</a>
-<a href=https://www.shiyuanjie.cn/tags/%E9%A9%BE%E7%85%A7/>驾照</a></div></section><section class=widget><h3 class=widget-title>产出</h3><ul class=widget-list><li><a target=_blank href=https://www.shiyuanjie.cn/tools/ title=我的小工具>我的小工具</a></li><li><a target=_blank href=https://www.shiyuanjie.cn/posts/Upgrade/%E5%88%A9%E7%94%A821%E5%A4%A9%E7%9A%84%E5%AE%8C%E6%88%90%E4%B8%80%E6%9C%ACMini%E4%B9%A6/ title=利用21天时间完成一本Mini书>利用21天时间完成一本Mini书</a></li><li><a target=_blank href=https://aimer1124.github.io/practice-character/ title=练字记录>练字记录</a></li><li><a target=_blank href=https://aimer1124.github.io/graphic-recorder/ title=GR记录>GR记录</a></li><li><a target=_blank href=https://aimer1124.github.io/100-questions-to-pm/ title=PM的问题集>PM的问题集</a></li><li><a target=_blank href=https://www.shiyuanjie.cn/posts/Blog/%E7%AB%99%E7%82%B9%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/ title=网站时间线Timeline>网站时间线Timeline</a></li></ul></section></div></div></div></div><footer id=footer><div class=container>&copy; 2021, By Yuanjie</a>。
+<img src=https://developer.android.com/images/training/ctl-test-results.png alt="图4 在Run窗口的使用Firebase Test Lab测试多个设备的结果展示"></p></div><div class=post-archive><ul class=post-copyright><li><strong>原文作者：</strong><a rel=author href=https://shiyuanjie.cn>Yuanjie</a></li><li style=word-break:break-all><strong>原文链接：</strong><a href=https://shiyuanjie.cn/posts/Android/Android-UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E7%A5%9E%E5%99%A8-Espresso%E5%BD%95%E5%88%B6/>https://shiyuanjie.cn/posts/Android/Android-UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E7%A5%9E%E5%99%A8-Espresso%E5%BD%95%E5%88%B6/</a></li><li><strong>版权声明：</strong>本作品采用<a rel=license href=https://creativecommons.org/licenses/by-nc-nd/4.0/>知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议</a>进行许可，非商业转载请注明出处（作者，原文链接），商业转载请联系作者获得授权。</li></ul></div><br><div class=post-archive><h2>See Also</h2><ul class=listing><li><a href=/posts/UITest/PageObject%E5%88%86%E7%A6%BBE2E%E6%B5%8B%E8%AF%95/>PageObject分离E2E测试</a></li><li><a href=/posts/UITest/Espresso%E5%85%A5%E9%97%A8/>Espresso入门</a></li><li><a href=/posts/Android/Android%E6%A8%A1%E6%8B%9F%E5%99%A8%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/>Android模拟器环境搭建</a></li><li><a href=/posts/UITest/E2E%E6%B5%8B%E8%AF%95%E4%B9%8BHeadless-browser%E5%AE%B9%E5%99%A8%E5%8C%96/>E2E测试之Headless browser容器化</a></li><li><a href=/posts/UITest/Protractor-End-to-End-Testing/>Protractor End to End Testing</a></li></ul></div><div class="post-meta meta-tags"><ul class=clearfix><li><a href=https://shiyuanjie.cn/tags/Espresso>Espresso</a></li><li><a href=https://shiyuanjie.cn/tags/E2E>E2E</a></li><li><a href=https://shiyuanjie.cn/tags/Android>Android</a></li></ul></div></article><div class="post bg-white"><script src=https://utteranc.es/client.js repo=aimer1124/comments-blog issue-term=pathname theme=github-light crossorigin=anonymous async></script></div></div></div><div id=secondary><section class=widget><h3 class=widget-title>最近文章</h3><ul class=widget-list><li><a href=https://shiyuanjie.cn/posts/Upgrade/driver-license/ title=我的驾照历程>我的驾照历程</a></li><li><a href=https://shiyuanjie.cn/posts/Book/%E5%8F%AF%E5%A4%8D%E5%88%B6%E7%9A%84%E9%A2%86%E5%AF%BC%E5%8A%9B/ title=可复制的领导力>可复制的领导力</a></li><li><a href=https://shiyuanjie.cn/posts/Book/%E5%86%8D%E8%A7%81%E5%BF%8D%E8%80%81%E5%B8%88/ title=再见，忍老师>再见，忍老师</a></li><li><a href=https://shiyuanjie.cn/posts/Book/%E5%85%84%E5%BC%9F/ title=兄弟>兄弟</a></li><li><a href=https://shiyuanjie.cn/posts/QA/BugReview/ title="Bug Review">Bug Review</a></li><li><a href=https://shiyuanjie.cn/posts/Book/%E4%BA%BA%E7%B1%BB%E7%AE%80%E5%8F%B2/ title=人类简史>人类简史</a></li><li><a href=https://shiyuanjie.cn/posts/Book/%E5%AD%A6%E4%BC%9A%E6%8F%90%E9%97%AE/ title=学会提问>学会提问</a></li><li><a href=https://shiyuanjie.cn/posts/Product/shiyanlou/ title=实验楼>实验楼</a></li><li><a href=https://shiyuanjie.cn/posts/Book/%E8%8C%B6%E9%81%93/ title=茶道>茶道</a></li><li><a href=https://shiyuanjie.cn/posts/Management/PM-Daily/ title="PM Daily">PM Daily</a></li></ul></section><section class=widget><h3 class=widget-title>分类</h3><ul class=widget-list><li><a href=https://shiyuanjie.cn/categories/Book/>Book (57)</a></li><li><a href=https://shiyuanjie.cn/categories/Car/>Car (1)</a></li><li><a href=https://shiyuanjie.cn/categories/Design/>Design (5)</a></li><li><a href=https://shiyuanjie.cn/categories/Management/>Management (6)</a></li><li><a href=https://shiyuanjie.cn/categories/Mark/>Mark (32)</a></li><li><a href=https://shiyuanjie.cn/categories/Paint/>Paint (3)</a></li><li><a href=https://shiyuanjie.cn/categories/Testing/>Testing (9)</a></li><li><a href=https://shiyuanjie.cn/categories/Tool/>Tool (34)</a></li><li><a href=https://shiyuanjie.cn/categories/Translate/>Translate (16)</a></li></ul></section><section class=widget><h3 class=widget-title>标签</h3><div class=tagcloud><a href=https://shiyuanjie.cn/tags/2017/>2017</a>
+<a href=https://shiyuanjie.cn/tags/2018/>2018</a>
+<a href=https://shiyuanjie.cn/tags/2019/>2019</a>
+<a href=https://shiyuanjie.cn/tags/API%E6%B5%8B%E8%AF%95/>API测试</a>
+<a href=https://shiyuanjie.cn/tags/Alfred/>Alfred</a>
+<a href=https://shiyuanjie.cn/tags/Android/>Android</a>
+<a href=https://shiyuanjie.cn/tags/Bug/>Bug</a>
+<a href=https://shiyuanjie.cn/tags/CI/>CI</a>
+<a href=https://shiyuanjie.cn/tags/Chrome/>Chrome</a>
+<a href=https://shiyuanjie.cn/tags/Cucumber/>Cucumber</a>
+<a href=https://shiyuanjie.cn/tags/Docker/>Docker</a>
+<a href=https://shiyuanjie.cn/tags/E2E/>E2E</a>
+<a href=https://shiyuanjie.cn/tags/ECS/>ECS</a>
+<a href=https://shiyuanjie.cn/tags/Espresso/>Espresso</a>
+<a href=https://shiyuanjie.cn/tags/Evernote/>Evernote</a>
+<a href=https://shiyuanjie.cn/tags/Flutter/>Flutter</a>
+<a href=https://shiyuanjie.cn/tags/GIF/>GIF</a>
+<a href=https://shiyuanjie.cn/tags/Galen/>Galen</a>
+<a href=https://shiyuanjie.cn/tags/Gauge/>Gauge</a>
+<a href=https://shiyuanjie.cn/tags/Genymotion/>Genymotion</a>
+<a href=https://shiyuanjie.cn/tags/Git/>Git</a>
+<a href=https://shiyuanjie.cn/tags/Github/>Github</a>
+<a href=https://shiyuanjie.cn/tags/Google/>Google</a>
+<a href=https://shiyuanjie.cn/tags/Grunt/>Grunt</a>
+<a href=https://shiyuanjie.cn/tags/Gulp/>Gulp</a>
+<a href=https://shiyuanjie.cn/tags/HTTP/>HTTP</a>
+<a href=https://shiyuanjie.cn/tags/Hexo/>Hexo</a>
+<a href=https://shiyuanjie.cn/tags/Hugo/>Hugo</a>
+<a href=https://shiyuanjie.cn/tags/JMeter/>JMeter</a>
+<a href=https://shiyuanjie.cn/tags/JavaScript/>JavaScript</a>
+<a href=https://shiyuanjie.cn/tags/Jenkins/>Jenkins</a>
+<a href=https://shiyuanjie.cn/tags/Layout%E6%B5%8B%E8%AF%95/>Layout测试</a>
+<a href=https://shiyuanjie.cn/tags/Locust/>Locust</a>
+<a href=https://shiyuanjie.cn/tags/MarkDown/>MarkDown</a>
+<a href=https://shiyuanjie.cn/tags/MarkDown/>MarkDown</a>
+<a href=https://shiyuanjie.cn/tags/Node.js/>Node.js</a>
+<a href=https://shiyuanjie.cn/tags/PDF/>PDF</a>
+<a href=https://shiyuanjie.cn/tags/PM/>PM</a>
+<a href=https://shiyuanjie.cn/tags/PageObject/>PageObject</a>
+<a href=https://shiyuanjie.cn/tags/Product/>Product</a>
+<a href=https://shiyuanjie.cn/tags/Protractor/>Protractor</a>
+<a href=https://shiyuanjie.cn/tags/Python/>Python</a>
+<a href=https://shiyuanjie.cn/tags/Ruby/>Ruby</a>
+<a href=https://shiyuanjie.cn/tags/SSH/>SSH</a>
+<a href=https://shiyuanjie.cn/tags/SuperTest/>SuperTest</a>
+<a href=https://shiyuanjie.cn/tags/TeamLeader/>TeamLeader</a>
+<a href=https://shiyuanjie.cn/tags/Test-scenario/>Test scenario</a>
+<a href=https://shiyuanjie.cn/tags/Testing/>Testing</a>
+<a href=https://shiyuanjie.cn/tags/TickTick/>TickTick</a>
+<a href=https://shiyuanjie.cn/tags/Travis/>Travis</a>
+<a href=https://shiyuanjie.cn/tags/Workflow/>Workflow</a>
+<a href=https://shiyuanjie.cn/tags/find/>find</a>
+<a href=https://shiyuanjie.cn/tags/%E4%B8%83%E7%89%9B/>七牛</a>
+<a href=https://shiyuanjie.cn/tags/%E4%B8%9C%E9%87%8E%E5%9C%AD%E5%90%BE/>东野圭吾</a>
+<a href=https://shiyuanjie.cn/tags/%E4%B8%9C%E9%87%8E%E5%A5%8E%E5%90%BE/>东野奎吾</a>
+<a href=https://shiyuanjie.cn/tags/%E4%B8%AD%E5%8F%B0/>中台</a>
+<a href=https://shiyuanjie.cn/tags/%E4%B8%AD%E5%9B%BD%E7%A7%BB%E5%8A%A8/>中国移动</a>
+<a href=https://shiyuanjie.cn/tags/%E4%B9%A0%E6%83%AF/>习惯</a>
+<a href=https://shiyuanjie.cn/tags/%E4%BA%A7%E5%93%81/>产品</a>
+<a href=https://shiyuanjie.cn/tags/%E4%BD%99%E5%8D%8E/>余华</a>
+<a href=https://shiyuanjie.cn/tags/%E5%8E%86%E5%8F%B2/>历史</a>
+<a href=https://shiyuanjie.cn/tags/%E5%92%A8%E8%AF%A2/>咨询</a>
+<a href=https://shiyuanjie.cn/tags/%E5%9B%A2%E9%98%9F/>团队</a>
+<a href=https://shiyuanjie.cn/tags/%E5%AD%A9%E5%AD%90/>孩子</a>
+<a href=https://shiyuanjie.cn/tags/%E5%B0%8F%E8%AF%B4/>小说</a>
+<a href=https://shiyuanjie.cn/tags/%E5%B7%A5%E5%85%B7/>工具</a>
+<a href=https://shiyuanjie.cn/tags/%E5%BE%AE%E5%89%8D%E7%AB%AF/>微前端</a>
+<a href=https://shiyuanjie.cn/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/>微服务</a>
+<a href=https://shiyuanjie.cn/tags/%E6%80%9D%E7%BB%B4/>思维</a>
+<a href=https://shiyuanjie.cn/tags/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/>思维导图</a>
+<a href=https://shiyuanjie.cn/tags/%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/>性能测试</a>
+<a href=https://shiyuanjie.cn/tags/%E6%88%92%E7%83%9F/>戒烟</a>
+<a href=https://shiyuanjie.cn/tags/%E6%89%8B%E7%BB%98/>手绘</a>
+<a href=https://shiyuanjie.cn/tags/%E6%8B%9B%E8%81%98/>招聘</a>
+<a href=https://shiyuanjie.cn/tags/%E6%94%B6%E8%B4%B9%E8%BD%AF%E4%BB%B6/>收费软件</a>
+<a href=https://shiyuanjie.cn/tags/%E6%95%8F%E6%8D%B7/>敏捷</a>
+<a href=https://shiyuanjie.cn/tags/%E6%95%99%E8%82%B2/>教育</a>
+<a href=https://shiyuanjie.cn/tags/%E6%95%B4%E7%90%86/>整理</a>
+<a href=https://shiyuanjie.cn/tags/%E6%97%A5%E6%9B%B4/>日更</a>
+<a href=https://shiyuanjie.cn/tags/%E6%A8%A1%E6%8B%9F%E5%99%A8/>模拟器</a>
+<a href=https://shiyuanjie.cn/tags/%E6%B2%9F%E9%80%9A/>沟通</a>
+<a href=https://shiyuanjie.cn/tags/%E6%B8%B8%E6%B3%B3/>游泳</a>
+<a href=https://shiyuanjie.cn/tags/%E7%88%AC%E8%99%AB/>爬虫</a>
+<a href=https://shiyuanjie.cn/tags/%E7%94%9F%E6%B4%BB/>生活</a>
+<a href=https://shiyuanjie.cn/tags/%E7%94%A8%E6%88%B7%E6%95%85%E4%BA%8B/>用户故事</a>
+<a href=https://shiyuanjie.cn/tags/%E7%94%B2%E6%96%B9/>甲方</a>
+<a href=https://shiyuanjie.cn/tags/%E7%AE%A1%E7%90%86/>管理</a>
+<a href=https://shiyuanjie.cn/tags/%E7%BB%83%E5%AD%97/>练字</a>
+<a href=https://shiyuanjie.cn/tags/%E8%81%8C%E5%9C%BA/>职场</a>
+<a href=https://shiyuanjie.cn/tags/%E8%8C%B6/>茶</a>
+<a href=https://shiyuanjie.cn/tags/%E8%AE%BE%E8%AE%A1/>设计</a>
+<a href=https://shiyuanjie.cn/tags/%E8%AF%BB%E4%B9%A6/>读书</a>
+<a href=https://shiyuanjie.cn/tags/%E8%B7%83%E8%BF%81/>跃迁</a>
+<a href=https://shiyuanjie.cn/tags/%E8%B7%91%E6%AD%A5/>跑步</a>
+<a href=https://shiyuanjie.cn/tags/%E9%93%B6%E5%B1%8B/>银屋</a>
+<a href=https://shiyuanjie.cn/tags/%E9%9C%80%E6%B1%82/>需求</a>
+<a href=https://shiyuanjie.cn/tags/%E9%A9%BE%E7%85%A7/>驾照</a></div></section><section class=widget><h3 class=widget-title>产出</h3><ul class=widget-list><li><a target=_blank href=https://www.shiyuanjie.cn/tools/ title=我的小工具>我的小工具</a></li><li><a target=_blank href=https://www.shiyuanjie.cn/posts/Upgrade/%E5%88%A9%E7%94%A821%E5%A4%A9%E7%9A%84%E5%AE%8C%E6%88%90%E4%B8%80%E6%9C%ACMini%E4%B9%A6/ title=利用21天时间完成一本Mini书>利用21天时间完成一本Mini书</a></li><li><a target=_blank href=https://aimer1124.github.io/practice-character/ title=练字记录>练字记录</a></li><li><a target=_blank href=https://aimer1124.github.io/graphic-recorder/ title=GR记录>GR记录</a></li><li><a target=_blank href=https://aimer1124.github.io/100-questions-to-pm/ title=PM的问题集>PM的问题集</a></li><li><a target=_blank href=https://www.shiyuanjie.cn/posts/Blog/%E7%AB%99%E7%82%B9%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/ title=网站时间线Timeline>网站时间线Timeline</a></li></ul></section></div></div></div></div><footer id=footer><div class=container>&copy; 2021, By Yuanjie</a>。
 访客 <span id=busuanzi_value_site_uv></span>人次 | 访问 <span id=busuanzi_value_site_pv></span>次。
 备案号：<a href=http://www.beian.miit.gov.cn target=_blank>陕ICP备20003547号-1</a></div></footer><script type=text/javascript>window.MathJax={tex2jax:{inlineMath:[['$','$']],processEscapes:true}};</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async></script><a id=rocket href=#top></a><script type=text/javascript src="/js/totop.js?v=0.0.0" async></script><script type=text/javascript src=//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js async></script></body></html>
